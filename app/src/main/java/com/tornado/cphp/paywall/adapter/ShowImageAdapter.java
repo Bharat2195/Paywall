@@ -21,7 +21,7 @@ import com.tornado.cphp.paywall.R;
 import java.util.ArrayList;
 
 /**
- * Created by cphp on 21-Sep-16.
+ * Created by bharat on 21-Sep-16.
  */
 public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.ViewHolder> {
 
