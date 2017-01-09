@@ -1,9 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_member_activation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.paywall.memberpanel.MemberActivationActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        android:id="@+id/mToolbarActiveMember"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"
+        android:layout_height="?attr/actionBarSize"></include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/mToolbarActiveMember"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtMemberId"
+                android:text="Member Id"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etMemberid"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_below="@+id/txtMemberId"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/change_password_corner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtMemberName"
+                android:text="Member Name"
+                android:layout_below="@+id/etMemberid"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etMemberName"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_below="@+id/txtMemberName"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/change_password_corner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:text="Amount"
+                android:layout_below="@+id/etMemberName"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spnAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:entries="@array/spin_amount"
+                android:background="@drawable/spinner_shape"
+                android:layout_below="@+id/txtAmount" />
+
+
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="Activation"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/spnAmount"
+                android:layout_margin="10dp"
+                android:background="@drawable/activation_button_corner"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--<Button-->
+                <!--android:id="@+id/btnReset"-->
+                <!--android:text="Reset"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:layout_toRightOf="@+id/btnSubmit"-->
+                <!--android:layout_below="@+id/txtEroorTransactionPassword"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@drawable/button_corner"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

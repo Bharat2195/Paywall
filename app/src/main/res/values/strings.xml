@@ -4,5 +4,14 @@
     <string name="bus_hotels_booking"><![CDATA[BUS & HOTELS & BOOKING]]></string>
 
     <string name="Rs">Enter Amount (\u20B9)</string>
+    <string name="error_memberid">Please enter member id</string>
+    <string name="error_validmemberid">Please enter valid memberid</string>
+    <string name="error_blank_membername">Please enter member name</string>
+    <string name="error_valid_member_name">Please enter valid member name</string>
+
+
+    <string-array name="spin_amount">
+        <item>"100"</item>
+    </string-array>
 
 </resources>

@@ -169,7 +169,7 @@ public class MemberRegistrationActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             try {
                 jsonObject.put("mode", "memberJoining");
-                jsonObject.put("Memberid", strMemberId);
+                jsonObject.put("memberid", strMemberId);
                 jsonObject.put("password", strPassword);
                 jsonObject.put("membername",strMemberName);
                 jsonObject.put("mobile",strMobile);
@@ -365,8 +365,8 @@ public class MemberRegistrationActivity extends AppCompatActivity {
                     etCity.getText().clear();
                     etState.getText().clear();
                     etCountry.getText().clear();
-                    Intent intentLogin=new Intent(MemberRegistrationActivity.this,MemberLoginActivity.class);
-                    startActivity(intentLogin);
+                    Intent intentActivation=new Intent(MemberRegistrationActivity.this,MemberActivationActivity.class);
+                    startActivity(intentActivation);
                 }
 
 
