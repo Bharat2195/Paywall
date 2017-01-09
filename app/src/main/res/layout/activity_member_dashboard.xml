@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tornado.cphp.paywall.VendorMainActivity">
+
+    <include
+        android:id="@+id/mToolbarMemberDashboard"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></include>
+
+
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Add Location"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnScanCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddLocation"
+        android:layout_centerHorizontal="true"
+        android:text="Scan Code"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/mToolbarMemberDashboard"
+        android:background="#2898c9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:src="@drawable/indian_rupee"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="5dp" />
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="BALANCE 0.00"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLoadMoeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_corner"
+            android:padding="10dp"
+            android:text="load money"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/layout_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mRalativeSend"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#39b77e">
+
+                <TextView
+                    android:id="@+id/txtSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Send"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSend"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Money"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mRelariveWithdrawal"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#d51b5c">
+
+                <TextView
+                    android:id="@+id/txtPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Withdrawal"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Withdrawal Amount"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_send"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mRelativeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#007aff">
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Address"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAddress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Add adress in map"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mRelativePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#af23cc">
+
+                <TextView
+                    android:id="@+id/txtPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Photo"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPhoto"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Add Photo"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/layout_gift"-->
+        <!--android:layout_below="@+id/layout_travel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#f88a00"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:layout_height="100sp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txtGift"-->
+        <!--android:text="gift"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="TALKTIME AND CARDS"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_below="@+id/txtGift"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#af23cc"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:layout_height="100sp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txtPayatShop"-->
+        <!--android:text="pay at shops"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="Scan Code,Mobile,OTP"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_below="@+id/txtPayatShop"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/layout_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_address"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mRelativePassword"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#fcb713">
+
+                <TextView
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Password"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Change Password"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mRelativeMe"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#1b70af">
+
+                <TextView
+                    android:id="@+id/txtMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="me"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMe"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="MY Profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLayoutReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_ask"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mRelativeReport"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_weight="0.5"
+                android:background="#FF5722">
+
+                <TextView
+                    android:id="@+id/txtReports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Reports"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtReports"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Admin Repots"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

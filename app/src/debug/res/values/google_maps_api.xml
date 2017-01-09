@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F8:CF:62:E8:99:C8:EB:03:59:B1:7F:9E:29:B1:38:A4:0F:6B:CF:EA%3Bcom.tornado.cphp.paywall
+
+    You can also add your credentials to an existing key, using this line:
+    F8:CF:62:E8:99:C8:EB:03:59:B1:7F:9E:29:B1:38:A4:0F:6B:CF:EA;com.tornado.cphp.paywall
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyB_FloYz5dhqDogUuzAfBfkwZ8EQEyf2AU
+    </string>
+</resources>

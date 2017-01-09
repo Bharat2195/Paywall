@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtEntryDate"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="EntryDate"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtToId"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="ToId"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Amount"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtCharges"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Charges"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtNetAmount"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="NetAmount"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

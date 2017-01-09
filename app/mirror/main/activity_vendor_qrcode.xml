@@ -1,0 +1,18 @@
+<!-- [ Mirror metadata ] generatedAt: 1483700522943 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/activity_vendor_qrcode">
+        <!-- TextView Examples:
+        <txtQRCodeTitle text="@string/string_resource" />
+        <txtQRCodeTitle text="Text literal" textSize="14sp" /> -->
+        <txtQRCodeTitle />
+        <!-- ImageView Examples:
+        <img_qr_code_image src="@drawable/image_resource" />
+        <img_qr_code_image src="relative_path/image.jpg" /> -->
+        <img_qr_code_image />
+    </_content>
+</screen>

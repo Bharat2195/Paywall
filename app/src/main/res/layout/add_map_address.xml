@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_logout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtAddress"
+        android:background="#FF0000"></View>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_logout"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Add Address your Location"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:hint="Enter Address"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtDescription"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddress"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vendor_qrcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tornado.cphp.paywall.VendorQRCodeActivity">
+
+    <include
+        android:id="@+id/toolbar_qrcode"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"
+        android:layout_height="?attr/actionBarSize"></include>
+
+        <TextView
+            android:id="@+id/txtQRCodeTitle"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/toolbar_qrcode"
+            android:textSize="18sp"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_margin="50dp"
+            android:layout_below="@+id/txtQRCodeTitle"
+            android:layout_height="match_parent"
+            android:id="@+id/img_qr_code_image"
+            android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

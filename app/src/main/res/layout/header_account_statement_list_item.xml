@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtSrNo"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Sr No."
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Date"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtType"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Type"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtRemark"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Remark"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Add"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtLess"
+            android:textSize="14sp"
+            android:text="Less"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtBalance"
+            android:textSize="14sp"
+            android:text="Balance"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtWallettype"-->
+            <!--android:textSize="14sp"-->
+            <!--android:text="Wallettype"-->
+            <!--android:background="@color/blue"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="50dp" />-->
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

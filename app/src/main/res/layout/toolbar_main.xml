@@ -1,0 +1,55 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_dashboard"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    app:titleTextColor="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgName"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgName"
+            android:background="@android:color/darker_gray"
+            android:layout_height="10dp"></View>
+
+        <TextView
+            android:id="@+id/txtWallet"
+            android:text="WALLET"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logout"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,24 @@
+<!-- [ Mirror metadata ] generatedAt: 1483700522924 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/activity_edit_profile">
+        <!-- ImageView Examples:
+        <imgVendorName src="@drawable/image_resource" />
+        <imgVendorName src="relative_path/image.jpg" /> -->
+        <imgVendorName />
+        <imgVendorEmail />
+        <imgVendorMobile />
+        <imgVendorBankAccountNo />
+        <imgVendorBankName />
+        <imgVendorBankBranchName />
+        <imgVendorBankIFSCCOde />
+        <!-- TextView Examples:
+        <txtSave text="@string/string_resource" />
+        <txtSave text="Text literal" textSize="14sp" /> -->
+        <txtSave />
+    </_content>
+</screen>

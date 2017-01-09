@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tornado.cphp.paywall.VendorRegistrationActivity">
+
+    <include
+        android:id="@+id/toolbar_registration"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_registration"
+        android:layout_above="@+id/layout_footer"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_registration"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="5dp"
+                app:civ_border_color="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/etVendorId"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/profile_image"
+                android:padding="15dp"
+                android:hint="Enter Vendor Id"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/focus_edittext_register"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtEroorVendorId"
+                android:text="Vendor id Is Already Used"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/etVendorId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:id="@+id/etVendorName"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtEroorVendorId"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Vendor Name"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/focus_edittext_register"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etVendorEmail"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorName"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Email Id"
+                android:gravity="center"
+                android:background="@drawable/focus_edittext_register"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etVendorMobile"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorEmail"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:hint="Enter Mobile Number"
+                android:gravity="center"
+                android:background="@drawable/focus_edittext_register"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etVendorPassword"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorMobile"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Passowrd"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/focus_edittext_register"
+                android:layout_height="wrap_content" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/etVendorDob"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/etVendorPassword"-->
+                <!--android:padding="15dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:hint="Enter Dob"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/register_corner"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:background="#2175BF"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/etVendorPassword"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:text="Register"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

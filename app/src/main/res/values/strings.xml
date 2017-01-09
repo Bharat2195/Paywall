@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PayWall</string>
+    <string name="title_activity_add_address_maps">Map</string>
+    <string name="bus_hotels_booking"><![CDATA[BUS & HOTELS & BOOKING]]></string>
+
+    <string name="Rs">Enter Amount (\u20B9)</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<!-- [ Mirror metadata ] generatedAt: 1483700522963 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/list_item_withdrawal_report_item">
+        <!-- TextView Examples:
+        <txtSrNo text="@string/string_resource" />
+        <txtSrNo text="Text literal" textSize="14sp" /> -->
+        <txtSrNo />
+        <txtDate />
+        <txtVendorId />
+        <txtVendorName />
+        <txtAmount />
+        <txtCharges />
+        <txtPayable />
+        <txtSatus />
+    </_content>
+</screen>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tornado.cphp.paywall.VendorRegistrationActivity">
+
+    <include
+        android:id="@+id/toolbar_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar_edit_profile"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_edit_profile"
+        android:layout_above="@+id/layout_footer"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_edit_profile"
+            android:layout_margin="10dp">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/profile_image"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="5dp"-->
+                <!--android:src="@drawable/profile"-->
+                <!--app:civ_border_width="5dp"-->
+                <!--app:civ_border_color="@android:color/white"/>-->
+
+
+            <EditText
+                android:id="@+id/etVendorId"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/profile_image"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:focusable="false"
+                android:singleLine="true"
+                android:hint="Vendor Id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgvendorId"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:src="@drawable/edit"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:padding="15dp"-->
+                <!--android:layout_below="@+id/profile_image"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <EditText
+                android:id="@+id/etVendorName"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorId"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:hint="Vendor Name"
+                android:singleLine="true"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgVendorName"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etVendorEmail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <EditText
+                android:id="@+id/etVendorEmail"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorName"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:hint="Vendor Email"
+                android:enabled="false"
+                android:textColor="@drawable/edit_text_selector"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgVendorEmail"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorEmail" />
+
+
+            <EditText
+                android:id="@+id/etVendorMobile"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etVendorEmail"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:hint="Vendor Mobile"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textColor="@android:color/holo_red_light"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/etVendorPassword"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etVendorMobile"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Vendor Password"
+                android:textColor="@drawable/edit_text_selector"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgVendorMobile"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorMobile"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etVendorAccountNo"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etVendorMobile"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Bank Account No"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgVendorBankAccountNo"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorAccountNo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etVendorBankName"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etVendorAccountNo"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Bank Name"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgVendorBankName"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorBankName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etVendorBankBranchName"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etVendorBankName"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Bank Branch Name"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgVendorBankBranchName"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorBankBranchName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etVendorIFSCCode"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etVendorBankBranchName"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Bank IFSC Code"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgVendorBankIFSCCOde"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etVendorIFSCCode"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:background="#2175BF"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:text="Save"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
