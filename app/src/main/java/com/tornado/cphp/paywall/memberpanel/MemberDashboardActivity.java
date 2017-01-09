@@ -17,7 +17,7 @@ public class MemberDashboardActivity extends AppCompatActivity {
     private static final String TAG = MemberDashboardActivity.class.getSimpleName();
     private Toolbar mToolbarMemberDashboard;
     private ImageView imgLogout;
-    private TextView txtNo,txtYes;
+    private TextView txtNo,txtYes,txtName;
     public static final String PREFS_NAME = "MemberLoginPrefes";
 
 
