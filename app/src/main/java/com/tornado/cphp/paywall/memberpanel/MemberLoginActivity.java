@@ -220,9 +220,8 @@ public class MemberLoginActivity extends AppCompatActivity {
                         editor.putString("logged", "logged");
                         editor.putString("MemberId", MemberId);
                         editor.commit();
-                        Intent intent=new Intent(MemberLoginActivity.this,MemberDashboardActivity.class);
-                        intent.putExtra("MemberId",MemberId);
-                        startActivity(intent);
+                        getActivation();
+
                     }
                 }else {
                     JSONArray jsonArray=Object.getJSONArray("response");
@@ -249,6 +248,117 @@ public class MemberLoginActivity extends AppCompatActivity {
 //                }
 //                Log.d(TAG, "login response: " + strSucess);
 
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void getActivation() {
+
+
+        JSONObject jsonObject=new JSONObject();
+        try{
+            jsonObject.put("mode","checkMemberidActiveOrNot");
+            jsonObject.put("memberid",MemberId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        if (jsonObject.length()>0){
+            new getActivationStatus().execute(String.valueOf(jsonObject));
+        }
+
+    }
+
+    private class getActivationStatus extends AsyncTask<String,String,String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            String JsonDATA = params[0];
+
+            HttpURLConnection urlConnection = null;
+            BufferedReader reader = null;
+            try {
+                URL url = new URL(StringUtils.strBaseURL);
+                urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setDoOutput(true);
+                // is output buffer writter
+                urlConnection.setRequestMethod("POST");
+                urlConnection.setRequestProperty("Content-Type", "application/json");
+                urlConnection.setRequestProperty("Accept", "application/json");
+//set headers and method
+                Writer writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
+                writer.write(JsonDATA);
+// json data
+                writer.close();
+                InputStream inputStream = urlConnection.getInputStream();
+//input stream
+                StringBuffer buffer = new StringBuffer();
+                if (inputStream == null) {
+                    return null;
+                }
+                reader = new BufferedReader(new InputStreamReader(inputStream));
+
+                String inputLine;
+                while ((inputLine = reader.readLine()) != null)
+                    buffer.append(inputLine + "\n");
+                if (buffer.length() == 0) {
+                    return null;
+                }
+                JsonResponse = buffer.toString();
+                Log.i(TAG, JsonResponse);
+                //send to post execute
+                return JsonResponse;
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (urlConnection != null) {
+                    urlConnection.disconnect();
+                }
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (final IOException e) {
+                        Log.e(TAG, "Error closing stream", e);
+                    }
+                }
+            }
+
+            return JsonResponse;
+        }
+
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+
+            try {
+                JSONObject Object = new JSONObject(JsonResponse);
+                String strStutus=Object.getString("status");
+                Log.d(TAG, "status data: "+strStutus);
+                String strMessage = Object.getString("message");
+                if (strStutus.equals("1")){
+                    JSONArray jsonArray=Object.getJSONArray("response");
+                    for (int i=0; i<jsonArray.length(); i++){
+                        JSONObject jsonObject=jsonArray.getJSONObject(i);
+                        String MemberId=jsonObject.getString("memberid");
+                        String strMemberName=jsonObject.getString("membername");
+                        String strActive=jsonObject.getString("active");
+                        Intent intent=new Intent(MemberLoginActivity.this,MemberActivationActivity.class);
+                        intent.putExtra("strMemberId",MemberId);
+                        intent.putExtra("strMemberName",strMemberName);
+                        intent.putExtra("strActive",strActive);
+                        startActivity(intent);
+
+                    }
+
+                }else {
+                    Intent intent=new Intent(MemberLoginActivity.this,MemberDashboardActivity.class);
+                    intent.putExtra("MemberId",MemberId);
+                    startActivity(intent);
+                }
 
             } catch (Exception e) {
                 e.printStackTrace();

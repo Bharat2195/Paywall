@@ -365,7 +365,7 @@ public class MemberRegistrationActivity extends AppCompatActivity {
                     etCity.getText().clear();
                     etState.getText().clear();
                     etCountry.getText().clear();
-                    Intent intentActivation=new Intent(MemberRegistrationActivity.this,MemberActivationActivity.class);
+                    Intent intentActivation=new Intent(MemberRegistrationActivity.this,MemberLoginActivity.class);
                     startActivity(intentActivation);
                 }
 

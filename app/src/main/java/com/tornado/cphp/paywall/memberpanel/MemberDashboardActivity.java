@@ -3,14 +3,31 @@ package com.tornado.cphp.paywall.memberpanel;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tornado.cphp.paywall.R;
+import com.tornado.cphp.paywall.utils.StringUtils;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class MemberDashboardActivity extends AppCompatActivity {
 
@@ -18,6 +35,8 @@ public class MemberDashboardActivity extends AppCompatActivity {
     private Toolbar mToolbarMemberDashboard;
     private ImageView imgLogout;
     private TextView txtNo,txtYes;
+    private String strMemberId;
+    private String JsonResponse="";
     public static final String PREFS_NAME = "MemberLoginPrefes";
 
 
@@ -26,6 +45,10 @@ public class MemberDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_dashboard);
         getSupportActionBar().hide();
+
+        Intent intent=getIntent();
+        strMemberId=intent.getStringExtra("MemberId");
+        Log.d(TAG, "member id: "+strMemberId);
 
         mToolbarMemberDashboard= (Toolbar) findViewById(R.id.mToolbarMemberDashboard);
         imgLogout=(ImageView)mToolbarMemberDashboard.findViewById(R.id.imgLogout);
@@ -70,4 +93,5 @@ public class MemberDashboardActivity extends AppCompatActivity {
 
 
     }
+
 }
