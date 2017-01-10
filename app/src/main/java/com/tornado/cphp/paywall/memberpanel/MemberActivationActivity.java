@@ -97,20 +97,20 @@ public class MemberActivationActivity extends AppCompatActivity {
 
 
         YoYo.with(Techniques.FadeInLeft)
-                .duration(1000)
+                .duration(2000)
                 .playOn(etMemberid);
 
         YoYo.with(Techniques.FadeInLeft)
-                .duration(1000)
+                .duration(2000)
                 .playOn(etMemberName);
 
 
         YoYo.with(Techniques.FadeInLeft)
-                .duration(1000)
+                .duration(2000)
                 .playOn(spnAmount);
 
         YoYo.with(Techniques.FadeInLeft)
-                .duration(700)
+                .duration(2000)
                 .playOn(btnSubmit);
 
     }
@@ -227,6 +227,11 @@ public class MemberActivationActivity extends AppCompatActivity {
                 String strRespnse=jsonArray.getString(0);
                 Log.d(TAG, "response: "+strRespnse);
                 Toast.makeText(MemberActivationActivity.this, strRespnse, Toast.LENGTH_SHORT).show();
+                if (strStutus.equals("5")){
+                    Intent intent=new Intent(MemberActivationActivity.this,MemberDashboardActivity.class);
+                    startActivity(intent);
+                }
+
 
             } catch (Exception e) {
                 e.printStackTrace();
