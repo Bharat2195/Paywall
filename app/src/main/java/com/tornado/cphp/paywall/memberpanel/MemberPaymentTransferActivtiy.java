@@ -1,7 +1,6 @@
-package com.tornado.cphp.paywall;
+package com.tornado.cphp.paywall.memberpanel;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,46 +14,60 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.tornado.cphp.paywall.PaySendMoneyVendorActivity;
+import com.tornado.cphp.paywall.R;
+import com.tornado.cphp.paywall.ScanCodeFragment;
+import com.tornado.cphp.paywall.ShowCodeFragment;
+import com.tornado.cphp.paywall.WithdrawalFragment;
 import com.tornado.cphp.paywall.utils.CheckConnectivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VendorUploadImageActivity extends AppCompatActivity {
+public class MemberPaymentTransferActivtiy extends AppCompatActivity {
 
-
-    public static final String UPLOAD_KEY = "image";
-    private Uri filePath;
+    private static final String TAG = MemberPaymentTransferActivtiy.class.getSimpleName();
 
     TabLayout tabLayout;
-    private Toolbar toolbar_upload_image;
+    private Toolbar mToolbarPaymentTransfer;
     private ViewPager viewPager;
     private TextView txtTitle;
     private String tabIndex;
     private boolean isConnected;
-
+    private int[] tabIcons = {
+            R.drawable.scan_code_unselected,
+            R.drawable.show_code_unselected,
+            R.drawable.payment_request_unselected
+    };
+    private int[] tabSelectIcon = {
+            R.drawable.scan_code_selected,
+            R.drawable.show_code_selected,
+            R.drawable.payment_request_selected
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vendor_upload_image);
-
+        setContentView(R.layout.activity_member_payment_transfer_activtiy);
         getSupportActionBar().hide();
-
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         isConnected = CheckConnectivity.checkNow(getApplicationContext());
 
         if (!isConnected) {
-            Toast.makeText(VendorUploadImageActivity.this, "Sorry! Not connected to Internet", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MemberPaymentTransferActivtiy.this, "Sorry! Not connected to Internet", Toast.LENGTH_SHORT).show();
         }
-        toolbar_upload_image = (Toolbar) findViewById(R.id.toolbar_upload_image);
-        txtTitle = (TextView) toolbar_upload_image.findViewById(R.id.txtTitle);
-        txtTitle.setText("Upload Images");
-//        tabLayout = (TabLayout) findViewById(R.id.tabs);
-        toolbar_upload_image.setNavigationIcon(R.drawable.back_icon);
-        toolbar_upload_image.setNavigationOnClickListener(new View.OnClickListener() {
+//        if (checkConnection==false){
+//            StringUtils.showToast("Newtwokt Not Available",getApplicationContext());
+//        }else {
+//
+//        }
+        mToolbarPaymentTransfer = (Toolbar) findViewById(R.id.mToolbarPaymentTransfer);
+        txtTitle = (TextView) mToolbarPaymentTransfer.findViewById(R.id.txtTitle);
+        txtTitle.setText("Payment Transfer");
+        mToolbarPaymentTransfer.setNavigationIcon(R.drawable.back_icon);
+        mToolbarPaymentTransfer.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
@@ -73,13 +86,13 @@ public class VendorUploadImageActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-//        setupTabIcons();
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        VendorUploadImageActivity.ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ImageUploadVenderFragment(), "Image Upload");
-        adapter.addFragment(new ShowImageVenderFragment(), "Show Image");
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new MemberScanCodeFragment(), "Scan Code");
+        adapter.addFragment(new MemberShowCodeFragment(), "Show Code");
+        adapter.addFragment(new MemberWithdrawalFragment(), "Withdrawal");
 
         viewPager.setAdapter(adapter);
 
@@ -113,4 +126,5 @@ public class VendorUploadImageActivity extends AppCompatActivity {
             return mFragmentTitleList.get(position);
         }
     }
+
 }

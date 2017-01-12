@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Date"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtMemberId"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Memberid"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtFromId"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Fromid"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtLevel"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Level"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:textSize="14sp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Amount"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

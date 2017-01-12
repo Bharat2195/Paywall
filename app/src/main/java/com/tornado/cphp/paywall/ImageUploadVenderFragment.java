@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.tornado.cphp.paywall.config.RequestHandler;
 import com.tornado.cphp.paywall.utils.StringUtils;
 
+import net.gotev.uploadservice.Logger;
 import net.gotev.uploadservice.MultipartUploadRequest;
 import net.gotev.uploadservice.UploadNotificationConfig;
 
@@ -119,9 +120,9 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
         }
 
         if (v == buttonUpload) {
-            uploadImage();
+//            uploadImage();
 ////            uploadtoserverImage();
-//            uploadMultipart();
+            uploadMultipart();
         }
 
     }
@@ -140,12 +141,13 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
             String uploadId = UUID.randomUUID().toString();
 
             //Creating a multi part request
-            new MultipartUploadRequest(getActivity(), uploadId, StringUtils.UPLOAD_URL)
+          String strResponse=  new MultipartUploadRequest(getActivity(), uploadId, StringUtils.UPLOAD_URL)
                     .addFileToUpload(path, "image") //Adding file
-                    .addParameter("name", name) //Adding text parameter to the request
+//                    .addParameter("name", name) //Adding text parameter to the request
                     .setNotificationConfig(new UploadNotificationConfig())
                     .setMaxRetries(2)
                     .startUpload(); //Starting the upload
+            Log.d(TAG, "uploadMultipart response: "+strResponse);
 
         } catch (Exception exc) {
             Toast.makeText(getActivity(), exc.getMessage(), Toast.LENGTH_SHORT).show();

@@ -3,4 +3,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/txtQRCodeTitle"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_margin="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/img_qr_code_image"
+        android:layout_gravity="center_horizontal" />
+
+
 </LinearLayout>

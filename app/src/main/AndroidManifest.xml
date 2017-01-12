@@ -76,7 +76,11 @@
         <activity android:name=".VendorChangePasswordActivity" />
         <activity android:name=".VendorReportsActivity" />
         <activity android:name=".memberpanel.MemberPaySendMoneyActivity" />
-        <activity android:name=".memberpanel.MemberActivationActivity"></activity>
+        <activity android:name=".memberpanel.MemberActivationActivity" />
+        <activity android:name=".VendorProductShowImage" />
+        <activity android:name=".memberpanel.MemberReportActivity" />
+        <activity android:name=".memberpanel.MemberPaymentTransferActivtiy" />
+        <activity android:name=".memberpanel.MemberQRCodeResultActivity"></activity>
     </application>
 
 </manifest>

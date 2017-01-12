@@ -9,7 +9,7 @@ import android.widget.Toast;
 public class StringUtils {
 
     public static String strBaseURL = "http://paywall.mlm4india.com/paywall/api.php";
-    public static final String UPLOAD_URL="http://paywall.mlm4india.com/paywall/Admin/image/productmaster/";
+    public static final String UPLOAD_URL="http://paywall.mlm4india.com/paywall/image_upload.php";
 
 
     public static String getDeviceId(Context context) {
