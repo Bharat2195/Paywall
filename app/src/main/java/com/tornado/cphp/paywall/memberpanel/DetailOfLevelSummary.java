@@ -4,8 +4,9 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,34 +34,50 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by cphp on 12-Jan-17.
- */
-public class BinaryLevelSummary extends Fragment {
+public class DetailOfLevelSummary extends AppCompatActivity {
 
-    private static final String TAG = NonWorkingIncomeFragment.class.getSimpleName();
-    String strMemberid = "", strJsonResponse = "";
-
+    private static final String TAG = DetailOfLevelSummary.class.getSimpleName();
+    private String strLevelNo = "";
+    String strMemberid = "", strJsonResponse = "",strName="";
     ProgressDialog pd;
-    ArrayList<String> listDetail= new ArrayList<>();
-    ArrayList<String> listLevelNo= new ArrayList<>();
-    ArrayList<String> listTotal= new ArrayList<>();
-    private ListView mListviewBinaryLevelSummary;
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_binary_levelsummary,container,false);
-    }
+    ArrayList<String> listMemberDetail = new ArrayList<>();
+    ArrayList<String> listJoiningDate = new ArrayList<>();
+    ArrayList<String> listActivationDate = new ArrayList<>();
+    private ListView mListviewdDetailOflevelBinary;
+    private Toolbar mToolbarDetailOfLevel;
+    private TextView txtTitle;
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail_of_level_summary);
+        getSupportActionBar().hide();
 
-        mListviewBinaryLevelSummary = (ListView) getActivity().findViewById(R.id.mListviewBinaryLevelSummary);
-        LayoutInflater layoutInflater=getActivity().getLayoutInflater();
-        View view=layoutInflater.inflate(R.layout.header_list_item_binary_level_summary,null);
-        mListviewBinaryLevelSummary.addHeaderView(view);
+        Intent intent = getIntent();
+        strLevelNo = intent.getStringExtra("strLevelNo");
+        strName=intent.getStringExtra("strName");
+        Log.d(TAG, "level no: " + strLevelNo);
+
+        mToolbarDetailOfLevel=(Toolbar)findViewById(R.id.mToolbarDetailOfLevel);
+        mToolbarDetailOfLevel.setNavigationIcon(R.drawable.back_icon);
+        mToolbarDetailOfLevel.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        txtTitle=(TextView)mToolbarDetailOfLevel.findViewById(R.id.txtTitle);
+        if (strName.equals("Round")){
+            txtTitle.setText("Detail Of Round"+"-"+strLevelNo);
+        }else {
+            txtTitle.setText("Detail Of Level"+"-"+strLevelNo);
+        }
+
+
+        mListviewdDetailOflevelBinary = (ListView) findViewById(R.id.mListviewdDetailOflevelBinary);
+        LayoutInflater layoutInflater = getLayoutInflater();
+        View view = layoutInflater.inflate(R.layout.header_list_item_detail_of_level_summary, null);
+        mListviewdDetailOflevelBinary.addHeaderView(view);
         getReportData();
     }
 
@@ -69,8 +86,9 @@ public class BinaryLevelSummary extends Fragment {
 
         try {
 
-            jsonObject.put("mode", "MemberLevelSummary");
+            jsonObject.put("mode", "MemberDetailLevelSummary");
             jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+            jsonObject.put("levelno", strLevelNo);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -83,7 +101,7 @@ public class BinaryLevelSummary extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pd = new ProgressDialog(getActivity());
+            pd = new ProgressDialog(DetailOfLevelSummary.this);
             pd.setIndeterminate(false);
             pd.setMessage("Please Wait....");
             pd.setCanceledOnTouchOutside(false);
@@ -158,41 +176,42 @@ public class BinaryLevelSummary extends Fragment {
                 JSONObject jsonObject = new JSONObject(strJsonResponse);
                 String strStatus = jsonObject.getString("status");
                 String Messagge = jsonObject.getString("message");
-                if (!strStatus.equals("2")){
+                if (!strStatus.equals("2")) {
                     JSONArray array = jsonObject.getJSONArray("response");
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object = array.getJSONObject(i);
-                        String strTotal=object.getString("NoofMember");
-                        String strLevelNo= object.getString("levelno");
+                        String strMemberID = object.getString("memberid");
+                        String strMemberName = object.getString("membername");
+                        String strEntryDate = object.getString("Entry Date");
+                        String strActivationDate = object.getString("Activtion Date");
+                        String strLevelNo = object.getString("levelno");
+                        listMemberDetail.add(strMemberID + "-" + strMemberName);
+                        listJoiningDate.add(strEntryDate);
+                        listActivationDate.add(strActivationDate);
 
-                        listDetail.add("Detail");
-                        listTotal.add(strTotal);
-                        listLevelNo.add(strLevelNo);
 
                     }
 
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
+                    if (mListviewdDetailOflevelBinary != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), R.layout.list_item_detail_of_level_summary, listMemberDetail);
+                        mListviewdDetailOflevelBinary.setAdapter(customAdapter);
 
 
                     } else {
-                        Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "listview null", Toast.LENGTH_SHORT).show();
                     }
 
-                }else {
+                } else {
 
-                    Toast.makeText(getActivity(), "No data available", Toast.LENGTH_SHORT).show();
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
+                    Toast.makeText(getApplicationContext(), "No data available", Toast.LENGTH_SHORT).show();
+                    if (mListviewdDetailOflevelBinary != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), R.layout.list_item_detail_of_level_summary, listMemberDetail);
+                        mListviewdDetailOflevelBinary.setAdapter(customAdapter);
 
                     } else {
-                        Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "listview null", Toast.LENGTH_SHORT).show();
                     }
                 }
-
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -227,9 +246,10 @@ public class BinaryLevelSummary extends Fragment {
                 LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
                 convertView = layoutInflater.inflate(resource, null);
 
-                holder.txtDetail= (TextView) convertView.findViewById(R.id.txtDetail);
-                holder.txtLevelNo = (TextView) convertView.findViewById(R.id.txtLevelNo);
-                holder.txtTotal = (TextView) convertView.findViewById(R.id.txtTotal);
+                holder.txtMemberDetail = (TextView) convertView.findViewById(R.id.txtMemberDetail);
+                holder.txtJoiningDate = (TextView) convertView.findViewById(R.id.txtJoiningDate);
+                holder.txtActivationDate = (TextView) convertView.findViewById(R.id.txtActivationDate);
+
 
                 convertView.setTag(holder);
 
@@ -239,29 +259,19 @@ public class BinaryLevelSummary extends Fragment {
                 holder = (ViewHolder) convertView.getTag();
             }
 
-            holder.txtDetail.setText(items.get(position));
-            holder.txtLevelNo.setText(listLevelNo.get(position));
-            holder.txtTotal.setText(listTotal.get(position));
-
-            holder.txtDetail.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent=new Intent(getActivity(),DetailOfLevelSummary.class);
-                    intent.putExtra("strName","level");
-                    intent.putExtra("strLevelNo",listLevelNo.get(position));
-                    startActivity(intent);
-                }
-            });
+            holder.txtMemberDetail.setText(items.get(position));
+            holder.txtJoiningDate.setText(listJoiningDate.get(position));
+            holder.txtActivationDate.setText(listActivationDate.get(position));
 
             return convertView;
 
         }
     }
 
+
     private class ViewHolder {
 
-        TextView txtDetail,txtLevelNo, txtTotal;
+        TextView txtMemberDetail, txtJoiningDate, txtActivationDate;
     }
-
 
 }

@@ -34,33 +34,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cphp on 12-Jan-17.
+ * Created by cphp on 13-Jan-17.
  */
-public class BinaryLevelSummary extends Fragment {
+public class RoundSummaryFragment extends Fragment {
 
-    private static final String TAG = NonWorkingIncomeFragment.class.getSimpleName();
+    private static final String TAG = RoundSummaryFragment.class.getSimpleName();
     String strMemberid = "", strJsonResponse = "";
 
     ProgressDialog pd;
     ArrayList<String> listDetail= new ArrayList<>();
-    ArrayList<String> listLevelNo= new ArrayList<>();
+    ArrayList<String> listRound= new ArrayList<>();
     ArrayList<String> listTotal= new ArrayList<>();
-    private ListView mListviewBinaryLevelSummary;
-
+    private ListView mListviewRoundSummary;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_binary_levelsummary,container,false);
+    public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_round_summary,container,false);
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
+    public void onActivityCreated( Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mListviewBinaryLevelSummary = (ListView) getActivity().findViewById(R.id.mListviewBinaryLevelSummary);
+        mListviewRoundSummary = (ListView) getActivity().findViewById(R.id.mListviewRoundSummary);
         LayoutInflater layoutInflater=getActivity().getLayoutInflater();
-        View view=layoutInflater.inflate(R.layout.header_list_item_binary_level_summary,null);
-        mListviewBinaryLevelSummary.addHeaderView(view);
+        View view=layoutInflater.inflate(R.layout.header_list_item_round_summary,null);
+        mListviewRoundSummary.addHeaderView(view);
         getReportData();
     }
 
@@ -69,7 +68,7 @@ public class BinaryLevelSummary extends Fragment {
 
         try {
 
-            jsonObject.put("mode", "MemberLevelSummary");
+            jsonObject.put("mode", "MemberRoundSummary");
             jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
         } catch (Exception e) {
             e.printStackTrace();
@@ -163,17 +162,19 @@ public class BinaryLevelSummary extends Fragment {
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object = array.getJSONObject(i);
                         String strTotal=object.getString("NoofMember");
-                        String strLevelNo= object.getString("levelno");
+                        String strRound= object.getString("Round");
 
                         listDetail.add("Detail");
                         listTotal.add(strTotal);
-                        listLevelNo.add(strLevelNo);
+                        listRound.add(strRound);
+
+
 
                     }
 
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
+                    if (mListviewRoundSummary != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_round_summary, listDetail);
+                        mListviewRoundSummary.setAdapter(customAdapter);
 
 
                     } else {
@@ -182,10 +183,10 @@ public class BinaryLevelSummary extends Fragment {
 
                 }else {
 
-                    Toast.makeText(getActivity(), "No data available", Toast.LENGTH_SHORT).show();
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
+                    if (mListviewRoundSummary != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_round_summary, listDetail);
+                        mListviewRoundSummary.setAdapter(customAdapter);
+
 
                     } else {
                         Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
@@ -228,8 +229,9 @@ public class BinaryLevelSummary extends Fragment {
                 convertView = layoutInflater.inflate(resource, null);
 
                 holder.txtDetail= (TextView) convertView.findViewById(R.id.txtDetail);
-                holder.txtLevelNo = (TextView) convertView.findViewById(R.id.txtLevelNo);
+                holder.txtRound = (TextView) convertView.findViewById(R.id.txtRound);
                 holder.txtTotal = (TextView) convertView.findViewById(R.id.txtTotal);
+
 
                 convertView.setTag(holder);
 
@@ -240,15 +242,15 @@ public class BinaryLevelSummary extends Fragment {
             }
 
             holder.txtDetail.setText(items.get(position));
-            holder.txtLevelNo.setText(listLevelNo.get(position));
+            holder.txtRound.setText(listRound.get(position));
             holder.txtTotal.setText(listTotal.get(position));
 
             holder.txtDetail.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(getActivity(),DetailOfLevelSummary.class);
-                    intent.putExtra("strName","level");
-                    intent.putExtra("strLevelNo",listLevelNo.get(position));
+                    intent.putExtra("strName","Round");
+                    intent.putExtra("strLevelNo",listRound.get(position));
                     startActivity(intent);
                 }
             });
@@ -260,8 +262,10 @@ public class BinaryLevelSummary extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtDetail,txtLevelNo, txtTotal;
+        TextView txtDetail,txtRound, txtTotal;
     }
+
+
 
 
 }

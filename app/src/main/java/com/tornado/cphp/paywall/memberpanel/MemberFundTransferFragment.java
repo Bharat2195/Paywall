@@ -2,9 +2,9 @@ package com.tornado.cphp.paywall.memberpanel;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,7 +15,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.tornado.cphp.paywall.FundTransferFragment;
 import com.tornado.cphp.paywall.R;
+import com.tornado.cphp.paywall.VendorMainActivity;
+import com.tornado.cphp.paywall.WithdrawalReportFragment;
 import com.tornado.cphp.paywall.utils.StringUtils;
 
 import org.json.JSONArray;
@@ -34,33 +37,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cphp on 12-Jan-17.
+ * Created by cphp on 13-Jan-17.
  */
-public class BinaryLevelSummary extends Fragment {
+public class MemberFundTransferFragment extends Fragment {
 
-    private static final String TAG = NonWorkingIncomeFragment.class.getSimpleName();
+    private static final String TAG = MemberFundTransferFragment.class.getSimpleName();
     String strMemberid = "", strJsonResponse = "";
 
     ProgressDialog pd;
-    ArrayList<String> listDetail= new ArrayList<>();
-    ArrayList<String> listLevelNo= new ArrayList<>();
-    ArrayList<String> listTotal= new ArrayList<>();
-    private ListView mListviewBinaryLevelSummary;
-
+    ArrayList<String> listDate= new ArrayList<>();
+    ArrayList<String> listToId= new ArrayList<>();
+    ArrayList<String> listAmount= new ArrayList<>();
+    ArrayList<String> listCharges= new ArrayList<>();
+    ArrayList<String> listNetAmount= new ArrayList<>();
+    ArrayList<String> listType= new ArrayList<>();
+    private ListView mListviewMemberFundtRansferReport;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_binary_levelsummary,container,false);
+        return inflater.inflate(R.layout.fragment_member_fund_transfer,container,false);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mListviewBinaryLevelSummary = (ListView) getActivity().findViewById(R.id.mListviewBinaryLevelSummary);
+        mListviewMemberFundtRansferReport = (ListView) getActivity().findViewById(R.id.mListviewMemberFundtRansferReport);
         LayoutInflater layoutInflater=getActivity().getLayoutInflater();
-        View view=layoutInflater.inflate(R.layout.header_list_item_binary_level_summary,null);
-        mListviewBinaryLevelSummary.addHeaderView(view);
+        View view=layoutInflater.inflate(R.layout.header_list_item_member_fund_transfer,null);
+        mListviewMemberFundtRansferReport.addHeaderView(view);
+
         getReportData();
     }
 
@@ -69,7 +75,7 @@ public class BinaryLevelSummary extends Fragment {
 
         try {
 
-            jsonObject.put("mode", "MemberLevelSummary");
+            jsonObject.put("mode", "memberFundTransferReport");
             jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
         } catch (Exception e) {
             e.printStackTrace();
@@ -162,35 +168,42 @@ public class BinaryLevelSummary extends Fragment {
                     JSONArray array = jsonObject.getJSONArray("response");
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object = array.getJSONObject(i);
-                        String strTotal=object.getString("NoofMember");
-                        String strLevelNo= object.getString("levelno");
+                        String strDate=object.getString("Entry Date");
+                        String strToId= object.getString("toid");
+                        String strAmount= object.getString("amount");
+                        String strCharges= object.getString("charges");
+                        String strNetAmount= object.getString("netamount");
+                        String strType= object.getString("type");
 
-                        listDetail.add("Detail");
-                        listTotal.add(strTotal);
-                        listLevelNo.add(strLevelNo);
+                        listDate.add(strDate);
+                        listToId.add(strToId);
+                        listAmount.add(strAmount);
+                        listCharges.add(strCharges);
+                        listNetAmount.add(strNetAmount);
+                        listType.add(strType);
 
                     }
 
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
+                    if (mListviewMemberFundtRansferReport != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_member_fund_transfer_report, listDate);
+                        mListviewMemberFundtRansferReport.setAdapter(customAdapter);
 
 
                     } else {
                         Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
                     }
-
                 }else {
 
                     Toast.makeText(getActivity(), "No data available", Toast.LENGTH_SHORT).show();
-                    if (mListviewBinaryLevelSummary != null) {
-                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_binary_level_summary, listDetail);
-                        mListviewBinaryLevelSummary.setAdapter(customAdapter);
-
+                    if (mListviewMemberFundtRansferReport != null) {
+                        CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_member_fund_transfer_report, listDate);
+                        mListviewMemberFundtRansferReport.setAdapter(customAdapter);
                     } else {
                         Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
                     }
+
                 }
+
 
 
             } catch (Exception e) {
@@ -218,7 +231,7 @@ public class BinaryLevelSummary extends Fragment {
         }
 
         @Override
-        public View getView(final int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, ViewGroup parent) {
 
             ViewHolder holder = null;
             if (convertView == null) {
@@ -227,31 +240,28 @@ public class BinaryLevelSummary extends Fragment {
                 LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
                 convertView = layoutInflater.inflate(resource, null);
 
-                holder.txtDetail= (TextView) convertView.findViewById(R.id.txtDetail);
-                holder.txtLevelNo = (TextView) convertView.findViewById(R.id.txtLevelNo);
-                holder.txtTotal = (TextView) convertView.findViewById(R.id.txtTotal);
+                holder.txtDate = (TextView) convertView.findViewById(R.id.txtDate);
+                holder.txtToId = (TextView) convertView.findViewById(R.id.txtToId);
+                holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
+                holder.txtCharges = (TextView) convertView.findViewById(R.id.txtCharges);
+                holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
+                holder.txtNetAmount= (TextView) convertView.findViewById(R.id.txtNetAmount);
+                holder.txtType= (TextView) convertView.findViewById(R.id.txtType);
 
                 convertView.setTag(holder);
-
 
             } else {
 
                 holder = (ViewHolder) convertView.getTag();
             }
 
-            holder.txtDetail.setText(items.get(position));
-            holder.txtLevelNo.setText(listLevelNo.get(position));
-            holder.txtTotal.setText(listTotal.get(position));
+            holder.txtDate.setText(items.get(position));
+            holder.txtToId.setText(listToId.get(position));
+            holder.txtAmount.setText(listAmount.get(position));
+            holder.txtCharges.setText(listCharges.get(position));
+            holder.txtNetAmount.setText(listNetAmount.get(position));
+            holder.txtType.setText(listType.get(position));
 
-            holder.txtDetail.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent=new Intent(getActivity(),DetailOfLevelSummary.class);
-                    intent.putExtra("strName","level");
-                    intent.putExtra("strLevelNo",listLevelNo.get(position));
-                    startActivity(intent);
-                }
-            });
 
             return convertView;
 
@@ -260,8 +270,6 @@ public class BinaryLevelSummary extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtDetail,txtLevelNo, txtTotal;
+        TextView txtDate, txtToId, txtAmount, txtCharges, txtNetAmount,txtType;
     }
-
-
 }

@@ -14,11 +14,27 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.tornado.cphp.paywall.R;
+import com.tornado.cphp.paywall.utils.StringUtils;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import uk.co.senab.photoview.log.LoggerDefault;
 
 public class MemberDashboardActivity extends AppCompatActivity {
 
@@ -81,6 +97,7 @@ public class MemberDashboardActivity extends AppCompatActivity {
     public static String strMemberId;
     private String JsonResponse = "";
     public static final String PREFS_NAME = "MemberLoginPrefes";
+    RequestQueue requestQueue;
 
 
     @Override
@@ -89,6 +106,8 @@ public class MemberDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_member_dashboard);
         ButterKnife.bind(this);
         getSupportActionBar().hide();
+
+        requestQueue= Volley.newRequestQueue(this);
 
         Intent intent = getIntent();
         strMemberId = intent.getStringExtra("MemberId");
@@ -134,7 +153,59 @@ public class MemberDashboardActivity extends AppCompatActivity {
             }
         });
 
+        getWallterBalance();
 
+
+    }
+
+    private void getWallterBalance() {
+
+        Map<String,String> jsonParams=new HashMap<String,String>();
+
+        jsonParams.put("mode","getMemberBalance");
+        jsonParams.put("memberid",strMemberId);
+
+
+        JsonObjectRequest postRequest = new JsonObjectRequest( Request.Method.POST, StringUtils.strBaseURL,
+
+                new JSONObject(jsonParams),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d(TAG, "json Response: "+response);
+                        try {
+                            String strStatus=response.getString("status");
+                            JSONArray jsonArray=response.getJSONArray("response");
+                            String strBalance=jsonArray.getString(0);
+                            Log.d(TAG, "member wallet balance: "+strBalance);
+                            txtBalance.setText("BALANCE "+strBalance);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        try{
+
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //   Handle Error
+                        Log.d(TAG, "onErrorResponse: "+error);
+                    }
+                }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                headers.put("User-agent", System.getProperty("http.agent"));
+                return headers;
+            }
+        };
+        requestQueue.add(postRequest);
     }
 
     @OnClick({R.id.mRalativeSend, R.id.mRelariveWithdrawal, R.id.mRelativeAddress, R.id.mRelativePhoto, R.id.mRelativePassword, R.id.mRelativeMe, R.id.mRelativeReport})
@@ -156,6 +227,8 @@ public class MemberDashboardActivity extends AppCompatActivity {
             case R.id.mRelativePassword:
                 break;
             case R.id.mRelativeMe:
+                Intent intentProfile=new Intent(MemberDashboardActivity.this,MemberEditProfileActivity.class);
+                startActivity(intentProfile);
                 break;
             case R.id.mRelativeReport:
                 Intent intentReport=new Intent(MemberDashboardActivity.this,MemberReportActivity.class);

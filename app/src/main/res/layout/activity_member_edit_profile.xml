@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tornado.cphp.paywall.VendorRegistrationActivity">
+
+    <include
+        android:id="@+id/mToolbarMemberEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar_edit_profile"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mToolbarMemberEditProfile"
+        android:layout_above="@+id/layout_footer"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mToolbarMemberEditProfile"
+            android:layout_margin="10dp">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/profile_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@drawable/profile"-->
+            <!--app:civ_border_width="5dp"-->
+            <!--app:civ_border_color="@android:color/white"/>-->
+
+            <EditText
+                android:id="@+id/etPlacementId"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:focusable="false"
+                android:singleLine="true"
+                android:hint="Placement Id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/etSponsorId"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etPlacementId"
+                android:singleLine="true"
+                android:hint="Sponsor Id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:id="@+id/etMemberID"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_below="@+id/etSponsorId"
+                android:textColorHint="@color/black"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:hint="Member Id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:id="@+id/etMemberName"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etMemberID"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:hint="Member Name"
+                android:singleLine="true"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgMemberName"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etMemberEmail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <EditText
+                android:id="@+id/etMemberEmail"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etMemberName"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:hint="Member Email"
+                android:enabled="false"
+                android:textColor="@drawable/edit_text_selector"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgMemberEmail"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etMemberEmail" />
+
+
+            <EditText
+                android:id="@+id/etMemberMobile"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/etMemberEmail"
+                android:padding="15dp"
+                android:textColorHint="@color/black"
+                android:hint="Member Mobile"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textColor="@android:color/holo_red_light"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgMemberMobile"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etMemberMobile"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <EditText
+                android:id="@+id/etMemberAddress"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etMemberMobile"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Member Address"
+                android:textColor="@drawable/edit_text_selector"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgMemberAddress"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etMemberAddress"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etMemberCity"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etMemberAddress"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Member City"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgMemberCity"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etMemberCity"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/etMemberState"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_below="@+id/etMemberCity"
+                android:padding="15dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:hint="Member State"
+                android:textColor="@drawable/edit_text_selector"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/layout_footer"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgMemberState"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/etMemberState"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <EditText
+                android:id="@+id/etMemberCountry"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:padding="15dp"
+                android:enabled="false"
+                android:layout_below="@+id/etMemberState"
+                android:textColorHint="@color/black"
+                android:hint="Member Country"
+                android:textColor="@drawable/edit_text_selector"
+                android:gravity="center"
+                android:background="@drawable/editext_background"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/imgMemberCountry"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etMemberCountry"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:background="#2175BF"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:text="Save"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

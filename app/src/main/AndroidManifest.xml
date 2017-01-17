@@ -25,7 +25,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -34,7 +33,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".adapter.ImageUploadSearverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,7 +79,11 @@
         <activity android:name=".VendorProductShowImage" />
         <activity android:name=".memberpanel.MemberReportActivity" />
         <activity android:name=".memberpanel.MemberPaymentTransferActivtiy" />
-        <activity android:name=".memberpanel.MemberQRCodeResultActivity"></activity>
+        <activity android:name=".memberpanel.MemberQRCodeResultActivity" />
+        <activity android:name=".memberpanel.DetailOfLevelSummary" />
+        <activity android:name=".memberpanel.MemberEditProfileActivity" />
+        <activity android:name=".memberpanel.MemberChangePasswordActivity" />
+        <activity android:name=".SplashScreenActivity"></activity>
     </application>
 
 </manifest>

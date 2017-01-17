@@ -84,6 +84,8 @@ public class MemberReportActivity extends AppCompatActivity {
         adapter.addFragment(new NonWorkingIncomeFragment(), "Non Working Income");
         adapter.addFragment(new WorkingIncomeFragment(), "Working Income");
         adapter.addFragment(new BinaryLevelSummary(), "Level Summary");
+        adapter.addFragment(new RoundSummaryFragment(), "Round Summary");
+        adapter.addFragment(new MemberFundTransferFragment(), "Fund Transfer");
 
         viewPager.setAdapter(adapter);
 
