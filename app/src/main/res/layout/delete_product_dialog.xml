@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Remove"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_logout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtLogOut"
+        android:background="#FF0000"></View>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_logout"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Are you sure want to delete this image?"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtDescription"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/view_line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="No"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="?attr/actionBarSize">
+
+        </View>
+
+        <TextView
+            android:id="@+id/txtYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</RelativeLayout>

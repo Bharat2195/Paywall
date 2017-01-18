@@ -1,13 +1,16 @@
 package com.tornado.cphp.paywall;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.SyncStateContract;
 import android.support.v4.app.ActivityCompat;
@@ -23,6 +26,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.tornado.cphp.paywall.adapter.ImageUploadSearverActivity;
 import com.tornado.cphp.paywall.config.RequestHandler;
 import com.tornado.cphp.paywall.utils.StringUtils;
 
@@ -36,13 +40,20 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -64,13 +75,21 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
     private EditText editTextName;
 
     private Bitmap bitmap;
-
+    String imagePath;
     private static final int STORAGE_PERMISSION_CODE = 123;
     private int PICK_IMAGE_REQUEST = 1;
     private Uri filePath;
+    private static final int REQUEST_IMAGE = 100;
 
+    File destination;
+
+    int serverResponseCode = 0;
+    ProgressDialog dialog = null;
+
+    String upLoadServerUri = null;
 
     ProgressDialog loading;
+    private String strImageName="";
     private String JsonResponse = "";
 
     private static final String TAG = ImageUploadVenderFragment.class.getSimpleName();
@@ -86,6 +105,8 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        upLoadServerUri =StringUtils.UPLOAD_URL;
+
         buttonChoose = (Button) getActivity().findViewById(R.id.buttonChoose);
         buttonUpload = (Button) getActivity().findViewById(R.id.buttonUpload);
 
@@ -94,8 +115,22 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
         imageView = (ImageView) getActivity().findViewById(R.id.imageView);
 
         requestStoragePermission();
+
+        String name = dateToString(new Date(),"yyyy-MM-dd-hh-mm-ss");
+        destination = new File(Environment.getExternalStorageDirectory(), name + ".jpg");
+
+        strImageName=editTextName.getText().toString() + ".jpg";
+
+
         buttonChoose.setOnClickListener(this);
         buttonUpload.setOnClickListener(this);
+
+
+    }
+
+    public String dateToString(Date date, String format) {
+        SimpleDateFormat df = new SimpleDateFormat(format);
+        return df.format(date);
     }
 
     //Requesting permission
@@ -128,94 +163,121 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
     }
 
     public void uploadMultipart() {
-        //getting name for the image
-        String name = editTextName.getText().toString().trim();
+//        //getting name for the image
+//        String name = editTextName.getText().toString().trim();
+//
+//        //getting the actual path of the image
+//        String path = getPath(filePath);
+//
+//        Log.d(TAG, "image path actual: " + path);
+//
+//        //Uploading code
+//        try {
+//            String uploadId = UUID.randomUUID().toString();
+//
+//            //Creating a multi part request
+//          String strResponse=  new MultipartUploadRequest(getActivity(), uploadId, StringUtils.UPLOAD_URL)
+//                    .addFileToUpload(path, "image") //Adding file
+////                    .addParameter("name", name) //Adding text parameter to the request
+//                    .setNotificationConfig(new UploadNotificationConfig())
+//                    .setMaxRetries(2)
+//                    .startUpload(); //Starting the upload
+//            Log.d(TAG, "uploadMultipart response: "+strResponse);
+//
+//        } catch (Exception exc) {
+//            Toast.makeText(getActivity(), exc.getMessage(), Toast.LENGTH_SHORT).show();
+//        }
 
-        //getting the actual path of the image
-        String path = getPath(filePath);
+        dialog = ProgressDialog.show(getActivity(), "", "Uploading file...", true);
 
-        Log.d(TAG, "image path actual: " + path);
+        new Thread(new Runnable() {
+            public void run() {
+                uploadFile(imagePath);
+            }
+        }).start();
 
-        //Uploading code
+
+        JSONObject jsonObject = new JSONObject();
+
         try {
-            String uploadId = UUID.randomUUID().toString();
-
-            //Creating a multi part request
-          String strResponse=  new MultipartUploadRequest(getActivity(), uploadId, StringUtils.UPLOAD_URL)
-                    .addFileToUpload(path, "image") //Adding file
-//                    .addParameter("name", name) //Adding text parameter to the request
-                    .setNotificationConfig(new UploadNotificationConfig())
-                    .setMaxRetries(2)
-                    .startUpload(); //Starting the upload
-            Log.d(TAG, "uploadMultipart response: "+strResponse);
-
-        } catch (Exception exc) {
-            Toast.makeText(getActivity(), exc.getMessage(), Toast.LENGTH_SHORT).show();
+            jsonObject.put("mode", "vendorImageUploadSubmit");
+            jsonObject.put("vendorid", "disha");
+            jsonObject.put("image_name", imagePath);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (jsonObject.length() > 0) {
+            new uploadImage().execute(String.valueOf(jsonObject));
         }
     }
 
     //method to get the file path from uri
-    public String getPath(Uri uri) {
-        Cursor cursor = getActivity().getContentResolver().query(uri, null, null, null, null);
-        cursor.moveToFirst();
-        String document_id = cursor.getString(0);
-        document_id = document_id.substring(document_id.lastIndexOf(":") + 1);
-        cursor.close();
+//    public String getPath(Uri uri) {
+//        Cursor cursor = getActivity().getContentResolver().query(uri, null, null, null, null);
+//        cursor.moveToFirst();
+//        String document_id = cursor.getString(0);
+//        document_id = document_id.substring(document_id.lastIndexOf(":") + 1);
+//        cursor.close();
+//
+//        cursor = getActivity().getContentResolver().query(
+//                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+//                null, MediaStore.Images.Media._ID + " = ? ", new String[]{document_id}, null);
+//        cursor.moveToFirst();
+//        String path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+//        cursor.close();
+//
+//        return path;
+//    }
 
-        cursor = getActivity().getContentResolver().query(
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                null, MediaStore.Images.Media._ID + " = ? ", new String[]{document_id}, null);
-        cursor.moveToFirst();
-        String path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
-        cursor.close();
 
-        return path;
-    }
-
-
-    private void uploadtoserverImage() {
-
-        class UploadImage extends AsyncTask<Bitmap, Void, String> {
-
-            ProgressDialog loading;
-            RequestHandler rh = new RequestHandler();
-
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-                loading = ProgressDialog.show(getActivity(), "Uploading Image", "Please wait...", true, true);
-            }
-
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                loading.dismiss();
-                Toast.makeText(getActivity(), s, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            protected String doInBackground(Bitmap... params) {
-                Bitmap bitmap = params[0];
-                String uploadImage = getStringImage(bitmap);
-
-                HashMap<String, String> data = new HashMap<>();
-                data.put(UPLOAD_KEY, uploadImage);
-
-                String result = rh.sendPostRequest(UPLOAD_URL, data);
-
-                return result;
-            }
-        }
-
-        UploadImage ui = new UploadImage();
-        ui.execute(bitmap);
-    }
+//    private void uploadtoserverImage() {
+//
+//        class UploadImage extends AsyncTask<Bitmap, Void, String> {
+//
+//            ProgressDialog loading;
+//            RequestHandler rh = new RequestHandler();
+//
+//            @Override
+//            protected void onPreExecute() {
+//                super.onPreExecute();
+//                loading = ProgressDialog.show(getActivity(), "Uploading Image", "Please wait...", true, true);
+//            }
+//
+//            @Override
+//            protected void onPostExecute(String s) {
+//                super.onPostExecute(s);
+//                loading.dismiss();
+//                Toast.makeText(getActivity(), s, Toast.LENGTH_LONG).show();
+//            }
+//
+//            @Override
+//            protected String doInBackground(Bitmap... params) {
+//                Bitmap bitmap = params[0];
+//                String uploadImage = getStringImage(bitmap);
+//
+//                HashMap<String, String> data = new HashMap<>();
+//                data.put(UPLOAD_KEY, uploadImage);
+//
+//                String result = rh.sendPostRequest(UPLOAD_URL, data);
+//
+//                return result;
+//            }
+//        }
+//
+//        UploadImage ui = new UploadImage();
+//        ui.execute(bitmap);
+//    }
 
     private void showFileChooser() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+//        Intent intent = new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+//        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+        startActivityForResult(intent, REQUEST_IMAGE);
     }
 
     public String getStringImage(Bitmap bmp) {
@@ -225,19 +287,152 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
         String encodedImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
         return encodedImage;
     }
+    public int uploadFile(String sourceFileUri) {
+
+        String fileName = sourceFileUri;
+
+
+
+        HttpURLConnection conn = null;
+        DataOutputStream dos = null;
+        String lineEnd = "\r\n";
+        String twoHyphens = "--";
+        String boundary = "*****";
+        int bytesRead, bytesAvailable, bufferSize;
+        byte[] buffer;
+        int maxBufferSize = 1 * 1024 * 1024;
+        File sourceFile = new File(sourceFileUri);
+
+        if (!sourceFile.isFile()) {
+            dialog.dismiss();
+            Log.e("uploadFile", "Source File not exist :" +imagePath);
+            return 0;
+        }
+        else
+        {
+            try {
+
+                // open a URL connection to the Servlet
+                FileInputStream fileInputStream = new FileInputStream(sourceFile);
+                URL url = new URL(upLoadServerUri);
+
+                // Open a HTTP  connection to  the URL
+                conn = (HttpURLConnection) url.openConnection();
+                conn.setDoInput(true); // Allow Inputs
+                conn.setDoOutput(true); // Allow Outputs
+                conn.setUseCaches(false); // Don't use a Cached Copy
+                conn.setRequestMethod("POST");
+                conn.setRequestProperty("Connection", "Keep-Alive");
+                conn.setRequestProperty("ENCTYPE", "multipart/form-data");
+                conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
+                conn.setRequestProperty("image_name", fileName);
+
+                dos = new DataOutputStream(conn.getOutputStream());
+
+                dos.writeBytes(twoHyphens + boundary + lineEnd);
+                dos.writeBytes("Content-Disposition: form-data; name=\"image_name\";filename="+ fileName + "" + lineEnd);
+                dos.writeBytes(lineEnd);
+
+                // create a buffer of  maximum size
+                bytesAvailable = fileInputStream.available();
+
+                bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                buffer = new byte[bufferSize];
+
+                // read file and write it into form...
+                bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+
+                while (bytesRead > 0) {
+
+                    dos.write(buffer, 0, bufferSize);
+                    bytesAvailable = fileInputStream.available();
+                    bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                    bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+
+                }
+
+                // send multipart form data necesssary after file data...
+                dos.writeBytes(lineEnd);
+                dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+
+                // Responses from the server (code and message)
+                serverResponseCode = conn.getResponseCode();
+                String serverResponseMessage = conn.getResponseMessage();
+
+                Log.i("uploadFile", "HTTP Response is : "+ serverResponseMessage + ": " + serverResponseCode);
+
+                if(serverResponseCode == 200){
+
+                    getActivity().runOnUiThread(new Runnable() {
+                        public void run() {
+
+                            Toast.makeText(getActivity(), "File Upload Complete.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+
+                //close the streams //
+                fileInputStream.close();
+                dos.flush();
+                dos.close();
+
+            } catch (MalformedURLException ex) {
+
+                dialog.dismiss();
+                ex.printStackTrace();
+
+                getActivity().runOnUiThread(new Runnable() {
+                    public void run() {
+
+                        Toast.makeText(getActivity(), "MalformedURLException",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                Log.e("Upload file to server", "error: " + ex.getMessage(), ex);
+            } catch (Exception e) {
+
+                dialog.dismiss();
+                e.printStackTrace();
+
+                getActivity().runOnUiThread(new Runnable() {
+                    public void run() {
+
+                        Toast.makeText(getActivity(), "Got Exception : see logcat ",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+                Log.d("Upload file to server Exception", "Exception : "
+                        + e.getMessage(), e);
+            }
+            dialog.dismiss();
+            return serverResponseCode;
+
+        } // End else block
+    }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            filePath = data.getData();
+        if (requestCode == REQUEST_IMAGE && resultCode == Activity.RESULT_OK ) {
+//            filePath = data.getData();
             try {
                 //Getting the Bitmap from Gallery
-                bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
-                //Setting the Bitmap to ImageView
-                imageView.setImageBitmap(bitmap);
-            } catch (IOException e) {
+//                bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
+//                //Setting the Bitmap to ImageView
+//                imageView.setImageBitmap(bitmap);
+                FileInputStream in = new FileInputStream(destination);
+                BitmapFactory.Options options = new BitmapFactory.Options();
+                options.inSampleSize = 10;
+                imagePath = destination.getAbsolutePath();
+                //tvPath.setText(imagePath);
+                Log.d("INFO", "PATH === " +imagePath);
+                Bitmap bmp = BitmapFactory.decodeStream(in, null, options);
+                imageView.setImageBitmap(bmp);
+            } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
         }

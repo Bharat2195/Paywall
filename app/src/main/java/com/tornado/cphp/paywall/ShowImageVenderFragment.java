@@ -48,10 +48,11 @@ public class ShowImageVenderFragment extends Fragment {
     SwipeRefreshLayout mSwipeRefreshLayout;
     ArrayAdapter<String> adapter;
     private String strJsonResponse="";
+    private ArrayList<String> listId=new ArrayList<>();
     private ArrayList<String> listEntryDate=new ArrayList<>();
     private ArrayList<String> listVendorId=new ArrayList<>();
     private ArrayList<String> listImageText=new ArrayList<>();
-    private ArrayList<Bitmap> listImagePath=new ArrayList<>();
+    private ArrayList<String> listImagePath=new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
@@ -76,6 +77,8 @@ public class ShowImageVenderFragment extends Fragment {
         // The number of Columns
         gridLayoutManager = new StaggeredGridLayoutManager(2, 1);
         mRecyclerView.setLayoutManager(gridLayoutManager);
+
+
 
 //        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 //            @Override
@@ -239,6 +242,7 @@ public class ShowImageVenderFragment extends Fragment {
                 JSONArray jsonArray=jsonObject.getJSONArray("response");
                 for (int i=0; i<jsonArray.length(); i++){
                     JSONObject object=jsonArray.getJSONObject(i);
+                    String strId=object.getString("id");
                     String strEntryDate=object.getString("entrydate");
                     String strVendorId=object.getString("vendorid");
                     String strImageName=object.getString("image_text");
@@ -246,16 +250,17 @@ public class ShowImageVenderFragment extends Fragment {
 
                     Log.d(TAG, "image path: "+strImagePath);
 
-                    Bitmap bitmapImagePath=decodeFromBase64ToBitmap(strImagePath);
-                    Log.d(TAG, "bitmapImagePath: "+bitmapImagePath);
+//                    Bitmap bitmapImagePath=decodeFromBase64ToBitmap(strImagePath);
+//                    Log.d(TAG, "bitmapImagePath: "+bitmapImagePath);
 
+                    listId.add(strId);
                     listVendorId.add(strVendorId);
                     listImageText.add(strImageName);
-                    listImagePath.add(bitmapImagePath);
+                    listImagePath.add(strImagePath);
                     listEntryDate.add(strEntryDate);
                 }
 
-                    mAdapter = new ShowImageAdapter(getActivity(),listEntryDate,listImageText,listImagePath);
+                    mAdapter = new ShowImageAdapter(getActivity(),listEntryDate,listImageText,listImagePath,listId);
                     mRecyclerView.setAdapter(mAdapter);
 //                    mSwipeRefreshLayout.setRefreshing(false);
 //                    mRecyclerView.scrollToPosition(0);

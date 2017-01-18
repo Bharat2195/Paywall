@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 import com.tornado.cphp.paywall.R;
 import com.tornado.cphp.paywall.VendorProductShowImage;
 
@@ -29,18 +30,21 @@ public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.View
 
     ArrayList<String> listEntryDate;
     ArrayList<String> listImageText;
-    ArrayList<Bitmap> listImagePath;
+    ArrayList<String> listImagePath;
+    ArrayList<String> listId;
     Context context;
     private static final String TAG=ShowImageAdapter.class.getSimpleName();
     Bitmap bitImagePath;
+    private int position;
 
 
-    public ShowImageAdapter(Context context, ArrayList<String> listEntryDate, ArrayList<String> listImageText, ArrayList<Bitmap> listImagePath) {
+    public ShowImageAdapter(Context context, ArrayList<String> listEntryDate, ArrayList<String> listImageText, ArrayList<String> listImagePath, ArrayList<String> listId) {
         super();
         this.context = context;
         this.listEntryDate = listEntryDate;
         this.listImageText = listImageText;
         this.listImagePath=listImagePath;
+        this.listId=listId;
     }
 
     @Override
@@ -52,13 +56,14 @@ public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(ViewHolder viewHolder, final int i) {
         viewHolder.txtItemName.setText(listImageText.get(i));
 
 //        Bitmap decodeImage=decodeFromBase64ToBitmap(listImagePath.get(i));
 //        Log.d(TAG, "decode image: "+decodeImage);
-        viewHolder.imgThumbnail.setImageBitmap(listImagePath.get(i));
-        bitImagePath=listImagePath.get(i);
+//        viewHolder.imgThumbnail.setImageBitmap(listImagePath.get(i));
+//        bitImagePath=listImagePath.get(i);
+        Picasso.with(context).load(listImagePath.get(i)).into(viewHolder.imgThumbnail);
 
 //        Glide.with(context).load(listImagePath.get(i)).into(viewHolder.imgThumbnail);
 
@@ -69,7 +74,8 @@ public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.View
                 try{
 
                     Intent intent = new Intent(context, VendorProductShowImage.class);
-                    intent.putExtra(Intent.EXTRA_STREAM, bitImagePath);
+                    intent.putExtra("strImagePath",listImagePath.get(i));
+                    intent.putExtra("strId", listId.get(i));
                     context.startActivity(intent);
 
                 }catch (Exception e){

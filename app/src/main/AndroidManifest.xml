@@ -33,7 +33,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adapter.ImageUploadSearverActivity">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -83,7 +83,7 @@
         <activity android:name=".memberpanel.DetailOfLevelSummary" />
         <activity android:name=".memberpanel.MemberEditProfileActivity" />
         <activity android:name=".memberpanel.MemberChangePasswordActivity" />
-        <activity android:name=".SplashScreenActivity"></activity>
+        <activity android:name=".adapter.ImageUploadSearverActivity"></activity>
     </application>
 
 </manifest>

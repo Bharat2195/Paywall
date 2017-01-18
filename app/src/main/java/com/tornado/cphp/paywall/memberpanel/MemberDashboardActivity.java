@@ -167,7 +167,6 @@ public class MemberDashboardActivity extends AppCompatActivity {
 
 
         JsonObjectRequest postRequest = new JsonObjectRequest( Request.Method.POST, StringUtils.strBaseURL,
-
                 new JSONObject(jsonParams),
                 new Response.Listener<JSONObject>() {
                     @Override
