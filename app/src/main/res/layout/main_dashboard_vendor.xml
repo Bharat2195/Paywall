@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.paywall.VendorMainActivity">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <include
-        android:id="@+id/mToolbarMemberDashboard"
+        android:id="@+id/toolbar_main"
         layout="@layout/toolbar_main"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"></include>
@@ -30,10 +28,10 @@
         android:visibility="gone" />
 
     <LinearLayout
-        android:id="@+id/mLinearLayoutMoney"
+        android:id="@+id/mLinearLayoutWallet"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_below="@+id/mToolbarMemberDashboard"
+        android:layout_below="@+id/toolbar_main"
         android:background="#2898c9"
         android:orientation="horizontal">
 
@@ -81,7 +79,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_below="@+id/mLinearLayoutMoney"
+        android:layout_below="@+id/mLinearLayoutWallet"
         android:layout_height="match_parent">
 
         <RelativeLayout
@@ -331,9 +329,9 @@
 
                     <ImageView
                         android:id="@+id/imgBalance"
+                        android:src="@drawable/money_transfer"
                         android:layout_centerInParent="true"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/money_transfer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -388,328 +386,5 @@
         </RelativeLayout>
 
     </ScrollView>
-
-
-
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true">-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_send"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRalativeSend"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#39b77e">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtSend"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Send"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtSend"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Money"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelariveWithdrawal"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#d51b5c">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPay"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Withdrawal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPay"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Withdrawal Amount"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="12sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_address"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_send"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeAddress"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#007aff">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtAddress"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Address"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtAddress"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Add adress in map"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativePhoto"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#af23cc">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPhoto"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Photo"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPhoto"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Add Photo"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-
-        <!--</LinearLayout>-->
-
-        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/layout_gift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/layout_travel"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:background="#f88a00"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/txtGift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="gift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="TALKTIME AND CARDS"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/txtGift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-
-        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:background="#af23cc"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/txtPayatShop"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="pay at shops"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="Scan Code,Mobile,OTP"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/txtPayatShop"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-
-        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
-
-
-        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_ask"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_address"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativePassword"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#fcb713">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPassword"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Password"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPassword"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Change Password"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeMe"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#1b70af">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtMe"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="me"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtMe"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="MY Profile"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/mLayoutReport"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_ask"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeReport"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#FF5722">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtReports"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Reports"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtReports"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Admin Repots"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
-
-
-            <!--</RelativeLayout>-->
-
-
-
-        <!--</LinearLayout>-->
-
-
-
-    <!--</RelativeLayout>-->
-
 
 </RelativeLayout>

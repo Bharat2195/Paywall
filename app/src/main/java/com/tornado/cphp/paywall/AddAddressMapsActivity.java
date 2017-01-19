@@ -3,6 +3,7 @@ package com.tornado.cphp.paywall;
 import android.Manifest;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -12,11 +13,16 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -73,12 +79,28 @@ GoogleApiClient.OnConnectionFailedListener,LocationListener {
     private ProgressDialog pd;
     private String JsonResponse="";
     private RelativeLayout mLayoutSave;
+    private Toolbar mToolbarAddress;
+    private TextView txtAddress,txtTitle;
+    private String strTitle,strDescription;
+    private int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_address_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+        mToolbarAddress=(Toolbar)findViewById(R.id.mToolbarAddress);
+        txtAddress=(TextView)mToolbarAddress.findViewById(R.id.txtAddress);
+        txtTitle=(TextView)mToolbarAddress.findViewById(R.id.txtTitle);
+        txtTitle.setText("Map");
+
+        txtAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addMarker();
+            }
+        });
 
 
         mLayoutSave=(RelativeLayout)findViewById(R.id.mLayoutSave);
@@ -126,6 +148,86 @@ GoogleApiClient.OnConnectionFailedListener,LocationListener {
 
         // Setting a click event handler for the map
 
+    }
+
+    private void addMarker() {
+        if(mMap != null){
+
+            //create custom LinearLayout programmatically
+            LinearLayout layout = new LinearLayout(AddAddressMapsActivity.this);
+            layout.setLayoutParams(new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.setOrientation(LinearLayout.VERTICAL);
+
+            final EditText titleField = new EditText(AddAddressMapsActivity.this);
+            titleField.setHint("Title");
+
+            final EditText descField = new EditText(AddAddressMapsActivity.this);
+            descField.setHint("Description");
+//            descField.setInputType(InputType.TYPE_CLASS_NUMBER
+//                    | InputType.TYPE_NUMBER_FLAG_DECIMAL
+//                    | InputType.TYPE_NUMBER_FLAG_SIGNED);
+
+//            final EditText lonField = new EditText(MapsActivity.this);
+//            lonField.setHint("Longitude");
+//            lonField.setInputType(InputType.TYPE_CLASS_NUMBER
+//                    | InputType.TYPE_NUMBER_FLAG_DECIMAL
+//                    | InputType.TYPE_NUMBER_FLAG_SIGNED);
+
+            layout.addView(titleField);
+            layout.addView(descField);
+//            layout.addView(lonField);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Add Marker");
+            builder.setView(layout);
+            AlertDialog alertDialog = builder.create();
+
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    boolean parsable = true;
+                    Double lat = null, lon = null;
+
+                    strTitle = titleField.getText().toString();
+                    strDescription= descField.getText().toString();
+
+
+                    Toast.makeText(AddAddressMapsActivity.this, "Add marker on map", Toast.LENGTH_SHORT).show();
+//                    try{
+//                        lat = Double.parseDouble(strLat);
+//                    }catch (NumberFormatException ex){
+//                        parsable = false;
+//                        Toast.makeText(MapsActivity.this,
+//                                "Latitude does not contain a parsable double",
+//                                Toast.LENGTH_LONG).show();
+//                    }
+//
+//                    try{
+//                        lon = Double.parseDouble(strLon);
+//                    }catch (NumberFormatException ex){
+//                        parsable = false;
+//                        Toast.makeText(MapsActivity.this,
+//                                "Longitude does not contain a parsable double",
+//                                Toast.LENGTH_LONG).show();
+//                    }
+//
+//                    if(parsable){
+//                        LatLng targetLatLng = new LatLng(lat, lon);
+//                        MarkerOptions markerOptions =
+//                                new MarkerOptions().position(targetLatLng).title(strTitle);
+//                        mMap.addMarker(markerOptions);
+//                        mMap.moveCamera(CameraUpdateFactory.newLatLng(targetLatLng));
+//                    }
+                }
+            });
+            builder.setNegativeButton("Cancel", null);
+
+            builder.show();
+        }else{
+            Toast.makeText(AddAddressMapsActivity.this, "Map not ready", Toast.LENGTH_LONG).show();
+        }
     }
 
     private boolean CheckGooglePlayServices() {
@@ -194,13 +296,15 @@ GoogleApiClient.OnConnectionFailedListener,LocationListener {
 
         }
 
+        if (strTitle!=null && strDescription!=null){
+            mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
 
-//        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-//
-//            @Override
-//            public void onMapClick(LatLng latLng) {
-//                locationCount++;
-//
+                @Override
+                public void onMapClick(LatLng latLng) {
+                    locationCount++;
+                    i++;
+                    Log.d(TAG, "location click: "+locationCount);
+
 //                // Drawing marker on the map
 //                final Dialog dialog = new Dialog(AddAddressMapsActivity.this);
 //                dialog.setCanceledOnTouchOutside(false);
@@ -222,31 +326,45 @@ GoogleApiClient.OnConnectionFailedListener,LocationListener {
 //
 //                    }
 //                });
-//
-////        markerOptions.title(point.latitude + " : " + point.longitude);
-//                drawMarker(latLng,strAddress);
-//
-//                SharedPreferences.Editor editor = sharedPreferences.edit();
-//
-//                // Storing the latitude for the i-th location
-//                editor.putString("lat"+ Integer.toString((locationCount-1)), Double.toString(latLng.latitude));
-//
-//                // Storing the longitude for the i-th location
-//                editor.putString("lng"+ Integer.toString((locationCount-1)), Double.toString(latLng.longitude));
-//
-//                // Storing the count of locations or marker count
-//                editor.putInt("locationCount", locationCount);
-//
-//                /** Storing the zoom level to the shared preferences */
-//                editor.putString("zoom", Float.toString(mMap.getCameraPosition().zoom));
-//
-//                /** Saving the values stored in the shared preferences */
-//                editor.commit();
-//
-//                Toast.makeText(getBaseContext(), "Marker is added to the Map", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
+
+//                 markerOptions.title(point.latitude + " : " + point.longitude);
+                    if (strTitle!=null && strDescription!=null){
+                        drawMarker(latLng,strTitle);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                        // Storing the latitude for the i-th location
+                        editor.putString("lat"+ Integer.toString((locationCount-1)), Double.toString(latLng.latitude));
+
+                        // Storing the longitude for the i-th location
+                        editor.putString("lng"+ Integer.toString((locationCount-1)), Double.toString(latLng.longitude));
+
+                        // Storing the count of locations or marker count
+                        editor.putInt("locationCount", locationCount);
+
+                        /** Storing the zoom level to the shared preferences */
+                        editor.putString("zoom", Float.toString(mMap.getCameraPosition().zoom));
+
+                        /** Saving the values stored in the shared preferences */
+                        editor.commit();
+
+                        Toast.makeText(getBaseContext(), "Marker is added to the Map", Toast.LENGTH_SHORT).show();
+                        i=0;
+                        strTitle="";
+                        strDescription="";
+                    }else {
+                        Toast.makeText(AddAddressMapsActivity.this, "Please enter address title & description", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+
+                }
+            });
+        }else {
+            Toast.makeText(AddAddressMapsActivity.this, "Please Enter Title and Descriptio ", Toast.LENGTH_SHORT).show();
+        }
+
+
         mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
             @Override
             public void onMapLongClick(LatLng point) {
@@ -358,16 +476,18 @@ GoogleApiClient.OnConnectionFailedListener,LocationListener {
         // Setting latitude and longitude for the marker
         markerOptions.position(point);
         markerOptions.title(strAddress);
-        listLangitude.add(point.longitude);
-        listLatitude.add(point.latitude);
-        listTitle.add(strAddress);
-        Log.d(TAG, "langitude data: "+listLangitude);
-        Log.d(TAG, "latitude data: "+listLatitude);
-        Log.d(TAG, "title data: "+listTitle);
+        markerOptions.draggable(true);
+//        listLangitude.add(point.longitude);
+//        listLatitude.add(point.latitude);
+//        listTitle.add(strAddress);
+//        Log.d(TAG, "langitude data: "+listLangitude);
+//        Log.d(TAG, "latitude data: "+listLatitude);
+//        Log.d(TAG, "title data: "+listTitle);
 
 
         // Adding marker on the Google Map
         mMap.addMarker(markerOptions).showInfoWindow();
+
 
 
     }

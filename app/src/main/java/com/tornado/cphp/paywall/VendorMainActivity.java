@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,31 +40,114 @@ import java.net.URL;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class VendorMainActivity extends AppCompatActivity {
 
     private static final String TAG = VendorMainActivity.class.getSimpleName();
-    @BindView(R.id.mLayoutMain)
-    RelativeLayout mLayoutMain;
+    @BindView(R.id.imgName)
+    ImageView imgName;
+    @BindView(R.id.view)
+    View view;
+    @BindView(R.id.txtWallet)
+    TextView txtWallet;
+    //    @BindView(R.id.imgLogout)
+//    ImageView imgLogout;
+    @BindView(R.id.layout)
+    RelativeLayout layout;
+    @BindView(R.id.btnAddLocation)
+    Button btnAddLocation;
+    @BindView(R.id.btnScanCode)
+    Button btnScanCode;
+    @BindView(R.id.txtBalance)
+    TextView txtBalance;
+    @BindView(R.id.btnLoadMoeny)
+    Button btnLoadMoeny;
+    @BindView(R.id.mLinearLayoutWallet)
+    LinearLayout mLinearLayoutWallet;
+    @BindView(R.id.imgSend)
+    ImageView imgSend;
+    @BindView(R.id.txtSend)
+    TextView txtSend;
+    @BindView(R.id.mRelativeSend)
+    RelativeLayout mRelativeSend;
+    @BindView(R.id.imgWithdrawal)
+    ImageView imgWithdrawal;
+    @BindView(R.id.txtWithdrawal)
+    TextView txtWithdrawal;
+    @BindView(R.id.mRelativeWithdrawal)
+    RelativeLayout mRelativeWithdrawal;
+    @BindView(R.id.imgAddress)
+    ImageView imgAddress;
+    @BindView(R.id.txtAddress)
+    TextView txtAddress;
+    @BindView(R.id.mRelativeAddress)
+    RelativeLayout mRelativeAddress;
+    @BindView(R.id.mLinearLayout)
+    LinearLayout mLinearLayout;
+    @BindView(R.id.imgPhoto)
+    ImageView imgPhoto;
+    @BindView(R.id.txtPhoto)
+    TextView txtPhoto;
+    @BindView(R.id.mRelativePhoto)
+    RelativeLayout mRelativePhoto;
+    @BindView(R.id.imgPassword)
+    ImageView imgPassword;
+    @BindView(R.id.txtPassword)
+    TextView txtPassword;
+    @BindView(R.id.mRelativePassword)
+    RelativeLayout mRelativePassword;
+    @BindView(R.id.imgMe)
+    ImageView imgMe;
+    @BindView(R.id.txtMe)
+    TextView txtMe;
+    @BindView(R.id.mRelativeMe)
+    RelativeLayout mRelativeMe;
+    @BindView(R.id.mLinearLayout1)
+    LinearLayout mLinearLayout1;
+    @BindView(R.id.imgReports)
+    ImageView imgReports;
+    @BindView(R.id.txtReports)
+    TextView txtReports;
+    @BindView(R.id.mRelativeReport)
+    RelativeLayout mRelativeReport;
+    @BindView(R.id.imgBalance)
+    ImageView imgBalance;
+    @BindView(R.id.Balance)
+    TextView Balance;
+    @BindView(R.id.mRelativeBalance)
+    RelativeLayout mRelativeBalance;
+    @BindView(R.id.imgLoadMoney)
+    ImageView imgLoadMoney;
+    @BindView(R.id.txtLoadMoney)
+    TextView txtLoadMoney;
+    @BindView(R.id.mRelativeLoadMoney)
+    RelativeLayout mRelativeLoadMoney;
+    @BindView(R.id.mLinearLayout2)
+    LinearLayout mLinearLayout2;
+    @BindView(R.id.mRelativeMain)
+    RelativeLayout mRelativeMain;
+    //    @BindView(R.id.mLayoutMain)
+//    RelativeLayout mLayoutMain;
     private Toolbar toolbar_main;
     private TextView txtTitle;
     private ImageView imgProfile, imgLogout;
     public static String strVendorId = "";
-    private Button btnAddLocation, btnScanCode;
-    private TextView txtBalance;
-    private Button btnLoadMoeny;
+    //    private Button btnAddLocation, btnScanCode;
+//    private TextView txtBalance;
+//    private Button btnLoadMoeny;
     public static String strWalletBalance = "";
     private String JsonResponse = "", strTDS = "";
     public static final int MY_PERMISSIONS_REQUEST_CAMERA = 99;
     public static final String PREFS_NAME = "LoginPrefes";
     private TextView txtNo, txtYes;
 
-    private RelativeLayout mRalativeSend, mRelariveWithdrawal, mRelativeAddress, mRelativePhoto, mRelativePassword, mRelativeMe, mRelativeReport;
+//    private RelativeLayout mRalativeSend, mRelariveWithdrawal, mRelativeAddress, mRelativePhoto, mRelativePassword, mRelativeMe, mRelativeReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_dashboard_vendor);
         ButterKnife.bind(this);
 
         getSupportActionBar().hide();
@@ -73,9 +157,9 @@ public class VendorMainActivity extends AppCompatActivity {
         Log.d(TAG, "vendor id: " + strVendorId);
         imgLogout = (ImageView) toolbar_main.findViewById(R.id.imgLogout);
 
-        YoYo.with(Techniques.Bounce)
-                .duration(1000)
-                .playOn(mLayoutMain);
+        YoYo.with(Techniques.Landing)
+                .duration(2000)
+                .playOn(mRelativeMain);
         imgLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,74 +196,74 @@ public class VendorMainActivity extends AppCompatActivity {
             checkCameraPermission();
         }
 
-        txtBalance = (TextView) findViewById(R.id.txtBalance);
-        btnLoadMoeny = (Button) findViewById(R.id.btnLoadMoeny);
+//        txtBalance = (TextView) findViewById(R.id.txtBalance);
+//        btnLoadMoeny = (Button) findViewById(R.id.btnLoadMoeny);
 
-        mRalativeSend = (RelativeLayout) findViewById(R.id.mRalativeSend);
-        mRelariveWithdrawal = (RelativeLayout) findViewById(R.id.mRelariveWithdrawal);
-        mRelativeAddress = (RelativeLayout) findViewById(R.id.mRelativeAddress);
-        mRelativePhoto = (RelativeLayout) findViewById(R.id.mRelativePhoto);
-        mRelativePassword = (RelativeLayout) findViewById(R.id.mRelativePassword);
-        mRelativeMe = (RelativeLayout) findViewById(R.id.mRelativeMe);
-        mRelativeReport = (RelativeLayout) findViewById(R.id.mRelativeReport);
+//        mRalativeSend = (RelativeLayout) findViewById(R.id.mRalativeSend);
+//        mRelariveWithdrawal = (RelativeLayout) findViewById(R.id.mRelariveWithdrawal);
+//        mRelativeAddress = (RelativeLayout) findViewById(R.id.mRelativeAddress);
+//        mRelativePhoto = (RelativeLayout) findViewById(R.id.mRelativePhoto);
+//        mRelativePassword = (RelativeLayout) findViewById(R.id.mRelativePassword);
+//        mRelativeMe = (RelativeLayout) findViewById(R.id.mRelativeMe);
+//        mRelativeReport = (RelativeLayout) findViewById(R.id.mRelativeReport);
 
         getWalletBalance();
-        mRalativeSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentSend = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
-                startActivity(intentSend);
-            }
-        });
+//        mRalativeSend.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentSend = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
+//                startActivity(intentSend);
+//            }
+//        });
 
-        mRelativeMe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentProfile = new Intent(VendorMainActivity.this, VendorEdiProfileActivity.class);
-                startActivity(intentProfile);
-            }
-        });
+//        mRelativeMe.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentProfile = new Intent(VendorMainActivity.this, VendorEdiProfileActivity.class);
+//                startActivity(intentProfile);
+//            }
+//        });
 
-        mRelativePhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentPhoto = new Intent(VendorMainActivity.this, VendorUploadImageActivity.class);
-                startActivity(intentPhoto);
-            }
-        });
+//        mRelativePhoto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentPhoto = new Intent(VendorMainActivity.this, VendorUploadImageActivity.class);
+//                startActivity(intentPhoto);
+//            }
+//        });
 
-        mRelativeAddress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentAddress = new Intent(VendorMainActivity.this, AddAddressMapsActivity.class);
-                startActivity(intentAddress);
-            }
-        });
+//        mRelativeAddress.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentAddress = new Intent(VendorMainActivity.this, AddAddressMapsActivity.class);
+//                startActivity(intentAddress);
+//            }
+//        });
 
 
-        mRelativePassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentPassword = new Intent(VendorMainActivity.this, VendorChangePasswordActivity.class);
-                startActivity(intentPassword);
-            }
-        });
+//        mRelativePassword.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentPassword = new Intent(VendorMainActivity.this, VendorChangePasswordActivity.class);
+//                startActivity(intentPassword);
+//            }
+//        });
 
-        mRelariveWithdrawal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentWitdrawal = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
-                intentWitdrawal.putExtra("tabindex", "2");
-                startActivity(intentWitdrawal);
-            }
-        });
-        mRelativeReport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentReport = new Intent(VendorMainActivity.this, VendorReportsActivity.class);
-                startActivity(intentReport);
-            }
-        });
+//        mRelariveWithdrawal.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentWitdrawal = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
+//                intentWitdrawal.putExtra("tabindex", "2");
+//                startActivity(intentWitdrawal);
+//            }
+//        });
+//        mRelativeReport.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentReport = new Intent(VendorMainActivity.this, VendorReportsActivity.class);
+//                startActivity(intentReport);
+//            }
+//        });
 //        btnAddLocation=(Button)findViewById(R.id.btnAddLocation);
 //        btnScanCode=(Button)findViewById(R.id.btnScanCode);
 //        btnAddLocation.setOnClickListener(new View.OnClickListener() {
@@ -271,6 +355,49 @@ public class VendorMainActivity extends AppCompatActivity {
 
         if (jsonObject.length() > 0) {
             new getwalletBalance().execute(String.valueOf(jsonObject));
+        }
+    }
+
+    @OnClick({R.id.btnAddLocation, R.id.btnLoadMoeny, R.id.mRelativeSend, R.id.mRelativeWithdrawal, R.id.mRelativeAddress, R.id.mRelativePhoto, R.id.mRelativePassword, R.id.mRelativeMe, R.id.mRelativeReport, R.id.mRelativeBalance, R.id.mRelativeLoadMoney})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btnAddLocation:
+                break;
+            case R.id.btnLoadMoeny:
+                break;
+            case R.id.mRelativeSend:
+                Intent intentSend = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
+                startActivity(intentSend);
+                break;
+            case R.id.mRelativeWithdrawal:
+                Intent intentWitdrawal = new Intent(VendorMainActivity.this, PaySendMoneyVendorActivity.class);
+                intentWitdrawal.putExtra("tabindex", "2");
+                startActivity(intentWitdrawal);
+                break;
+            case R.id.mRelativeAddress:
+                Intent intentAddress = new Intent(VendorMainActivity.this, AddAddressMapsActivity.class);
+                startActivity(intentAddress);
+                break;
+            case R.id.mRelativePhoto:
+                Intent intentPhoto = new Intent(VendorMainActivity.this, VendorUploadImageActivity.class);
+                startActivity(intentPhoto);
+                break;
+            case R.id.mRelativePassword:
+                Intent intentPassword = new Intent(VendorMainActivity.this, VendorChangePasswordActivity.class);
+                startActivity(intentPassword);
+                break;
+            case R.id.mRelativeMe:
+                Intent intentProfile = new Intent(VendorMainActivity.this, VendorEdiProfileActivity.class);
+                startActivity(intentProfile);
+                break;
+            case R.id.mRelativeReport:
+                Intent intentReport = new Intent(VendorMainActivity.this, VendorReportsActivity.class);
+                startActivity(intentReport);
+                break;
+            case R.id.mRelativeBalance:
+                break;
+            case R.id.mRelativeLoadMoney:
+                break;
         }
     }
 

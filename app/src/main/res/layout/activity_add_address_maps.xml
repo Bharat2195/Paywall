@@ -4,6 +4,7 @@
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+        android:layout_below="@+id/mToolbarAddress"
         android:layout_above="@+id/mLayoutSave"
         android:layout_height="match_parent">
 
@@ -65,6 +66,15 @@
             android:textStyle="bold" />
 
     </RelativeLayout>
+
+    <include
+        android:id="@+id/mToolbarAddress"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar_map_activity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></include>
 
 
 </RelativeLayout>
