@@ -106,8 +106,8 @@ public class MemberDashboardActivity extends AppCompatActivity {
     ImageView imgBalance;
     @BindView(R.id.Balance)
     TextView Balance;
-    @BindView(R.id.mRelativeBalance)
-    RelativeLayout mRelativeBalance;
+    @BindView(R.id.mRelativeActivation)
+    RelativeLayout mRelativeActivation;
     @BindView(R.id.imgLoadMoney)
     ImageView imgLoadMoney;
     @BindView(R.id.txtLoadMoney)
@@ -177,7 +177,7 @@ public class MemberDashboardActivity extends AppCompatActivity {
     private Toolbar mToolbarMemberDashboard;
     private ImageView imgLogout;
     private TextView txtNo, txtYes;
-    public static String strMemberId;
+    public static String strMemberId,strBalance;
     private String JsonResponse = "";
     public static final String PREFS_NAME = "MemberLoginPrefes";
     RequestQueue requestQueue;
@@ -260,7 +260,7 @@ public class MemberDashboardActivity extends AppCompatActivity {
                         try {
                             String strStatus = response.getString("status");
                             JSONArray jsonArray = response.getJSONArray("response");
-                            String strBalance = jsonArray.getString(0);
+                            strBalance = jsonArray.getString(0);
                             Log.d(TAG, "member wallet balance: " + strBalance);
                             txtBalance.setText("BALANCE " + strBalance);
                         } catch (JSONException e) {
@@ -321,7 +321,7 @@ public class MemberDashboardActivity extends AppCompatActivity {
 //        }
 //    }
 
-    @OnClick({R.id.mRelativeSend, R.id.mRelativeWithdrawal, R.id.mRelativeAddress, R.id.mRelativePhoto, R.id.mRelativePassword, R.id.mRelativeMe, R.id.mRelativeReport, R.id.mRelativeBalance, R.id.mRelativeLoadMoney, R.id.mRelativeMain})
+    @OnClick({R.id.mRelativeSend, R.id.mRelativeWithdrawal, R.id.mRelativeAddress, R.id.mRelativePhoto, R.id.mRelativePassword, R.id.mRelativeMe, R.id.mRelativeReport, R.id.mRelativeActivation, R.id.mRelativeLoadMoney, R.id.mRelativeMain})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mRelativeSend:
@@ -336,8 +336,12 @@ public class MemberDashboardActivity extends AppCompatActivity {
             case R.id.mRelativeAddress:
                 break;
             case R.id.mRelativePhoto:
+                Intent intentImage=new Intent(MemberDashboardActivity.this,MemberShowVendorImages.class);
+                startActivity(intentImage);
                 break;
             case R.id.mRelativePassword:
+                Intent intentChangePassword=new Intent(MemberDashboardActivity.this,MemberChangePasswordActivity.class);
+                startActivity(intentChangePassword);
                 break;
             case R.id.mRelativeMe:
                 Intent intentProfile = new Intent(MemberDashboardActivity.this, MemberEditProfileActivity.class);
@@ -347,9 +351,13 @@ public class MemberDashboardActivity extends AppCompatActivity {
                 Intent intentReport = new Intent(MemberDashboardActivity.this, MemberReportActivity.class);
                 startActivity(intentReport);
                 break;
-            case R.id.mRelativeBalance:
+            case R.id.mRelativeActivation:
+                Intent intentActivation=new Intent(MemberDashboardActivity.this,MemberActivationActivity.class);
+                startActivity(intentActivation);
                 break;
             case R.id.mRelativeLoadMoney:
+//                Intent intentMoney=new Intent(MemberDashboardActivity.this,MemberShowVendorImages.class);
+//                startActivity(intentMoney);
                 break;
             case R.id.mRelativeMain:
                 break;

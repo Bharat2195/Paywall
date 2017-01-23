@@ -24,4 +24,12 @@
     <color name="lightgreen">#8BC34A</color>
     <color name="lime">#CDDC39</color>
     <color name="yellow">#FFEB3B</color>
+
+    <color name="card">#fff</color>
+
+    <color name="grey_background">#f5f5f5</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
 </resources>

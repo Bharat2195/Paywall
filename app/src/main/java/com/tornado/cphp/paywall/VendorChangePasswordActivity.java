@@ -74,7 +74,7 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
                 if (StringUtils.isBlank(strOldPassword)) {
                     showToast("Please Enter OldPassword");
                 }else if (StringUtils.isBlank(strNewPassword)) {
-                    showToast("Please Enter New Password");
+                    showToast("Please Enter News Password");
                 }else if (StringUtils.isBlank(strConfirmPassword)) {
                     showToast("Please Enter ConfirmPassword");
                 }else if (!strConfirmPassword.equals(strNewPassword)){

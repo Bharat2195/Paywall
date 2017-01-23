@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/paywall_dashboard"
+    android:background="@drawable/dashboard_logo"
     tools:context="com.tornado.cphp.paywall.VendorLoginActivity">
 
 

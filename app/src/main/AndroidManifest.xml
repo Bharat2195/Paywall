@@ -25,10 +25,11 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
@@ -83,7 +84,10 @@
         <activity android:name=".memberpanel.DetailOfLevelSummary" />
         <activity android:name=".memberpanel.MemberEditProfileActivity" />
         <activity android:name=".memberpanel.MemberChangePasswordActivity" />
-        <activity android:name=".adapter.ImageUploadSearverActivity"></activity>
+        <activity android:name=".adapter.ImageUploadSearverActivity" />
+        <activity android:name=".memberpanel.MemberShowVendorImages" />
+        <activity android:name=".memberpanel.MemberVendorShowInformationActivity"></activity>
+        <activity android:name=".config.AsyncActivity"></activity>
     </application>
 
 </manifest>

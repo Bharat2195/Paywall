@@ -4,7 +4,7 @@
     android:id="@+id/activity_login_type"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/paywall_dashboard"
+    android:background="@drawable/dashboard_logo"
     tools:context="com.tornado.cphp.paywall.LoginTypeActivity">
 
     <RelativeLayout

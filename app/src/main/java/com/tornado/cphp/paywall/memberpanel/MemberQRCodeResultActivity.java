@@ -18,6 +18,7 @@ import com.tornado.cphp.paywall.R;
 import com.tornado.cphp.paywall.VendorMainActivity;
 import com.tornado.cphp.paywall.utils.StringUtils;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -97,7 +98,7 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
                 }else if (strAmount.contains("-")){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Correct Amount", Toast.LENGTH_SHORT).show();
-                }else if (Integer.parseInt(strAmount) > Integer.parseInt(VendorMainActivity.strWalletBalance)){
+                }else if (Integer.parseInt(strAmount) > Integer.parseInt(MemberDashboardActivity.strBalance)){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Insufficient Your Wallet balance", Toast.LENGTH_SHORT).show();
                 }else {
 
@@ -208,13 +209,15 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
                 String strMessage = Object.getString("message");
                 Log.d(TAG, "message: " + strMessage);
 
-                if (strStutus.equals("1")){
-                    Toast.makeText(MemberQRCodeResultActivity.this, "Transaction Done Successfully", Toast.LENGTH_SHORT).show();
-                }else if (strStutus.equals("2")) {
-                    Toast.makeText(MemberQRCodeResultActivity.this, "Qrcode Is Not Valid", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(MemberQRCodeResultActivity.this, "Vendor Doesn't Have Sufficient Balance", Toast.LENGTH_SHORT).show();
-                }
+                JSONArray jsonArray=Object.getJSONArray("response");
+                String strResponse=jsonArray.getString(0);
+                Toast.makeText(MemberQRCodeResultActivity.this, strResponse, Toast.LENGTH_SHORT).show();
+
+//                if (strStutus.equals("1")){
+//                    Toast.makeText(MemberQRCodeResultActivity.this, "Transaction Done Successfully", Toast.LENGTH_SHORT).show();
+//                }else  {
+//                    Toast.makeText(MemberQRCodeResultActivity.this, "Qrcode Is Not Valid", Toast.LENGTH_SHORT).show();
+//                }
 
             } catch (Exception e) {
                 e.printStackTrace();

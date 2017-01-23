@@ -22,6 +22,7 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
+
 }
 
 dependencies {
@@ -47,4 +48,6 @@ dependencies {
     compile 'com.andreabaccega:android-form-edittext:1.2.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    //    compile 'com.github.GrenderG:Toasty:1.1'
+//    compile 'com.ericliu.asyncexpandablelist:asyncexpandablelist:1.0.8'
 }

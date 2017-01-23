@@ -323,7 +323,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/mRelativeBalance"
+                    android:id="@+id/mRelativeActivation"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:background="#4a433d"
@@ -339,7 +339,7 @@
 
                     <TextView
                         android:id="@+id/Balance"
-                        android:text="Balance"
+                        android:text="Activation"
                         android:textSize="18sp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"

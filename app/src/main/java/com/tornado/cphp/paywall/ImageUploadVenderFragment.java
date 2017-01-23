@@ -269,15 +269,16 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
 //    }
 
     private void showFileChooser() {
-//        Intent intent = new Intent();
-//        intent.setType("image/*");
-//        intent.setAction(Intent.ACTION_GET_CONTENT);
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
 //        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
-//        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
-
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
-        startActivityForResult(intent, REQUEST_IMAGE);
+//        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+//
+//        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+//        startActivityForResult(intent, REQUEST_IMAGE);
     }
 
     public String getStringImage(Bitmap bmp) {
@@ -417,14 +418,16 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == REQUEST_IMAGE && resultCode == Activity.RESULT_OK ) {
-//            filePath = data.getData();
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK ) {
+            filePath = data.getData();
             try {
                 //Getting the Bitmap from Gallery
 //                bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
 //                //Setting the Bitmap to ImageView
 //                imageView.setImageBitmap(bitmap);
-                FileInputStream in = new FileInputStream(destination);
+
+
+                FileInputStream in = new FileInputStream(String.valueOf(filePath.fromFile(destination)));
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 10;
                 imagePath = destination.getAbsolutePath();
