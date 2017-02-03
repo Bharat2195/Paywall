@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.paywall.VendorMainActivity">
+    tools:context="com.tornado.cphp.awhitepaid.VendorMainActivity">
 
     <include
         android:id="@+id/mToolbarMemberDashboard"
@@ -81,47 +81,47 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_below="@+id/mLinearLayoutMoney"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mLinearLayoutMoney">
 
         <RelativeLayout
             android:id="@+id/mRelativeMain"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
 
             <LinearLayout
                 android:id="@+id/mLinearLayout"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:orientation="horizontal">
 
                 <RelativeLayout
                     android:id="@+id/mRelativeSend"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#4a433d"
-                    android:layout_height="match_parent">
+                    android:background="#564d44">
 
                     <ImageView
                         android:id="@+id/imgSend"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/send"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/send" />
 
                     <TextView
                         android:id="@+id/txtSend"
-                        android:text="Send"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgSend"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgSend"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Send"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
 
                 </RelativeLayout>
@@ -129,257 +129,254 @@
                 <RelativeLayout
                     android:id="@+id/mRelativeWithdrawal"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#564d44"
-                    android:layout_height="match_parent">
+                    android:background="#4a433d">
 
                     <ImageView
                         android:id="@+id/imgWithdrawal"
-                        android:src="@drawable/withdrawal"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/withdrawal" />
 
                     <TextView
                         android:id="@+id/txtWithdrawal"
-                        android:text="Withdrwal"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:textSize="18sp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgWithdrawal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgWithdrawal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Withdrwal"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativeAddress"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#5a5148"
-                    android:layout_height="match_parent">
+                    android:background="#5a5148">
 
                     <ImageView
                         android:id="@+id/imgAddress"
-                        android:src="@drawable/address"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/address" />
 
                     <TextView
                         android:id="@+id/txtAddress"
-                        android:text="Address"
-                        android:layout_marginTop="5dp"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgAddress"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgAddress"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Address"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
-
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/mLinearLayout1"
-                android:layout_below="@+id/mLinearLayout"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:layout_below="@+id/mLinearLayout"
+                android:orientation="horizontal">
 
                 <RelativeLayout
                     android:id="@+id/mRelativePhoto"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#564d44"
-                    android:layout_height="match_parent">
+                    android:background="#4a433d">
 
                     <ImageView
                         android:id="@+id/imgPhoto"
-                        android:src="@drawable/photo"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/photo" />
 
                     <TextView
                         android:id="@+id/txtPhoto"
-                        android:text="Photo"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgPhoto"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgPhoto"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Photo"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativePassword"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#5a5148"
-                    android:layout_height="match_parent">
+                    android:background="#5a5148">
 
                     <ImageView
                         android:id="@+id/imgPassword"
-                        android:src="@drawable/password_icon"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/password_icon" />
 
                     <TextView
                         android:id="@+id/txtPassword"
-                        android:text="Password"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgPassword"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgPassword"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Password"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativeMe"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#4b413f"
-                    android:layout_height="match_parent">
+                    android:background="#4a433d">
 
                     <ImageView
                         android:id="@+id/imgMe"
-                        android:src="@drawable/me"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/me" />
 
                     <TextView
                         android:id="@+id/txtMe"
-                        android:text="Me"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgMe"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgMe"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Me"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
-
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/mLinearLayout2"
-                android:layout_below="@+id/mLinearLayout1"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:layout_below="@+id/mLinearLayout1"
+                android:orientation="horizontal">
 
                 <RelativeLayout
                     android:id="@+id/mRelativeReport"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#5a5148"
-                    android:layout_height="match_parent">
+                    android:background="#5a5148">
 
                     <ImageView
                         android:id="@+id/imgReports"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:src="@drawable/reports"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/reports" />
 
                     <TextView
                         android:id="@+id/txtReports"
-                        android:text="Reports"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgReports"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgReports"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Reports"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativeActivation"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#4a433d"
-                    android:layout_height="match_parent">
+                    android:background="#4a433d">
 
                     <ImageView
                         android:id="@+id/imgBalance"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/money_transfer"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/money_transfer" />
 
                     <TextView
                         android:id="@+id/Balance"
-                        android:text="Activation"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgBalance"
+                        android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="5dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgBalance"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:text="@string/activation"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/mRelativeLoadMoney"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#564d44"
-                    android:layout_height="match_parent">
+                    android:background="#564d44">
 
                     <ImageView
                         android:id="@+id/imgLoadMoney"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
-                        android:src="@drawable/load_money"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/load_money" />
 
                     <TextView
                         android:id="@+id/txtLoadMoney"
-                        android:text="Load Money"
-                        android:textSize="18sp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="@android:color/white"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/imgLoadMoney"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgLoadMoney"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Load Money"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
-
 
 
             </LinearLayout>
@@ -390,323 +387,320 @@
     </ScrollView>
 
 
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_send"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
 
     <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true">-->
+    <!--android:id="@+id/mRalativeSend"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#39b77e">-->
 
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_send"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
+    <!--<TextView-->
+    <!--android:id="@+id/txtSend"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Send"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRalativeSend"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#39b77e">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtSend"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Send"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtSend"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Money"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtSend"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Money"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
 
 
-            <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelariveWithdrawal"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#d51b5c">-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelariveWithdrawal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#d51b5c">-->
 
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPay"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Withdrawal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/txtPay"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Withdrawal"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPay"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Withdrawal Amount"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="12sp" />-->
-
-
-            <!--</RelativeLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtPay"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Withdrawal Amount"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="12sp" />-->
 
 
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_address"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_send"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeAddress"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#007aff">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtAddress"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Address"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtAddress"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Add adress in map"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--</RelativeLayout>-->
 
 
-            <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativePhoto"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#af23cc">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_address"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/layout_send"-->
+    <!--android:orientation="horizontal">-->
 
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPhoto"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Photo"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelativeAddress"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#007aff">-->
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPhoto"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Add Photo"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/txtAddress"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Address"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
 
-
-            <!--</RelativeLayout>-->
-
-
-        <!--</LinearLayout>-->
-
-        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/layout_gift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/layout_travel"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:background="#f88a00"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/txtGift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="gift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="TALKTIME AND CARDS"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/txtGift"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtAddress"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Add adress in map"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
 
 
-        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
 
-        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:background="#af23cc"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelativePhoto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#af23cc">-->
 
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/txtPayatShop"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="pay at shops"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/txtPhoto"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Photo"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
 
-        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="Scan Code,Mobile,OTP"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_below="@+id/txtPayatShop"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
-
-
-        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtPhoto"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Add Photo"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
 
 
-        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/layout_ask"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_address"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativePassword"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#fcb713">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtPassword"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Password"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtPassword"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Change Password"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--</RelativeLayout>-->
 
 
-            <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeMe"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#1b70af">-->
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/layout_gift"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/layout_travel"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
 
-                <!--<TextView-->
-                    <!--android:id="@+id/txtMe"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="me"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#f88a00"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtMe"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="MY Profile"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/txtGift"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="gift"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
 
-
-            <!--</RelativeLayout>-->
-
-
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:id="@+id/mLayoutReport"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/layout_ask"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/mRelativeReport"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="100sp"-->
-                <!--android:layout_weight="0.5"-->
-                <!--android:background="#FF5722">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/txtReports"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="Reports"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="30sp" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/txtReports"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:text="Admin Repots"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="14sp" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="TALKTIME AND CARDS"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/txtGift"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
 
 
-            <!--</RelativeLayout>-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#af23cc"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="100sp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/txtPayatShop"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="pay at shops"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Scan Code,Mobile,OTP"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_below="@+id/txtPayatShop"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
 
 
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
 
-        <!--</LinearLayout>-->
 
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_ask"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/layout_address"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelativePassword"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#fcb713">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtPassword"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Password"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtPassword"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Change Password"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelativeMe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#1b70af">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtMe"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="me"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtMe"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="MY Profile"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/mLayoutReport"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/layout_ask"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mRelativeReport"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:background="#FF5722">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtReports"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="Reports"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtReports"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Admin Repots"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="14sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
 
 
     <!--</RelativeLayout>-->

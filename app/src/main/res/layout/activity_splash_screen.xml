@@ -5,7 +5,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:src="@drawable/splash"
+        android:src="@drawable/splash_logo"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:layout_height="match_parent" />

@@ -4,7 +4,7 @@
     android:id="@+id/activity_qrcode_result"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.paywall.QRCodeResultActivity">
+    tools:context="com.tornado.cphp.awhitepaid.QRCodeResultActivity">
 
     <include
         android:id="@+id/mToolbarMemberQRCodeResult"

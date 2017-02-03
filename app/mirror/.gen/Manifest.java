@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.tornado.cphp.paywall;
+package com.tornado.cphp.awhitepaid;
 
 public final class Manifest {
     public static final class permission {

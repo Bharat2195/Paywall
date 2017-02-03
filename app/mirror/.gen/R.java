@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.tornado.cphp.paywall;
+package com.tornado.cphp.awhitepaid;
 
 public final class R {
     public static final class anim {
@@ -5137,7 +5137,7 @@ containing a value of this type.
             0x7f01012a
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#background}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5147,7 +5147,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5159,7 +5159,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5171,7 +5171,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5187,7 +5187,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5203,7 +5203,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5219,7 +5219,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5235,7 +5235,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5251,7 +5251,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5267,7 +5267,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5277,7 +5277,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5299,7 +5299,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5309,7 +5309,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5325,7 +5325,7 @@ containing a value of this type.
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#height}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5341,7 +5341,7 @@ containing a value of this type.
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5355,7 +5355,7 @@ containing a value of this type.
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5365,7 +5365,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5375,7 +5375,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5385,7 +5385,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5395,7 +5395,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5411,7 +5411,7 @@ containing a value of this type.
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5421,7 +5421,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5439,7 +5439,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5449,7 +5449,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5465,7 +5465,7 @@ containing a value of this type.
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5475,7 +5475,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5489,7 +5489,7 @@ containing a value of this type.
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5499,7 +5499,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#title}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5513,7 +5513,7 @@ containing a value of this type.
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5590,7 +5590,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100de, 0x7f0100ee
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#background}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5600,7 +5600,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5612,7 +5612,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5622,7 +5622,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#height}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5638,7 +5638,7 @@ containing a value of this type.
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5648,7 +5648,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5673,7 +5673,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ef, 0x7f0100f0
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -5683,7 +5683,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -5714,7 +5714,7 @@ containing a value of this type.
             0x7f010072, 0x7f010073, 0x7f010074
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#adSize}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5728,7 +5728,7 @@ containing a value of this type.
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5742,7 +5742,7 @@ containing a value of this type.
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5786,7 +5786,7 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5796,7 +5796,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5806,7 +5806,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5816,7 +5816,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5826,7 +5826,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5859,7 +5859,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5875,7 +5875,7 @@ containing a value of this type.
         */
         public static final int AppBarLayout_elevation = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5904,7 +5904,7 @@ containing a value of this type.
             0x7f010081, 0x7f010082
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -5924,7 +5924,7 @@ containing a value of this type.
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -5955,7 +5955,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -5990,7 +5990,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -6000,7 +6000,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -6015,7 +6015,7 @@ containing a value of this type.
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -6057,7 +6057,7 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -6337,7 +6337,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010169, 0x7f01016a, 0x7f01016b
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6347,7 +6347,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6357,7 +6357,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6367,7 +6367,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6391,7 +6391,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6401,7 +6401,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6411,7 +6411,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6421,7 +6421,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6431,7 +6431,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6441,7 +6441,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6451,7 +6451,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6461,7 +6461,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6471,7 +6471,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6481,7 +6481,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6491,7 +6491,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6503,7 +6503,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6513,7 +6513,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6523,7 +6523,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6533,7 +6533,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6543,7 +6543,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6553,7 +6553,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6563,7 +6563,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6573,7 +6573,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6583,7 +6583,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6593,7 +6593,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6603,7 +6603,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6613,7 +6613,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6623,7 +6623,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6633,7 +6633,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6643,7 +6643,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6653,7 +6653,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6663,7 +6663,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6673,7 +6673,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6687,7 +6687,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 95;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6697,7 +6697,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_alertDialogStyle = 93;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6719,7 +6719,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6729,7 +6729,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6739,7 +6739,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6749,7 +6749,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6759,7 +6759,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6769,7 +6769,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6779,7 +6779,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6789,7 +6789,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6799,7 +6799,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6809,7 +6809,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_buttonStyleSmall = 103;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6819,7 +6819,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_checkboxStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6829,7 +6829,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6844,7 +6844,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorAccent = 85;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6859,7 +6859,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 92;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6874,7 +6874,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorButtonNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6889,7 +6889,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorControlActivated = 87;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6904,7 +6904,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorControlHighlight = 88;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6919,7 +6919,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorControlNormal = 86;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6934,7 +6934,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorPrimary = 83;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6949,7 +6949,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorPrimaryDark = 84;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6964,7 +6964,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6974,7 +6974,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_controlBackground = 91;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6990,7 +6990,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7000,7 +7000,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7010,7 +7010,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7020,7 +7020,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7030,7 +7030,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7046,7 +7046,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7056,7 +7056,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7068,7 +7068,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7078,7 +7078,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_editTextStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7088,7 +7088,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7098,7 +7098,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7108,7 +7108,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 82;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7118,7 +7118,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7128,7 +7128,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_listMenuViewStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7138,7 +7138,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7154,7 +7154,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7170,7 +7170,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7186,7 +7186,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7202,7 +7202,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7218,7 +7218,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7228,7 +7228,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_panelBackground = 79;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7238,7 +7238,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_panelMenuListTheme = 81;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7254,7 +7254,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_panelMenuListWidth = 80;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7264,7 +7264,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7274,7 +7274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7284,7 +7284,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_radioButtonStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7294,7 +7294,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_ratingBarStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7304,7 +7304,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 109;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7314,7 +7314,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 110;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7324,7 +7324,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7334,7 +7334,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_seekBarStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7344,7 +7344,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7354,7 +7354,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7364,7 +7364,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7374,7 +7374,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_spinnerStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7384,7 +7384,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_switchStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7394,7 +7394,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7404,7 +7404,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7414,7 +7414,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 78;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7424,7 +7424,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7434,7 +7434,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7444,7 +7444,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7454,7 +7454,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7466,7 +7466,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 97;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7478,7 +7478,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7488,7 +7488,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7498,7 +7498,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7512,7 +7512,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7526,7 +7526,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7540,7 +7540,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7559,7 +7559,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7578,7 +7578,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7597,7 +7597,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7616,7 +7616,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7635,7 +7635,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7654,7 +7654,7 @@ containing a value of this type.
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7688,7 +7688,7 @@ containing a value of this type.
             0x7f010083, 0x7f010084
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -7702,7 +7702,7 @@ containing a value of this type.
         */
         public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -7731,7 +7731,7 @@ containing a value of this type.
             0x7f01016c
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -7797,7 +7797,7 @@ containing a value of this type.
         */
         public static final int CardView_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7812,7 +7812,7 @@ containing a value of this type.
         */
         public static final int CardView_cardBackgroundColor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7828,7 +7828,7 @@ containing a value of this type.
         */
         public static final int CardView_cardCornerRadius = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7844,7 +7844,7 @@ containing a value of this type.
         */
         public static final int CardView_cardElevation = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7860,7 +7860,7 @@ containing a value of this type.
         */
         public static final int CardView_cardMaxElevation = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7874,7 +7874,7 @@ containing a value of this type.
         */
         public static final int CardView_cardPreventCornerOverlap = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7888,7 +7888,7 @@ containing a value of this type.
         */
         public static final int CardView_cardUseCompatPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7904,7 +7904,7 @@ containing a value of this type.
         */
         public static final int CardView_contentPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7920,7 +7920,7 @@ containing a value of this type.
         */
         public static final int CardView_contentPaddingBottom = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7936,7 +7936,7 @@ containing a value of this type.
         */
         public static final int CardView_contentPaddingLeft = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7952,7 +7952,7 @@ containing a value of this type.
         */
         public static final int CardView_contentPaddingRight = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7981,7 +7981,7 @@ containing a value of this type.
             0x7f010068
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castControlButtons}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castControlButtons}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
@@ -8015,7 +8015,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010064, 0x7f010065
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castBackgroundColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castBackgroundColor}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8027,7 +8027,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastIntroOverlay_castBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castButtonBackgroundColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castButtonBackgroundColor}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8039,7 +8039,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastIntroOverlay_castButtonBackgroundColor = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castButtonText}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castButtonText}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8050,7 +8050,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastIntroOverlay_castButtonText = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castButtonTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castButtonTextAppearance}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8060,7 +8060,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastIntroOverlay_castButtonTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castFocusRadius}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castFocusRadius}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8073,7 +8073,7 @@ in (inches), mm (millimeters).
         */
         public static final int CastIntroOverlay_castFocusRadius = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castTitleTextAppearance}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8102,7 +8102,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010064, 0x7f010066, 0x7f010067, 0x7f010068
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castControlButtons}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castControlButtons}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8112,7 +8112,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastMiniController_castControlButtons = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castShowImageThumbnail}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castShowImageThumbnail}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8126,7 +8126,7 @@ containing a value of this type.
         */
         public static final int CastMiniController_castShowImageThumbnail = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castSubtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castSubtitleTextAppearance}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8136,7 +8136,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CastMiniController_castSubtitleTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castTitleTextAppearance}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8165,7 +8165,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#civ_border_color}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#civ_border_color}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -8180,7 +8180,7 @@ containing a value of this type.
         */
         public static final int CircleImageView_civ_border_color = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#civ_border_overlay}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#civ_border_overlay}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -8194,7 +8194,7 @@ containing a value of this type.
         */
         public static final int CircleImageView_civ_border_overlay = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#civ_border_width}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#civ_border_width}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -8210,7 +8210,7 @@ containing a value of this type.
         */
         public static final int CircleImageView_civ_border_width = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#civ_fill_color}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#civ_fill_color}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -8240,7 +8240,7 @@ containing a value of this type.
             0x7f010085, 0x7f010086
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -8258,7 +8258,7 @@ containing a value of this type.
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -8314,7 +8314,7 @@ containing a value of this type.
             0x7f010093, 0x7f0100d3
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8339,7 +8339,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8349,7 +8349,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8364,7 +8364,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_contentScrim = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8389,7 +8389,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8405,7 +8405,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8421,7 +8421,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8437,7 +8437,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8453,7 +8453,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8469,7 +8469,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8479,7 +8479,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8494,7 +8494,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#title}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8508,7 +8508,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_title = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8522,7 +8522,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8549,7 +8549,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010101a5, 0x0101031f, 0x7f01016d
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#alpha}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -8598,7 +8598,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -8613,7 +8613,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -8648,7 +8648,7 @@ containing a value of this type.
             0x7f010094, 0x7f010095
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
@@ -8658,7 +8658,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
@@ -8696,7 +8696,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8706,7 +8706,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8735,7 +8735,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8749,7 +8749,7 @@ containing a value of this type.
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -8791,7 +8791,7 @@ containing a value of this type.
             0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentProviderUri}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentProviderUri}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8805,7 +8805,7 @@ containing a value of this type.
         */
         public static final int Corpus_contentProviderUri = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#corpusId}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#corpusId}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8819,7 +8819,7 @@ containing a value of this type.
         */
         public static final int Corpus_corpusId = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#corpusVersion}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#corpusVersion}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8833,7 +8833,7 @@ containing a value of this type.
         */
         public static final int Corpus_corpusVersion = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#documentMaxAgeSecs}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#documentMaxAgeSecs}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8847,7 +8847,7 @@ containing a value of this type.
         */
         public static final int Corpus_documentMaxAgeSecs = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#perAccountTemplate}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#perAccountTemplate}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8861,7 +8861,7 @@ containing a value of this type.
         */
         public static final int Corpus_perAccountTemplate = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#schemaOrgType}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#schemaOrgType}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8875,7 +8875,7 @@ containing a value of this type.
         */
         public static final int Corpus_schemaOrgType = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#semanticallySearchable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#semanticallySearchable}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8889,7 +8889,7 @@ containing a value of this type.
         */
         public static final int Corpus_semanticallySearchable = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#trimmable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#trimmable}
           attribute's value can be found in the {@link #Corpus} array.
 
 
@@ -8920,7 +8920,7 @@ containing a value of this type.
             0x7f010069, 0x7f01006a, 0x7f01006b
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castExpandedControllerStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castExpandedControllerStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
@@ -8930,7 +8930,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CustomCastTheme_castExpandedControllerStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castIntroOverlayStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castIntroOverlayStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
@@ -8940,7 +8940,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CustomCastTheme_castIntroOverlayStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#castMiniControllerStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#castMiniControllerStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
@@ -8965,7 +8965,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010000, 0x7f010001
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#toolbarTextColorStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#toolbarTextColorStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -8982,7 +8982,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CustomWalletTheme_toolbarTextColorStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#windowTransitionStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#windowTransitionStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -9016,7 +9016,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01009a, 0x7f01009b, 0x7f01009c
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -9026,7 +9026,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -9036,7 +9036,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -9079,7 +9079,7 @@ containing a value of this type.
             0x7f010174, 0x7f010175, 0x7f010176, 0x7f010177
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9095,7 +9095,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9111,7 +9111,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9127,7 +9127,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#color}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9142,7 +9142,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9158,7 +9158,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9174,7 +9174,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9188,7 +9188,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9219,7 +9219,7 @@ containing a value of this type.
             0x7f010019, 0x7f01001a
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#paramName}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#paramName}
           attribute's value can be found in the {@link #FeatureParam} array.
 
 
@@ -9233,7 +9233,7 @@ containing a value of this type.
         */
         public static final int FeatureParam_paramName = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#paramValue}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#paramValue}
           attribute's value can be found in the {@link #FeatureParam} array.
 
 
@@ -9275,7 +9275,7 @@ containing a value of this type.
             0x7f0100a1, 0x7f0100ec, 0x7f0101af, 0x7f0101b0
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9290,7 +9290,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_backgroundTint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9310,7 +9310,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_backgroundTintMode = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9326,7 +9326,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_borderWidth = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9342,7 +9342,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_elevation = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9359,7 +9359,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_fabSize = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9375,7 +9375,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_pressedTranslationZ = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9390,7 +9390,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_rippleColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9433,7 +9433,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -9462,7 +9462,7 @@ containing a value of this type.
             0x7f010079, 0x7f01007a
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#gifSource}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#gifSource}
           attribute's value can be found in the {@link #GifTextureView} array.
 
 
@@ -9473,7 +9473,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int GifTextureView_gifSource = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#isOpaque}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#isOpaque}
           attribute's value can be found in the {@link #GifTextureView} array.
 
 
@@ -9500,7 +9500,7 @@ containing a value of this type.
             0x7f01007b
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#freezesAnimation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#freezesAnimation}
           attribute's value can be found in the {@link #GifView} array.
 
 
@@ -9538,7 +9538,7 @@ containing a value of this type.
             0x7f01001f, 0x7f010020
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#defaultIntentAction}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#defaultIntentAction}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9552,7 +9552,7 @@ containing a value of this type.
         */
         public static final int GlobalSearch_defaultIntentAction = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#defaultIntentActivity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#defaultIntentActivity}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9566,7 +9566,7 @@ containing a value of this type.
         */
         public static final int GlobalSearch_defaultIntentActivity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#defaultIntentData}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#defaultIntentData}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9580,7 +9580,7 @@ containing a value of this type.
         */
         public static final int GlobalSearch_defaultIntentData = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#searchEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#searchEnabled}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9594,7 +9594,7 @@ containing a value of this type.
         */
         public static final int GlobalSearch_searchEnabled = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#searchLabel}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#searchLabel}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9608,7 +9608,7 @@ containing a value of this type.
         */
         public static final int GlobalSearch_searchLabel = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#settingsDescription}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#settingsDescription}
           attribute's value can be found in the {@link #GlobalSearch} array.
 
 
@@ -9635,7 +9635,7 @@ containing a value of this type.
             0x7f010021
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#allowShortcuts}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#allowShortcuts}
           attribute's value can be found in the {@link #GlobalSearchCorpus} array.
 
 
@@ -9664,7 +9664,7 @@ containing a value of this type.
             0x7f010022, 0x7f010023
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sectionContent}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sectionContent}
           attribute's value can be found in the {@link #GlobalSearchSection} array.
 
 
@@ -9678,7 +9678,7 @@ containing a value of this type.
         */
         public static final int GlobalSearchSection_sectionContent = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sectionType}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sectionType}
           attribute's value can be found in the {@link #GlobalSearchSection} array.
 
 
@@ -9727,7 +9727,7 @@ containing a value of this type.
             0x7f010028, 0x7f010029
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#inputEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#inputEnabled}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9741,7 +9741,7 @@ containing a value of this type.
         */
         public static final int IMECorpus_inputEnabled = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sourceClass}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sourceClass}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9759,7 +9759,7 @@ containing a value of this type.
         */
         public static final int IMECorpus_sourceClass = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#toAddressesSection}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#toAddressesSection}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9773,7 +9773,7 @@ containing a value of this type.
         */
         public static final int IMECorpus_toAddressesSection = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#userInputSection}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#userInputSection}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9787,7 +9787,7 @@ containing a value of this type.
         */
         public static final int IMECorpus_userInputSection = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#userInputTag}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#userInputTag}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9801,7 +9801,7 @@ containing a value of this type.
         */
         public static final int IMECorpus_userInputTag = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#userInputValue}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#userInputValue}
           attribute's value can be found in the {@link #IMECorpus} array.
 
 
@@ -9876,7 +9876,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -9886,7 +9886,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -9902,7 +9902,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -9916,7 +9916,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -10022,7 +10022,7 @@ containing a value of this type.
             0x7f01006f, 0x7f010070, 0x7f010071
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10036,7 +10036,7 @@ containing a value of this type.
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10050,7 +10050,7 @@ containing a value of this type.
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10130,7 +10130,7 @@ containing a value of this type.
             0x7f010046, 0x7f010047, 0x7f010048
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#ambientEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#ambientEnabled}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10144,7 +10144,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_ambientEnabled = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10158,7 +10158,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraMaxZoomPreference}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraMaxZoomPreference}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10172,7 +10172,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraMaxZoomPreference = 18;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraMinZoomPreference}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraMinZoomPreference}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10186,7 +10186,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraMinZoomPreference = 17;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10200,7 +10200,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10214,7 +10214,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10228,7 +10228,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10242,7 +10242,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#latLngBoundsNorthEastLatitude}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#latLngBoundsNorthEastLatitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10256,7 +10256,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_latLngBoundsNorthEastLatitude = 21;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#latLngBoundsNorthEastLongitude}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#latLngBoundsNorthEastLongitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10270,7 +10270,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_latLngBoundsNorthEastLongitude = 22;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#latLngBoundsSouthWestLatitude}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#latLngBoundsSouthWestLatitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10284,7 +10284,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_latLngBoundsSouthWestLatitude = 19;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#latLngBoundsSouthWestLongitude}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#latLngBoundsSouthWestLongitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10298,7 +10298,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_latLngBoundsSouthWestLongitude = 20;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10312,7 +10312,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10332,7 +10332,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10346,7 +10346,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10360,7 +10360,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10374,7 +10374,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10388,7 +10388,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10402,7 +10402,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10416,7 +10416,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10430,7 +10430,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10444,7 +10444,7 @@ containing a value of this type.
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10487,7 +10487,7 @@ containing a value of this type.
         */
         public static final int MediaRouteButton_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#externalRouteEnabledDrawable}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#externalRouteEnabledDrawable}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
@@ -10606,7 +10606,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01017e
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10616,7 +10616,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10630,7 +10630,7 @@ containing a value of this type.
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10722,7 +10722,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10815,7 +10815,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -10829,7 +10829,7 @@ containing a value of this type.
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -10890,7 +10890,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10906,7 +10906,7 @@ containing a value of this type.
         */
         public static final int NavigationView_elevation = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10916,7 +10916,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_headerLayout = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10926,7 +10926,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_itemBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10941,7 +10941,7 @@ containing a value of this type.
         */
         public static final int NavigationView_itemIconTint = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10951,7 +10951,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_itemTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -10966,7 +10966,7 @@ containing a value of this type.
         */
         public static final int NavigationView_itemTextColor = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -11005,7 +11005,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -11032,7 +11032,7 @@ containing a value of this type.
             0x7f010182
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -11074,7 +11074,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11088,7 +11088,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11102,7 +11102,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11116,7 +11116,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11143,7 +11143,7 @@ containing a value of this type.
             0x7f0100a9
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -11168,7 +11168,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100aa
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -11257,7 +11257,7 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11267,7 +11267,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11277,7 +11277,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11291,7 +11291,7 @@ containing a value of this type.
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11301,7 +11301,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11315,7 +11315,7 @@ containing a value of this type.
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11325,7 +11325,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11335,7 +11335,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11349,7 +11349,7 @@ containing a value of this type.
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11359,7 +11359,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11369,7 +11369,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11379,7 +11379,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11389,7 +11389,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11425,7 +11425,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01002e, 0x7f01002f, 0x7f010030
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#indexPrefixes}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#indexPrefixes}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11439,7 +11439,7 @@ containing a value of this type.
         */
         public static final int Section_indexPrefixes = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#noIndex}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#noIndex}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11453,7 +11453,7 @@ containing a value of this type.
         */
         public static final int Section_noIndex = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#schemaOrgProperty}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#schemaOrgProperty}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11467,7 +11467,7 @@ containing a value of this type.
         */
         public static final int Section_schemaOrgProperty = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sectionFormat}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sectionFormat}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11486,7 +11486,7 @@ containing a value of this type.
         */
         public static final int Section_sectionFormat = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sectionId}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sectionId}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11500,7 +11500,7 @@ containing a value of this type.
         */
         public static final int Section_sectionId = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#sectionWeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#sectionWeight}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11514,7 +11514,7 @@ containing a value of this type.
         */
         public static final int Section_sectionWeight = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subsectionSeparator}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subsectionSeparator}
           attribute's value can be found in the {@link #Section} array.
 
 
@@ -11541,7 +11541,7 @@ containing a value of this type.
             0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#featureType}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#featureType}
           attribute's value can be found in the {@link #SectionFeature} array.
 
 
@@ -11579,7 +11579,7 @@ containing a value of this type.
             0x7f01006c, 0x7f01006d, 0x7f01006e
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -11599,7 +11599,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -11619,7 +11619,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -11653,7 +11653,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -11669,7 +11669,7 @@ containing a value of this type.
         */
         public static final int SnackbarLayout_elevation = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -11731,7 +11731,7 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -11801,7 +11801,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11815,7 +11815,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11829,7 +11829,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11845,7 +11845,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11861,7 +11861,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11871,7 +11871,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11887,7 +11887,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11902,7 +11902,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11923,7 +11923,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#track}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11933,7 +11933,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11948,7 +11948,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12050,7 +12050,7 @@ containing a value of this type.
             0x7f0100b8, 0x7f0100b9, 0x7f0100ba, 0x7f0100bb
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12060,7 +12060,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12076,7 +12076,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12093,7 +12093,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12108,7 +12108,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12124,7 +12124,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12140,7 +12140,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12156,7 +12156,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12173,7 +12173,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12189,7 +12189,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12205,7 +12205,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12221,7 +12221,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12237,7 +12237,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12253,7 +12253,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12268,7 +12268,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12278,7 +12278,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12372,7 +12372,7 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
@@ -12430,7 +12430,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12444,7 +12444,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12458,7 +12458,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12468,7 +12468,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12478,7 +12478,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12492,7 +12492,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12502,7 +12502,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12516,7 +12516,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12530,7 +12530,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12628,7 +12628,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12645,7 +12645,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12659,7 +12659,7 @@ containing a value of this type.
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12669,7 +12669,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12685,7 +12685,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12701,7 +12701,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12717,7 +12717,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12733,7 +12733,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12749,7 +12749,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12765,7 +12765,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12775,7 +12775,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12789,7 +12789,7 @@ containing a value of this type.
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12805,7 +12805,7 @@ containing a value of this type.
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12819,7 +12819,7 @@ containing a value of this type.
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12829,7 +12829,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12839,7 +12839,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12853,7 +12853,7 @@ containing a value of this type.
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12863,7 +12863,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12878,7 +12878,7 @@ containing a value of this type.
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#title}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12892,7 +12892,7 @@ containing a value of this type.
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12908,7 +12908,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12924,7 +12924,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12940,7 +12940,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12956,7 +12956,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12972,7 +12972,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12988,7 +12988,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12998,7 +12998,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13047,7 +13047,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -13063,7 +13063,7 @@ containing a value of this type.
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -13079,7 +13079,7 @@ containing a value of this type.
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -13112,7 +13112,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -13127,7 +13127,7 @@ containing a value of this type.
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -13201,7 +13201,7 @@ containing a value of this type.
             0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#appTheme}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#appTheme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13218,7 +13218,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#environment}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13237,7 +13237,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13254,7 +13254,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13299,7 +13299,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01000f, 0x7f010010
         };
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13323,7 +13323,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13348,7 +13348,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13370,7 +13370,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13395,7 +13395,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13407,7 +13407,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13419,7 +13419,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13429,7 +13429,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13439,7 +13439,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13459,7 +13459,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13474,7 +13474,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.tornado.cphp.paywall.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link com.tornado.cphp.awhitepaid.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 

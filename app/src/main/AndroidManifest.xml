@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tornado.cphp.paywall">
+    package="com.tornado.cphp.awhitepaid">
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -19,13 +19,12 @@
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality. 
+         location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -56,7 +55,7 @@
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -86,8 +85,12 @@
         <activity android:name=".memberpanel.MemberChangePasswordActivity" />
         <activity android:name=".adapter.ImageUploadSearverActivity" />
         <activity android:name=".memberpanel.MemberShowVendorImages" />
-        <activity android:name=".memberpanel.MemberVendorShowInformationActivity"></activity>
-        <activity android:name=".config.AsyncActivity"></activity>
+        <activity android:name=".memberpanel.MemberShowVendorInformationActivity" />
+        <activity android:name=".memberpanel.MemberVendorIdImagesActivity" />
+        <activity android:name=".memberpanel.MemberShowVendorProductImageActivity" />
+        <activity
+            android:name=".memberpanel.MemberShowVendorAddressonMapActivity"
+            android:label="@string/title_activity_member_show_vendor_addresson_map"></activity>
     </application>
 
 </manifest>

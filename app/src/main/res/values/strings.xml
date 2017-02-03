@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PayWall</string>
+    <string name="app_name">AWhitePaid</string>
     <string name="title_activity_add_address_maps">Map</string>
     <string name="bus_hotels_booking"><![CDATA[BUS & HOTELS & BOOKING]]></string>
 
@@ -38,5 +38,7 @@
     <string name="element_text">Element</string>
     <string name="grid_layout_manager">Grid Layout Manager</string>
     <string name="linear_layout_manager">Linear Layout Manager</string>
+    <string name="activation">Activation</string>
+    <string name="title_activity_member_show_vendor_addresson_map">Map</string>
 
 </resources>

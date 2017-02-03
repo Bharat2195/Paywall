@@ -22,7 +22,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etVendorImageName"
         android:hint="Enter a Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

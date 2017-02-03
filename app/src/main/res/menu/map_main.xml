@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="rajkamal.maps.main.MainActivity" >
+
+    <item
+        android:id="@+id/menurefresh"
+        android:orderInCategory="100"
+        android:title="REFRESH"
+        app:showAsAction="always|withText"/>
+    <!--<item-->
+        <!--android:id="@+id/addpolylines"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="ADD POLYLINES"-->
+        <!--app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/menustatellite"
+        android:orderInCategory="100"
+        android:title="Statellite"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menunormal"
+        android:orderInCategory="100"
+        android:title="NORMAL"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuterrian"
+        android:orderInCategory="100"
+        android:title="TERRIAN"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuhybrid"
+        android:orderInCategory="100"
+        android:title="HYBRID"
+        app:showAsAction="never"/>
+
+</menu>

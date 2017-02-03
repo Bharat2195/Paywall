@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dashboard_logo"
-    tools:context="com.tornado.cphp.paywall.VendorLoginActivity">
+    android:background="@drawable/splash_logo"
+    tools:context="com.tornado.cphp.awhitepaid.VendorLoginActivity">
 
 
     <RelativeLayout
@@ -26,9 +26,9 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:textColor="@android:color/white"
-            android:textStyle="bold"
             android:textColorHint="@android:color/white"
             android:padding="10sp"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:singleLine="true" />
 
@@ -48,8 +48,8 @@
             android:hint="Password"
             android:textColor="@android:color/white"
             android:layout_marginTop="20dp"
-            android:inputType="textPassword"
             android:textStyle="bold"
+            android:inputType="textPassword"
             android:background="@android:color/transparent"
             android:layout_marginLeft="10dp"
             android:drawableLeft="@drawable/password"

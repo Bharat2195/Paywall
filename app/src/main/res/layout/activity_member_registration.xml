@@ -4,7 +4,7 @@
     android:id="@+id/activity_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.paywall.VendorRegistrationActivity">
+    tools:context="com.tornado.cphp.awhitepaid.VendorRegistrationActivity">
 
     <include
         android:id="@+id/mToolbarMemberRegistration"

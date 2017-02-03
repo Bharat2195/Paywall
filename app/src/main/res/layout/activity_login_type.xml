@@ -4,8 +4,8 @@
     android:id="@+id/activity_login_type"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dashboard_logo"
-    tools:context="com.tornado.cphp.paywall.LoginTypeActivity">
+    android:background="@drawable/splash_logo"
+    tools:context="com.tornado.cphp.awhitepaid.LoginTypeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

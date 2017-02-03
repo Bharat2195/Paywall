@@ -14,7 +14,6 @@
     <dimen name="card_header_elevation">4dp</dimen>
 
 
-
     <!-- standard metrics -->
     <dimen name="spacing_normal">8dp</dimen>
     <dimen name="spacing_micro">4dp</dimen>

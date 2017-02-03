@@ -12,14 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imgName"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:src="@drawable/logo_name"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
         <View
             android:id="@+id/view"
             android:layout_width="1dp"
@@ -27,7 +19,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imgName"
             android:background="@android:color/darker_gray"
-            android:layout_height="10dp"></View>
+            android:layout_height="12dp"></View>
 
         <TextView
             android:id="@+id/txtWallet"
@@ -39,16 +31,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:id="@+id/txtLogOut"
+            android:text="LOGOUT"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgLogout"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/logout"-->
+            <!--android:layout_height="wrap_content" />-->
 
         <ImageView
-            android:id="@+id/imgLogout"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
+            android:id="@+id/imgName"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/logout"
-            android:layout_height="wrap_content" />
-
+            android:src="@drawable/logo_name2" />
 
 
     </RelativeLayout>
