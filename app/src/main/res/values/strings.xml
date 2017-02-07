@@ -40,5 +40,12 @@
     <string name="linear_layout_manager">Linear Layout Manager</string>
     <string name="activation">Activation</string>
     <string name="title_activity_member_show_vendor_addresson_map">Map</string>
+    <string name="title_activity_member_home">MemberHomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_vendor_home_acivity">VendorHomeAcivity</string>
 
 </resources>

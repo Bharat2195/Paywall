@@ -126,7 +126,7 @@ public class AddAddressMapsActivity extends FragmentActivity implements OnMapRea
                     JSONObject jsonObject=new JSONObject();
                     try{
                         jsonObject.put("mode","vendorAddressUpdation");
-                        jsonObject.put("vendorid",VendorMainActivity.strVendorId);
+                        jsonObject.put("vendorid",VendorHomeAcivity.strVendorId);
                         jsonObject.put("vendor_address",listTitle.get(i));
                         jsonObject.put("latitude",listLatitude.get(i));
                         jsonObject.put("longitude",listLangitude.get(i));

@@ -132,7 +132,6 @@ public class MemberShowVendorAddressonMapActivity extends FragmentActivity imple
             jsonObject.put("mode", "memberShowVendorImage");
             jsonObject.put("vendorid", strVendorId);
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -224,10 +223,7 @@ public class MemberShowVendorAddressonMapActivity extends FragmentActivity imple
         mMap.setMyLocationEnabled(true);
 
         // Add a marker in Sydney and move the camera
-        for (int i=0; i<listLng.size();i++){
-            LatLng location=new LatLng(listLat.get(i), listLng.get(i));
-            drawMarker(location,listTitle.get(i),listDescription.get(i));
-        }
+
 //        LatLng sydney = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
@@ -359,13 +355,22 @@ public class MemberShowVendorAddressonMapActivity extends FragmentActivity imple
                         String strTitle=object.getString("addresstitle");
                         String strDescription=object.getString("addressdescription");
 
-
                         listLat.add(dblLat);
                         listLng.add(dblLng);
+                        Log.d(TAG, "list lng data: "+listLng);
                         listTitle.add(strTitle);
                         listDescription.add(strDescription);
 
+                        LatLng location=new LatLng(dblLat, dblLng);
+                        drawMarker(location,strTitle,strDescription);
+
                     }
+
+//                    Log.d(TAG, "listlng size: "+listLng.size());
+//                    for (int i=0; i<listLng.size();i++){
+//                        LatLng location=new LatLng(listLat.get(i), listLng.get(i));
+//                        drawMarker(location,listTitle.get(i),listDescription.get(i));
+//                    }
                 }
 
 

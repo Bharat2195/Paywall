@@ -74,9 +74,6 @@ public class QRCodeResultActivity extends AppCompatActivity {
 
         txtName.setText(strMemberName);
 
-
-
-
         txtTitle.setText("Pay Money to "+strMemberName);
 
 
@@ -90,7 +87,9 @@ public class QRCodeResultActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String strAmount=etAmount.getText().toString();
                 Log.d(TAG, "amount: "+strAmount);
-                if (StringUtils.isBlank(strAmount)) {
+                if (StringUtils.isBlank(strAmount) ) {
+                    Toast.makeText(QRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
+                }else if (strAmount.equals("0")){
                     Toast.makeText(QRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
                 }else if (strAmount.contains("-")){
                     Toast.makeText(QRCodeResultActivity.this, "Please Enter Correct Amount", Toast.LENGTH_SHORT).show();
@@ -112,8 +111,6 @@ public class QRCodeResultActivity extends AppCompatActivity {
                         new transferAmount().execute(String.valueOf(jsonObject));
                     }
                 }
-
-
             }
         });
     }
@@ -193,7 +190,6 @@ public class QRCodeResultActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-
             if (pd.isShowing()){
                 pd.dismiss();
             }
@@ -207,6 +203,7 @@ public class QRCodeResultActivity extends AppCompatActivity {
 
                 if (strStutus.equals("1")){
                     Toast.makeText(QRCodeResultActivity.this, "Transaction Done Successfully", Toast.LENGTH_SHORT).show();
+                    etAmount.setText("0");
                 }else if (strStutus.equals("2")) {
                     Toast.makeText(QRCodeResultActivity.this, "Qrcode Is Not Valid", Toast.LENGTH_SHORT).show();
                 }else {

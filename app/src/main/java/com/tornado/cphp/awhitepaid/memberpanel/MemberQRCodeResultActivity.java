@@ -44,7 +44,6 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_qrcode_result);
 
-
         getSupportActionBar().hide();
         mToolbarMemberQRCodeResult=(Toolbar)findViewById(R.id.mToolbarMemberQRCodeResult);
         txtTitle=(TextView)mToolbarMemberQRCodeResult.findViewById(R.id.txtTitle);
@@ -76,9 +75,6 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
 
         txtName.setText(strMemberName);
 
-
-
-
         txtTitle.setText("Pay Money to "+strMemberName);
 
 
@@ -91,8 +87,11 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strAmount=etAmount.getText().toString();
+                Log.d(TAG, "str amount: "+strAmount);
                 Log.d(TAG, "amount: "+strAmount);
                 if (StringUtils.isBlank(strAmount)) {
+                    Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
+                }else if (strAmount.equals("0")){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
                 }else if (strAmount.contains("-")){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Correct Amount", Toast.LENGTH_SHORT).show();
@@ -210,7 +209,7 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
                 JSONArray jsonArray=Object.getJSONArray("response");
                 String strResponse=jsonArray.getString(0);
                 Toast.makeText(MemberQRCodeResultActivity.this, strResponse, Toast.LENGTH_SHORT).show();
-                txtName.setText("0");
+                etAmount.setText("0");
 //                if (strStutus.equals("1")){
 //                    Toast.makeText(MemberQRCodeResultActivity.this, "Transaction Done Successfully", Toast.LENGTH_SHORT).show();
 //                }else  {

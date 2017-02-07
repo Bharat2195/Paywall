@@ -110,7 +110,7 @@ public class ShowImageVenderFragment extends Fragment {
         JSONObject jsonObject=new JSONObject();
         try{
             jsonObject.put("mode","vendorImageShow");
-            jsonObject.put("vendorid",VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid",VendorHomeAcivity.strVendorId);
         }catch (Exception e){
             e.printStackTrace();
         }

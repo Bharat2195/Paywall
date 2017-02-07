@@ -113,7 +113,7 @@ public class MemberEditProfileActivity extends AppCompatActivity {
             }
         });
 
-        strMemberId=MemberDashboardActivity.strMemberId;
+        strMemberId=MemberHomeActivity.strMemberId;
         Log.d(TAG, "member id: "+strMemberId);
 
         getProfileData();

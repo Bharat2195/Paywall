@@ -16,12 +16,11 @@
             android:id="@+id/txtSrNo"
             android:textSize="14sp"
             android:textColor="@color/black"
-            android:padding="10dp"
             android:textStyle="bold"
             android:gravity="center"
             android:text="Sr No."
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtDate"
@@ -31,7 +30,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtType"
@@ -41,7 +40,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtRemark"
@@ -51,7 +50,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
 
         <TextView
@@ -62,7 +61,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtLess"
@@ -72,7 +71,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtBalance"
@@ -82,7 +81,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <!--<TextView-->
             <!--android:id="@+id/txtWallettype"-->

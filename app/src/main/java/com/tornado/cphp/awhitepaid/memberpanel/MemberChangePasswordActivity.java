@@ -3,6 +3,7 @@ package com.tornado.cphp.awhitepaid.memberpanel;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -59,6 +60,8 @@ public class MemberChangePasswordActivity extends AppCompatActivity {
     @BindView(R.id.activity_vendor_change_password)
     RelativeLayout activityVendorChangePassword;
     String strChangePwdRespose="",strChangePwdMessage="",strOldPassword = "", strNewPassword = "", strConfirmPassword = "", strMemberid = "",JsonResponse="",strMessagge ="",strChangePasswordResponse="";
+    private Toolbar mToolbarMemberChangePassword;
+    private TextView txtTitle;
 
 
 
@@ -68,6 +71,17 @@ public class MemberChangePasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_member_change_password);
         ButterKnife.bind(this);
         getSupportActionBar().hide();
+
+        mToolbarMemberChangePassword=(Toolbar)findViewById(R.id.mToolbarMemberChangePassword);
+        txtTitle= (TextView)mToolbarMemberChangePassword.findViewById(R.id.txtTitle);
+        txtTitle.setText("Change Password");
+        mToolbarMemberChangePassword.setNavigationIcon(R.drawable.back_icon);
+        mToolbarMemberChangePassword.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         etChangeOldPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -81,7 +95,7 @@ public class MemberChangePasswordActivity extends AppCompatActivity {
                         String oldPassword=editText.getText().toString();
                         Log.d(TAG,"MemberId:"+oldPassword);
                         jsonObject.put("mode","MemberCheckOldPassword");
-                        jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+                        jsonObject.put("memberid", MemberHomeActivity.strMemberId);
                         jsonObject.put("oldpassword", oldPassword);
                     }catch (Exception e){
                         e.printStackTrace();
@@ -206,8 +220,8 @@ public class MemberChangePasswordActivity extends AppCompatActivity {
             if (strMessagge.equals("Success")){
                 JSONObject jsonObject=new JSONObject();
                 try{
-                    jsonObject.put("mode","vendorChangepasswordSubmit");
-                    jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+                    jsonObject.put("mode","MemberOldPasswordUpdation");
+                    jsonObject.put("memberid", MemberHomeActivity.strMemberId);
                     jsonObject.put("oldpassword",strOldPassword);
                     jsonObject.put("newpassword",strNewPassword);
                 }catch (Exception e){

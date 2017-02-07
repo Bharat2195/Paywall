@@ -86,7 +86,7 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
                         JSONObject jsonObject=new JSONObject();
                         try{
                             jsonObject.put("mode","vendorChangepasswordSubmit");
-                            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+                            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
                             jsonObject.put("oldpassword",strOldPassword);
                             jsonObject.put("newpassword",strNewPassword);
                         }catch (Exception e){
@@ -116,7 +116,7 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
                         String oldPassword=editText.getText().toString();
                         Log.d(TAG,"MemberId:"+oldPassword);
                         jsonObject.put("mode","vendorOldPasswordCheck");
-                        jsonObject.put("vendorid",VendorMainActivity.strVendorId);
+                        jsonObject.put("vendorid",VendorHomeAcivity.strVendorId);
                         jsonObject.put("oldpassword", oldPassword);
                     }catch (Exception e){
                         e.printStackTrace();

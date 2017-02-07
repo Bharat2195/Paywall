@@ -59,14 +59,14 @@ public class MemberShowCodeFragment extends Fragment {
 
         img_qr_code_image=(ImageView)getActivity().findViewById(R.id.img_qr_code_image);
         txtQRCodeTitle=(TextView)getActivity().findViewById(R.id.txtQRCodeTitle);
-        txtQRCodeTitle.setText("Scan AWhitePaid code to make payment to "+ MemberDashboardActivity.strMemberId);
+        txtQRCodeTitle.setText("Scan AWhitePaid code to make payment to "+ MemberHomeActivity.strMemberId);
 
 
         JSONObject jsonObject=new JSONObject();
         try{
             jsonObject.put("mode","memberQRcode");
-            Log.d(TAG, "member id: "+MemberDashboardActivity.strMemberId);
-            jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+            Log.d(TAG, "member id: "+MemberHomeActivity.strMemberId);
+            jsonObject.put("memberid", MemberHomeActivity.strMemberId);
         }catch (Exception e){
             e.printStackTrace();
         }

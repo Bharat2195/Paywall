@@ -181,12 +181,12 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
             }
 
 
-            Log.d(TAG, "vendrod id: "+VendorMainActivity.strVendorId);
+            Log.d(TAG, "vendrod id: "+VendorHomeAcivity.strVendorId);
             JSONObject jsonObject = new JSONObject();
 
             try {
                 jsonObject.put("mode", "vendorImageUploadSubmit");
-                jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+                jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
                 jsonObject.put("image_text", strImageName);
                 jsonObject.put("image_name", selectedFilePath);
             } catch (Exception e) {
@@ -602,7 +602,7 @@ public class ImageUploadVenderFragment extends Fragment implements View.OnClickL
 
         try {
             jsonObject.put("mode", "vendorImageUploadSubmit");
-            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
             jsonObject.put("image_text", name);
             jsonObject.put("image_name", image);
         } catch (Exception e) {

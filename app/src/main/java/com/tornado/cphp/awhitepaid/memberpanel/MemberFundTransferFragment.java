@@ -72,7 +72,7 @@ public class MemberFundTransferFragment extends Fragment {
         try {
 
             jsonObject.put("mode", "memberFundTransferReport");
-            jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+            jsonObject.put("memberid", MemberHomeActivity.strMemberId);
         } catch (Exception e) {
             e.printStackTrace();
         }

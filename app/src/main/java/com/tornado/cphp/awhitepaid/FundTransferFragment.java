@@ -71,7 +71,7 @@ public class FundTransferFragment extends Fragment {
         try {
 
             jsonObject.put("mode", "VendorFundtransferReport");
-            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
         } catch (Exception e) {
             e.printStackTrace();
         }

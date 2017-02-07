@@ -90,7 +90,15 @@
         <activity android:name=".memberpanel.MemberShowVendorProductImageActivity" />
         <activity
             android:name=".memberpanel.MemberShowVendorAddressonMapActivity"
-            android:label="@string/title_activity_member_show_vendor_addresson_map"></activity>
+            android:label="@string/title_activity_member_show_vendor_addresson_map" />
+        <activity
+            android:name=".memberpanel.MemberHomeActivity"
+            android:label="@string/title_activity_member_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VendorHomeAcivity"
+            android:label="@string/title_activity_vendor_home_acivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

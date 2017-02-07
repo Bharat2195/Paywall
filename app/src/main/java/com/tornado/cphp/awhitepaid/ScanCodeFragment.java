@@ -115,7 +115,7 @@ public class ScanCodeFragment extends Fragment implements ZXingScannerView.Resul
 
             try {
                 jsonObject.put("mode", "getVendorOrMemberQrcode");
-                jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+                jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
                 jsonObject.put("qrcode", strQRCodeResult);
             } catch (Exception e) {
                 e.printStackTrace();

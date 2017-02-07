@@ -138,7 +138,7 @@ public class WithdrawalFragment extends Fragment {
 
                     try {
                         jsonObject.put("mode", "VendorWithdrwalSubmit");
-                        jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+                        jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
                         jsonObject.put("amount", strWithDrawalAmount);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -274,7 +274,7 @@ public class WithdrawalFragment extends Fragment {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("mode", "getVendorBalance");
-            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
         } catch (Exception e) {
             e.printStackTrace();
         }

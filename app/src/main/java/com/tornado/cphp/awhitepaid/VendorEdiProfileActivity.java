@@ -221,7 +221,7 @@ public class VendorEdiProfileActivity extends AppCompatActivity {
         try{
 
             jsonObject.put("mode","vendorEditProfile");
-            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -416,8 +416,6 @@ public class VendorEdiProfileActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
-
 
             try {
                 JSONObject Object = new JSONObject(strQRCodeResponse);

@@ -140,7 +140,7 @@ public class MemberWithdrawalFragment extends Fragment {
 
                     try {
                         jsonObject.put("mode", "MemberWithdrwalSubmit");
-                        jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+                        jsonObject.put("memberid", MemberHomeActivity.strMemberId);
                         jsonObject.put("amount", strWithDrawalAmount);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -275,7 +275,7 @@ public class MemberWithdrawalFragment extends Fragment {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("mode", "getMemberBalance");
-            jsonObject.put("memberid", MemberDashboardActivity.strMemberId);
+            jsonObject.put("memberid", MemberHomeActivity.strMemberId);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -67,7 +67,7 @@ public class MemberScanCodeFragment extends Fragment implements ZXingScannerView
 
             try {
                 jsonObject.put("mode", "getVendorOrMemberQrcode");
-                jsonObject.put("vendorid", MemberDashboardActivity.strMemberId);
+                jsonObject.put("vendorid", MemberHomeActivity.strMemberId);
                 jsonObject.put("qrcode", strQRCodeResult);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -81,18 +81,13 @@ public class MemberScanCodeFragment extends Fragment implements ZXingScannerView
         // * Wait 2 seconds to resume the preview.
         // * On older devices continuously stopping and resuming camera preview can result in freezing the app.
         // * I don't know why this is the case but I don't have the time to figure out.
-        new Thread(new Runnable() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mScannerView.resumeCameraPreview(MemberScanCodeFragment.this);
-                    }
-                }, 1000);
+                mScannerView.resumeCameraPreview(MemberScanCodeFragment.this);
             }
-        }).start();
+        }, 1000);
 
 
     }

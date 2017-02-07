@@ -55,13 +55,13 @@ public class ShowCodeFragment extends Fragment {
         
         img_qr_code_image=(ImageView)getActivity().findViewById(R.id.img_qr_code_image);
         txtQRCodeTitle=(TextView)getActivity().findViewById(R.id.txtQRCodeTitle);
-        txtQRCodeTitle.setText("Scan AWhitePaid code to make payment to "+ VendorMainActivity.strVendorId);
+        txtQRCodeTitle.setText("Scan AWhitePaid code to make payment to "+ VendorHomeAcivity.strVendorId);
 
 
         JSONObject jsonObject=new JSONObject();
         try{
             jsonObject.put("mode","vendorQRcode");
-            jsonObject.put("vendorid", VendorMainActivity.strVendorId);
+            jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
         }catch (Exception e){
             e.printStackTrace();
         }

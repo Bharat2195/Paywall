@@ -21,7 +21,7 @@
             android:gravity="center"
             android:text="Date"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtMemberId"
@@ -31,7 +31,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtFromId"
@@ -41,7 +41,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtLevel"
@@ -51,7 +51,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtAmount"
@@ -61,7 +61,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
-            android:layout_height="50dp" />
+            android:layout_height="wrap_content" />
 
 
 

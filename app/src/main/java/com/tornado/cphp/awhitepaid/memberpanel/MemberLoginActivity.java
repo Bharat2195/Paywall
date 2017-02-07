@@ -58,7 +58,7 @@ public class MemberLoginActivity extends AppCompatActivity {
 
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, 0);
         if (preferences.getString("logged", "").toString().equals("logged")) {
-            Intent intent = new Intent(MemberLoginActivity.this, MemberDashboardActivity.class);
+            Intent intent = new Intent(MemberLoginActivity.this, MemberHomeActivity.class);
             intent.putExtra("MemberId", preferences.getString("MemberId", "").toString());
             startActivity(intent);
         }
@@ -367,7 +367,7 @@ public class MemberLoginActivity extends AppCompatActivity {
                     }
 
                 }else {
-                    Intent intent=new Intent(MemberLoginActivity.this,MemberDashboardActivity.class);
+                    Intent intent=new Intent(MemberLoginActivity.this,MemberHomeActivity.class);
                     intent.putExtra("MemberId",MemberId);
                     startActivity(intent);
                 }

@@ -86,7 +86,7 @@ public class VendorLoginActivity extends AppCompatActivity {
 
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, 0);
         if (preferences.getString("logged", "").toString().equals("logged")) {
-            Intent intent = new Intent(VendorLoginActivity.this, VendorMainActivity.class);
+            Intent intent = new Intent(VendorLoginActivity.this, VendorHomeAcivity.class);
             intent.putExtra("VendorId", preferences.getString("VendorId", "").toString());
             startActivity(intent);
         }
@@ -258,7 +258,7 @@ public class VendorLoginActivity extends AppCompatActivity {
                         editor.putString("logged", "logged");
                         editor.putString("VendorId", VendorId);
                         editor.commit();
-                        Intent intent=new Intent(VendorLoginActivity.this,VendorMainActivity.class);
+                        Intent intent=new Intent(VendorLoginActivity.this,VendorHomeAcivity.class);
                         intent.putExtra("VendorId",VendorId);
                         startActivity(intent);
 

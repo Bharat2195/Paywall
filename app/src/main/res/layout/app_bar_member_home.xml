@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tornado.cphp.awhitepaid.memberpanel.MemberHomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:titleTextColor="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imgName"
+                        android:background="@android:color/white"
+                        android:layout_height="12dp"></View>
+
+                    <TextView
+                        android:id="@+id/txtWallet"
+                        android:text="WALLET"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/view"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtLogOut"
+                        android:text="LOGOUT"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imgLogout"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@drawable/logout"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                    <ImageView
+                        android:id="@+id/imgName"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo_name2" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/content_member_home" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>
