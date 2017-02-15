@@ -33,9 +33,9 @@
             android:icon="@drawable/icon_address"
             android:title="Address" />
         <item
-            android:id="@+id/nav_wallet"
-            android:icon="@drawable/icon_wallet"
-            android:title="Wallet" />
+            android:id="@+id/nav_mobile"
+            android:icon="@drawable/icon_mobile"
+            android:title="Mobile Transfer" />
         <item
             android:id="@+id/nav_password"
             android:icon="@drawable/icon_history"

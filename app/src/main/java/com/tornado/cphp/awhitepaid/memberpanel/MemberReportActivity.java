@@ -15,6 +15,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
+import com.tornado.cphp.awhitepaid.memberfragment.MemberFundTransferFragment;
+import com.tornado.cphp.awhitepaid.memberfragment.MemberRechargeFragmentReport;
+import com.tornado.cphp.awhitepaid.memberfragment.MemberRewardFragmentReport;
+import com.tornado.cphp.awhitepaid.memberfragment.NonWorkingIncomeFragment;
+import com.tornado.cphp.awhitepaid.memberfragment.WorkingIncomeFragment;
 import com.tornado.cphp.awhitepaid.utils.CheckConnectivity;
 
 import java.util.ArrayList;
@@ -79,9 +84,9 @@ public class MemberReportActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new NonWorkingIncomeFragment(), "Non Working Cashback");
         adapter.addFragment(new WorkingIncomeFragment(), "Working Cashback");
-//        adapter.addFragment(new BinaryLevelSummary(), "Level Summary");
-//        adapter.addFragment(new RoundSummaryFragment(), "Round Summary");
         adapter.addFragment(new MemberFundTransferFragment(), "Fund Transfer");
+        adapter.addFragment(new MemberRechargeFragmentReport(), "Recharge Report");
+        adapter.addFragment(new MemberRewardFragmentReport(),"Reward Report");
 
         viewPager.setAdapter(adapter);
 

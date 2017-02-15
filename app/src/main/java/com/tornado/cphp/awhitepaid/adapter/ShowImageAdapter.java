@@ -14,8 +14,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.VendorProductShowImage;
-import com.tornado.cphp.awhitepaid.memberpanel.MemberShowVendorProductImageActivity;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorProductShowImage;
 
 import java.util.ArrayList;
 

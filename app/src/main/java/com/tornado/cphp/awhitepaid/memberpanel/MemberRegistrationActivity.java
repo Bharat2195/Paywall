@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorRegistrationActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -72,7 +73,8 @@ public class MemberRegistrationActivity extends AppCompatActivity {
     @BindView(R.id.activity_registration)
     RelativeLayout activityRegistration;
     private Toolbar mToolbarMemberRegistration;
-    private TextView txtTitle;
+    private TextView txtTitle,txtErrorMobileNumber;
+    private String strJsonMobielResponse="";
 
 
     @Override
@@ -90,6 +92,23 @@ public class MemberRegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+            }
+        });
+
+        txtErrorMobileNumber=(TextView)findViewById(R.id.txtErrorMobileNumber);
+
+
+        etMobile.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                EditText editText;
+                if (!hasFocus){
+                    editText=(EditText)v;
+                    String strMobileNumber=editText.getText().toString();
+
+
+                    checkMobileNumber(strMobileNumber);
+                }
             }
         });
 
@@ -123,6 +142,20 @@ public class MemberRegistrationActivity extends AppCompatActivity {
 
     }
 
+    private void checkMobileNumber(String strMobileNumber) {
+
+        JSONObject jsonObject=new JSONObject();
+        try{
+            jsonObject.put("mode","mobilenumberValidation");
+            jsonObject.put("mobile",strMobileNumber);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if (jsonObject.length()>0){
+            new getCheckMobileResponse().execute(String.valueOf(jsonObject));
+        }
+    }
+
 
     @OnClick(R.id.mLayoutRegistration)
     public void onClick() {
@@ -146,14 +179,14 @@ public class MemberRegistrationActivity extends AppCompatActivity {
             Toast.makeText(MemberRegistrationActivity.this, "SponsorId Is Invalid", Toast.LENGTH_SHORT).show();
         } else if (StringUtils.isBlank(strSponsorName)) {
             Toast.makeText(MemberRegistrationActivity.this, "Please enter sponsor name", Toast.LENGTH_SHORT).show();
-        } else if (StringUtils.isBlank(strMemberId)) {
-            Toast.makeText(MemberRegistrationActivity.this, "Please enter Member Id", Toast.LENGTH_SHORT).show();
         }else if (StringUtils.isBlank(strPassword)){
             Toast.makeText(MemberRegistrationActivity.this, "Please enter Member Passowrd", Toast.LENGTH_SHORT).show();
         } else if (StringUtils.isBlank(strMemberName)) {
             Toast.makeText(MemberRegistrationActivity.this, "Please enter Member Name", Toast.LENGTH_SHORT).show();
         } else if (StringUtils.isBlank(strMobile)) {
             Toast.makeText(MemberRegistrationActivity.this, "Please enter Mobile Number", Toast.LENGTH_SHORT).show();
+        }else if (txtErrorMobileNumber.getVisibility()==View.VISIBLE){
+            Toast.makeText(MemberRegistrationActivity.this, "Invalid Mobile Number", Toast.LENGTH_SHORT).show();
         } else if (StringUtils.isBlank(strEmail)) {
             Toast.makeText(MemberRegistrationActivity.this, "Please enter Email Address", Toast.LENGTH_SHORT).show();
         } else if (StringUtils.isBlank(strAddress)) {
@@ -169,7 +202,7 @@ public class MemberRegistrationActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             try {
                 jsonObject.put("mode", "memberJoining");
-                jsonObject.put("memberid", strMemberId);
+//                jsonObject.put("memberid", strMemberId);
                 jsonObject.put("password", strPassword);
                 jsonObject.put("membername",strMemberName);
                 jsonObject.put("mobile",strMobile);
@@ -189,6 +222,87 @@ public class MemberRegistrationActivity extends AppCompatActivity {
 
         }
     }
+
+    private class getCheckMobileResponse extends AsyncTask<String,String,String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            String JsonDATA = params[0];
+
+            HttpURLConnection urlConnection = null;
+            BufferedReader reader = null;
+            try {
+                URL url = new URL(StringUtils.strBaseURL);
+                urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setDoOutput(true);
+                // is output buffer writter
+                urlConnection.setRequestMethod("POST");
+                urlConnection.setRequestProperty("Content-Type", "application/json");
+                urlConnection.setRequestProperty("Accept", "application/json");
+//set headers and method
+                Writer writer = new BufferedWriter(new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8"));
+                writer.write(JsonDATA);
+// json data
+                writer.close();
+                InputStream inputStream = urlConnection.getInputStream();
+//input stream
+                StringBuffer buffer = new StringBuffer();
+                if (inputStream == null) {
+                    return null;
+                }
+                reader = new BufferedReader(new InputStreamReader(inputStream));
+
+                String inputLine;
+                while ((inputLine = reader.readLine()) != null)
+                    buffer.append(inputLine + "\n");
+                if (buffer.length() == 0) {
+                    return null;
+                }
+                strJsonMobielResponse = buffer.toString();
+                Log.i(TAG, strJsonMobielResponse);
+                //send to post execute
+                return strJsonMobielResponse;
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (urlConnection != null) {
+                    urlConnection.disconnect();
+                }
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (final IOException e) {
+                        Log.e(TAG, "Error closing stream", e);
+                    }
+                }
+            }
+
+            return strJsonMobielResponse;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+
+            try {
+                JSONObject Object = new JSONObject(strJsonMobielResponse);
+                String strStatus = Object.getString("status");
+                String strMessage = Object.getString("message");
+                if (strStatus.equals("1")){
+                    txtErrorMobileNumber.setVisibility(View.VISIBLE);
+                }else {
+                    txtErrorMobileNumber.setVisibility(View.GONE);
+                }
+
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 
     private class checkSponsorId extends AsyncTask<String, String, String> {
 
@@ -261,6 +375,13 @@ public class MemberRegistrationActivity extends AppCompatActivity {
                     txtEroorSponsorId.setVisibility(View.VISIBLE);
                 } else {
                     txtEroorSponsorId.setVisibility(View.GONE);
+                    JSONArray jsonArray=Object.getJSONArray("response");
+                    for (int i=0; i<jsonArray.length(); i++){
+                        JSONObject jsonObject=jsonArray.getJSONObject(i);
+                        String strMemberName=jsonObject.getString("membername");
+                        Log.d(TAG, "member name: "+strMemberName);
+                        etSponsorName.setText(strMemberName);
+                    }
                 }
 
 
@@ -355,7 +476,7 @@ public class MemberRegistrationActivity extends AppCompatActivity {
                 String strResponse=jsonArray.getString(0);
                 Toast.makeText(MemberRegistrationActivity.this, strResponse, Toast.LENGTH_SHORT).show();
                 if (strStatus.equals("3")){
-                    etMemberid.getText().clear();
+//                    etMemberid.getText().clear();
                     etMemberPassword.getText().clear();
                     etMemberName.getText().clear();
                     etMobile.getText().clear();

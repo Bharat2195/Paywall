@@ -23,7 +23,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
-import com.tornado.cphp.awhitepaid.LoginTypeActivity;
+import com.tornado.cphp.awhitepaid.vendorpanel.LoginTypeActivity;
 import com.tornado.cphp.awhitepaid.R;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
 
@@ -190,9 +190,9 @@ public class MemberDashboardActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         getSupportActionBar().hide();
 
-        YoYo.with(Techniques.FlipInX)
-                .duration(2000)
-                .playOn(mRelativeMain);
+//        YoYo.with(Techniques.FlipInX)
+//                .duration(2000)
+//                .playOn(mRelativeMain);
 
         requestQueue = Volley.newRequestQueue(this);
 

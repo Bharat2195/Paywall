@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.VendorMainActivity;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
 
 import org.json.JSONArray;

@@ -29,6 +29,8 @@ import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import uk.co.senab.photoview.log.LoggerDefault;
+
 public class MemberQRCodeResultActivity extends AppCompatActivity {
 
     private static final String TAG=MemberQRCodeResultActivity.class.getSimpleName();
@@ -38,6 +40,7 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
     private Button btnName,btnProcessToPay;
     private EditText etReason,etAmount;
     private ProgressDialog pd;
+    private String strTransferType,strMobileNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,14 +67,26 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
         etAmount=(EditText)findViewById(R.id.etAmount);
 
         Intent intent=getIntent();
-        strMemberId=intent.getStringExtra("memberId");
-        strMemberName=intent.getStringExtra("memberName");
-        strQRCode=intent.getStringExtra("QrCode");
+        strTransferType=intent.getStringExtra("type");
+        Log.d(TAG, "Payment transfer Type: "+strTransferType);
+        if (strTransferType.equalsIgnoreCase("qrcode")){
+            strMemberId=intent.getStringExtra("memberId");
+            strMemberName=intent.getStringExtra("memberName");
+            strQRCode=intent.getStringExtra("QrCode");
 
+            Log.d(TAG, "memberid: "+strMemberId);
+            Log.d(TAG, "membername: "+strMemberName);
+            Log.d(TAG, "qrcode: "+strQRCode);
+        } else {
 
-        Log.d(TAG, "memberid: "+strMemberId);
-        Log.d(TAG, "membername: "+strMemberName);
-        Log.d(TAG, "qrcode: "+strQRCode);
+            strMemberId=intent.getStringExtra("memberId");
+            strMemberName=intent.getStringExtra("memberName");
+            strMobileNumber=intent.getStringExtra("strMobileNumber");
+            Log.d(TAG, "member mobile number: "+strMobileNumber);
+            Log.d(TAG, "mobile memberid: "+strMemberId);
+            Log.d(TAG, "mobile membername: "+strMemberName);
+
+        }
 
         txtName.setText(strMemberName);
 
@@ -95,16 +110,27 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Amount", Toast.LENGTH_SHORT).show();
                 }else if (strAmount.contains("-")){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Please Enter Correct Amount", Toast.LENGTH_SHORT).show();
-                }else if (Integer.parseInt(strAmount) > Integer.parseInt(MemberDashboardActivity.strSpiltBlance)){
+                }else if (Integer.parseInt(strAmount) > Integer.parseInt(MemberHomeActivity.strSpiltBlance)){
                     Toast.makeText(MemberQRCodeResultActivity.this, "Insufficient Your Wallet balance", Toast.LENGTH_SHORT).show();
                 }else {
 
+
+
                     JSONObject jsonObject=new JSONObject();
                     try{
-                        jsonObject.put("mode","memberToOtherFundTransfer");
-                        jsonObject.put("fromid", MemberDashboardActivity.strMemberId);
-                        jsonObject.put("to",strQRCode);
-                        jsonObject.put("amount",strAmount);
+                        if (strTransferType.equalsIgnoreCase("qrcode")){
+                            jsonObject.put("mode","memberToOtherFundTransfer");
+                            jsonObject.put("fromid", MemberHomeActivity.strMemberId);
+                            jsonObject.put("to",strQRCode);
+                            jsonObject.put("amount",strAmount);
+                        }else {
+
+                            jsonObject.put("mode","memberToOtherFundTransferWithMobileNumber");
+                            jsonObject.put("fromid", MemberHomeActivity.strMemberId);
+                            jsonObject.put("to",strMobileNumber);
+                            jsonObject.put("amount",strAmount);
+                        }
+
                     }catch (Exception e){
                         e.printStackTrace();
                     }
@@ -118,6 +144,7 @@ public class MemberQRCodeResultActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private class transferAmount extends AsyncTask<String,String,String> {
 

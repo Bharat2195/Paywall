@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
+import com.tornado.cphp.awhitepaid.memberfragment.MemberScanCodeFragment;
+import com.tornado.cphp.awhitepaid.memberfragment.MemberShowCodeFragment;
 import com.tornado.cphp.awhitepaid.utils.CheckConnectivity;
 
 import java.util.ArrayList;

@@ -4,8 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,13 +12,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -31,7 +29,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
-import com.tornado.cphp.awhitepaid.LoginTypeActivity;
+import com.tornado.cphp.awhitepaid.vendorpanel.LoginTypeActivity;
 import com.tornado.cphp.awhitepaid.R;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
 
@@ -138,14 +136,15 @@ public class MemberHomeActivity extends AppCompatActivity
     RequestQueue requestQueue;
     private TextView txtMemberHeaderTitle;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_home);
         ButterKnife.bind(this);
-        YoYo.with(Techniques.FlipInX)
-                .duration(2000)
-                .playOn(mRelativeMain);
+//        YoYo.with(Techniques.FlipInX)
+//                .duration(2000)
+//                .playOn(mRelativeMain);
 
         requestQueue = Volley.newRequestQueue(this);
 
@@ -155,6 +154,10 @@ public class MemberHomeActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        YoYo.with(Techniques.Landing)
+                .duration(2000)
+                .playOn(mRelativeMain);
 
         txtLogOut = (TextView) toolbar.findViewById(R.id.txtLogOut);
 
@@ -199,6 +202,7 @@ public class MemberHomeActivity extends AppCompatActivity
         });
 
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -207,8 +211,8 @@ public class MemberHomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        View viewMemberHeader=navigationView.getHeaderView(0);
-        txtMemberHeaderTitle=(TextView)viewMemberHeader.findViewById(R.id.txtMemberHeaderTitle);
+        View viewMemberHeader = navigationView.getHeaderView(0);
+        txtMemberHeaderTitle = (TextView) viewMemberHeader.findViewById(R.id.txtMemberHeaderTitle);
         txtMemberHeaderTitle.setText(strMemberId);
 
         getWallterBalance();
@@ -298,6 +302,7 @@ public class MemberHomeActivity extends AppCompatActivity
                 startActivity(intentWithdrawal);
                 break;
             case R.id.mRelativeAddress:
+                Toast.makeText(MemberHomeActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mRelativePhoto:
                 Intent intentImage = new Intent(MemberHomeActivity.this, MemberShowVendorInformationActivity.class);
@@ -320,8 +325,8 @@ public class MemberHomeActivity extends AppCompatActivity
                 startActivity(intentActivation);
                 break;
             case R.id.mRelativeLoadMoney:
-//                Intent intentMoney=new Intent(MemberHomeActivity.this,MemberShowVendorImages.class);
-//                startActivity(intentMoney);
+                Intent intentRecharge = new Intent(MemberHomeActivity.this, MemberRechargeActivity.class);
+                startActivity(intentRecharge);
                 break;
             case R.id.mRelativeMain:
                 break;
@@ -336,7 +341,7 @@ public class MemberHomeActivity extends AppCompatActivity
 //        return true;
 //    }
 //
-//    @Override
+//    @Overridenot
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        // Handle action bar item clicks here. The action bar will
 //        // automatically handle clicks on the Home/Up button, so long
@@ -362,10 +367,10 @@ public class MemberHomeActivity extends AppCompatActivity
             if (drawer.isDrawerOpen(GravityCompat.START)) {
                 drawer.closeDrawer(GravityCompat.START);
             }
-                // Handle the camera action
-            } else if (id == R.id.nav_image) {
-                Intent intentImage = new Intent(MemberHomeActivity.this, MemberShowVendorInformationActivity.class);
-                startActivity(intentImage);
+            // Handle the camera action
+        } else if (id == R.id.nav_image) {
+            Intent intentImage = new Intent(MemberHomeActivity.this, MemberShowVendorInformationActivity.class);
+            startActivity(intentImage);
 
         } else if (id == R.id.nav_history) {
 
@@ -380,7 +385,9 @@ public class MemberHomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_Address) {
 
-        } else if (id == R.id.nav_wallet) {
+        } else if (id == R.id.nav_mobile) {
+            Intent intent=new Intent(MemberHomeActivity.this,MemberMobileNumberToPay.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_password) {
             Intent intentPassword = new Intent(MemberHomeActivity.this, MemberChangePasswordActivity.class);

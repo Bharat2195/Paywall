@@ -4,7 +4,7 @@
     android:id="@+id/activity_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.awhitepaid.VendorRegistrationActivity">
+    tools:context="com.tornado.cphp.awhitepaid.vendorpanel.VendorRegistrationActivity">
 
     <include
         android:id="@+id/toolbar_edit_profile"
@@ -143,7 +143,6 @@
                 android:textColor="@drawable/edit_text_selector"
                 android:inputType="textPassword"
                 android:layout_marginTop="10dp"
-                android:layout_above="@+id/layout_footer"
                 android:gravity="center"
                 android:background="@drawable/editext_background"
                 android:layout_height="wrap_content" />
@@ -170,7 +169,6 @@
                 android:hint="Bank Account No"
                 android:textColor="@drawable/edit_text_selector"
                 android:layout_marginTop="10dp"
-                android:layout_above="@+id/layout_footer"
                 android:gravity="center"
                 android:background="@drawable/editext_background"
                 android:layout_height="wrap_content" />
@@ -197,7 +195,6 @@
                 android:hint="Bank Name"
                 android:textColor="@drawable/edit_text_selector"
                 android:layout_marginTop="10dp"
-                android:layout_above="@+id/layout_footer"
                 android:gravity="center"
                 android:background="@drawable/editext_background"
                 android:layout_height="wrap_content" />
@@ -224,7 +221,6 @@
                 android:hint="Bank Branch Name"
                 android:textColor="@drawable/edit_text_selector"
                 android:layout_marginTop="10dp"
-                android:layout_above="@+id/layout_footer"
                 android:gravity="center"
                 android:background="@drawable/editext_background"
                 android:layout_height="wrap_content" />
@@ -251,7 +247,6 @@
                 android:hint="Bank IFSC Code"
                 android:textColor="@drawable/edit_text_selector"
                 android:layout_marginTop="10dp"
-                android:layout_above="@+id/layout_footer"
                 android:gravity="center"
                 android:background="@drawable/editext_background"
                 android:layout_height="wrap_content" />

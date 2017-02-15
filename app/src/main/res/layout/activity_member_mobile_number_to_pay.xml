@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_member_mobile_number_to_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tornado.cphp.awhitepaid.memberpanel.MemberMobileNumberToPay">
+
+    <include
+        android:id="@+id/mToolbarMemberMobilePay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/toolbar"></include>
+
+
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:src="@drawable/contact"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mToolbarMemberMobilePay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_below="@+id/mToolbarMemberMobilePay"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:maxLength="13"
+        android:hint="Enter Mobile Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttonshape"
+        android:text="Process to Transfer"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

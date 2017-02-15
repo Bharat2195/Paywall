@@ -79,14 +79,14 @@ public class CustomGrid extends BaseAdapter {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(mContext, MemberShowVendorProductImageActivity.class);
-//                intent.putExtra("strImagePath", listImage.get(position));
-//                intent.putExtra("strId", listVendorId.get(position));
-//                intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
-//                mContext.startActivity(intent);
-                Intent intent = new Intent(mContext, MemberShowVendorAddressonMapActivity.class);
-                intent.putExtra("strVendorId", listVendorId.get(position));
+                Intent intent = new Intent(mContext, MemberShowVendorProductImageActivity.class);
+                intent.putExtra("strImagePath", listImage.get(position));
+                intent.putExtra("strId", listVendorId.get(position));
+                intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
+//                Intent intent = new Intent(mContext, MemberShowVendorAddressonMapActivity.class);
+//                intent.putExtra("strVendorId", listVendorId.get(position));
+//                mContext.startActivity(intent);
             }
         });
 

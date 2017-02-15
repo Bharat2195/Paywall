@@ -4,7 +4,7 @@
     android:id="@+id/activity_vendor_qrcode"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.awhitepaid.VendorQRCodeActivity">
+    tools:context="com.tornado.cphp.awhitepaid.vendorpanel.VendorQRCodeActivity">
 
     <include
         android:id="@+id/toolbar_qrcode"

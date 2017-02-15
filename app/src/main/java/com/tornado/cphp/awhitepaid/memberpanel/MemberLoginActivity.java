@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tornado.cphp.awhitepaid.LoginTypeActivity;
+import com.tornado.cphp.awhitepaid.vendorpanel.LoginTypeActivity;
 import com.tornado.cphp.awhitepaid.R;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
 
@@ -45,6 +45,7 @@ public class MemberLoginActivity extends AppCompatActivity {
     GifImageView gifLoading;
     JSONObject jsonObject;
     private ProgressDialog pd;
+    private TextView txtForgotPassword;
 
 
     @Override
@@ -69,6 +70,14 @@ public class MemberLoginActivity extends AppCompatActivity {
         gifLoading=(GifImageView)findViewById(R.id.gifLoading);
         txtRegister=(TextView)findViewById(R.id.txtRegister);
         txtSignIn=(TextView)findViewById(R.id.txtSignIn);
+        txtForgotPassword=(TextView)findViewById(R.id.txtForgotPassword);
+        txtForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForgotPassword=new Intent(MemberLoginActivity.this,MemberForgotPassword.class);
+                startActivity(intentForgotPassword);
+            }
+        });
 
         txtSignIn.setOnClickListener(new View.OnClickListener() {
             @Override

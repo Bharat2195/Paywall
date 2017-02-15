@@ -9,6 +9,8 @@
     <string name="error_blank_membername">Please enter member name</string>
     <string name="error_valid_member_name">Please enter valid member name</string>
 
+    <string name="category_name_prompt">Choose a category</string>
+
 
     <string-array name="spin_amount">
         <item>"100"</item>

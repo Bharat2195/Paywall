@@ -10,6 +10,7 @@ public class StringUtils {
 
     public static String strBaseURL = "http://paywall.mlm4india.com/paywall/api.php";
     public static final String UPLOAD_URL="http://paywall.mlm4india.com/paywall/image_upload_new.php";
+    public static final String RECHARGE_URL="http://www.champrecharges.com/api_users/recharge?";
 
 
     public static String getDeviceId(Context context) {

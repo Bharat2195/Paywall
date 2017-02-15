@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -23,7 +24,6 @@ public class MemberShowVendorProductImageActivity extends AppCompatActivity {
     private static final String TAG = MemberShowVendorProductImageActivity.class.getSimpleName();
 
     PhotoViewAttacher mAttacher;
-
     String strImagePath, strId;
     @BindView(R.id.imgCancle)
     ImageView imgCancle;
@@ -33,6 +33,8 @@ public class MemberShowVendorProductImageActivity extends AppCompatActivity {
     ImageView imgProduct;
     Dialog dialog;
     RequestQueue requestQueue;
+    @BindView(R.id.imgMap)
+    ImageView imgMap;
 
 
     @Override
@@ -57,9 +59,17 @@ public class MemberShowVendorProductImageActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.imgCancle)
-    public void onClick() {
-
-        onBackPressed();
+    @OnClick({R.id.imgCancle, R.id.imgMap})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.imgCancle:
+                onBackPressed();
+                break;
+            case R.id.imgMap:
+                Intent intent = new Intent(MemberShowVendorProductImageActivity.this, MemberShowVendorAddressonMapActivity.class);
+                intent.putExtra("strVendorId", strId);
+                startActivity(intent);
+                break;
+        }
     }
 }

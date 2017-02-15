@@ -60,7 +60,6 @@ public class MemberShowVendorImages extends AppCompatActivity {
         mToolbarMembershowImage.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
             }
         });
 

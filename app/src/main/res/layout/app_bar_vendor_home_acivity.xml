@@ -78,7 +78,6 @@
 
                 </RelativeLayout>
 
-
             </android.support.v7.widget.Toolbar>
 
             <include
@@ -88,12 +87,7 @@
 
         </android.support.design.widget.AppBarLayout>
 
-
-
     </RelativeLayout>
-
-
-
 
     <!--<android.support.design.widget.FloatingActionButton-->
     <!--android:id="@+id/fab"-->

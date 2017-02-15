@@ -4,7 +4,7 @@
     android:id="@+id/activity_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.awhitepaid.VendorRegistrationActivity">
+    tools:context="com.tornado.cphp.awhitepaid.vendorpanel.VendorRegistrationActivity">
 
     <include
         android:id="@+id/mToolbarMemberRegistration"
@@ -39,6 +39,7 @@
                 android:id="@+id/etSponsorId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:elevation="5dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
                 android:hint="Enter Sponsor Id"
@@ -65,7 +66,9 @@
                 android:gravity="center"
                 android:layout_marginTop="15dp"
                 android:hint="Enter Sponsor Name"
+                android:focusable="false"
                 android:padding="15dp"
+                android:elevation="5dp"
                 android:singleLine="true"
                 android:layout_below="@+id/txtEroorSponsorId" />
 
@@ -78,6 +81,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
+                android:elevation="5dp"
                 android:hint="Enter Member Name"
                 android:padding="15dp"
                 android:singleLine="true" />
@@ -91,6 +95,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
+                android:elevation="5dp"
                 android:hint="Enter Address"
                 android:padding="15dp"
                 android:singleLine="true" />
@@ -103,6 +108,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
+                android:elevation="5dp"
                 android:hint="Enter City"
                 android:padding="15dp"
                 android:singleLine="true" />
@@ -112,6 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etCity"
+                android:elevation="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
@@ -124,9 +131,9 @@
                 android:id="@+id/etCountry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/mLayoutRegistration"
                 android:layout_below="@+id/etState"
                 android:layout_marginTop="15dp"
+                android:elevation="5dp"
                 android:background="@drawable/register_corner"
                 android:gravity="center"
                 android:hint="Enter Country"
@@ -138,22 +145,25 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
+                android:elevation="5dp"
                 android:layout_marginTop="15dp"
                 android:hint="Enter Email Id"
                 android:padding="15dp"
                 android:singleLine="true"
-                android:layout_below="@+id/etMobile"
+                android:layout_below="@+id/txtErrorMobileNumber"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <EditText
                 android:id="@+id/etMemberid"
                 android:layout_width="match_parent"
+                android:elevation="5dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
                 android:hint="Enter Member Id"
+                android:visibility="gone"
                 android:padding="15dp"
                 android:singleLine="true"
                 android:layout_below="@+id/etSponsorName"
@@ -165,6 +175,7 @@
                 android:id="@+id/etMemberPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:elevation="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
@@ -179,17 +190,34 @@
             <EditText
                 android:id="@+id/etMobile"
                 android:layout_width="match_parent"
+                android:elevation="5dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:inputType="number"
                 android:background="@drawable/focus_edittext_register"
                 android:gravity="center"
                 android:hint="Enter Mobile Number"
+                android:maxLength="10"
                 android:padding="15dp"
                 android:singleLine="true"
                 android:layout_below="@+id/etMemberName"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/txtErrorMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/etMobile"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="Invalid Mobile Number"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
 
 
         </RelativeLayout>
@@ -199,7 +227,6 @@
     <RelativeLayout
         android:id="@+id/mLayoutRegistration"
         android:layout_width="match_parent"
-        android:layout_below="@+id/etCountry"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
         android:background="#2175BF">

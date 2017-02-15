@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tornado.cphp.awhitepaid.VendorMainActivity">
+    tools:context="com.tornado.cphp.awhitepaid.vendorpanel.VendorMainActivity">
 
     <Button
         android:id="@+id/btnAddLocation"
@@ -160,8 +160,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
+                        android:tint="@color/white"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/address" />
+                        android:src="@drawable/icon_wallet" />
 
                     <TextView
                         android:id="@+id/txtAddress"
@@ -171,7 +172,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="5dp"
-                        android:text="Address"
+                        android:text="Load Money"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
@@ -210,7 +211,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="5dp"
-                        android:text="Photo"
+                        android:text="Shop Detail"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
@@ -365,7 +366,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="5dp"
-                        android:text="Load Money"
+                        android:text="Recharge"
                         android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
