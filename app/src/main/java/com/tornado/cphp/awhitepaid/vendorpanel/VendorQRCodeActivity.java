@@ -25,11 +25,11 @@ public class VendorQRCodeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         toolbar_qrcode=(Toolbar)findViewById(R.id.toolbar_qrcode);
         txtTitle=(TextView)toolbar_qrcode.findViewById(R.id.txtTitle);
-        txtTitle.setText("PayWall Code");
+        txtTitle.setText("AWhitePaid Code");
         img_qr_code_image=(ImageView)findViewById(R.id.img_qr_code_image);
 
         txtQRCodeTitle=(TextView)findViewById(R.id.txtQRCodeTitle);
-        txtQRCodeTitle.setText("Scan PayWall code to make payment to "+ VendorHomeAcivity.strVendorId);
+        txtQRCodeTitle.setText("Scan AWhitePaid code to make payment to "+ VendorHomeAcivity.strVendorId);
         toolbar_qrcode.setNavigationIcon(R.drawable.back_icon);
         toolbar_qrcode.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

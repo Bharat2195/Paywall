@@ -1,5 +1,6 @@
 package com.tornado.cphp.awhitepaid.vendorpanel;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,14 +31,15 @@ import java.net.URL;
 
 public class VendorChangePasswordActivity extends AppCompatActivity {
 
-    private static final String TAG=VendorUploadImageActivity.class.getSimpleName();
+    private static final String TAG = VendorUploadImageActivity.class.getSimpleName();
 
     private Toolbar toolbar_change_password;
     private TextView txtTitle;
     private EditText etChangeOldPassword, etChangeNewPassword, etChangeConfirmPassword;
     private Button btnChangeUpadateNow;
-    String strChangePwdRespose="",strChangePwdMessage="",strOldPassword = "", strNewPassword = "", strConfirmPassword = "", strMemberid = "",JsonResponse="",strMessagge ="",strChangePasswordResponse="";
-    TextView txtSignIn,txtErrorMsgOldPassword,txtErrorMsgConfirmPassword;
+    String strChangePwdRespose = "", strChangePwdMessage = "", strOldPassword = "", strNewPassword = "", strConfirmPassword = "", strMemberid = "", JsonResponse = "", strMessagge = "", strChangePasswordResponse = "";
+    TextView txtSignIn, txtErrorMsgOldPassword, txtErrorMsgConfirmPassword;
+    private ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +48,8 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        toolbar_change_password= (Toolbar) findViewById(R.id.toolbar_change_password);
-        txtTitle=(TextView)toolbar_change_password.findViewById(R.id.txtTitle);
+        toolbar_change_password = (Toolbar) findViewById(R.id.toolbar_change_password);
+        txtTitle = (TextView) toolbar_change_password.findViewById(R.id.txtTitle);
         txtTitle.setText("Change Password");
         toolbar_change_password.setNavigationIcon(R.drawable.back_icon);
         toolbar_change_password.setNavigationOnClickListener(new View.OnClickListener() {
@@ -57,12 +59,12 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
             }
         });
 
-        txtErrorMsgOldPassword=(TextView)findViewById(R.id.txtErrorMsgOldPassword);
-        txtErrorMsgConfirmPassword=(TextView)findViewById(R.id.txtErrorMsgConfirmPassword);
-        etChangeOldPassword= (EditText)findViewById(R.id.etChangeOldPassword);
-        etChangeNewPassword= (EditText)findViewById(R.id.etChangeNewPassword);
-        etChangeConfirmPassword= (EditText)findViewById(R.id.etChangeConfirmPassword);
-        btnChangeUpadateNow= (Button)findViewById(R.id.btnChangeUpadateNow);
+        txtErrorMsgOldPassword = (TextView) findViewById(R.id.txtErrorMsgOldPassword);
+        txtErrorMsgConfirmPassword = (TextView) findViewById(R.id.txtErrorMsgConfirmPassword);
+        etChangeOldPassword = (EditText) findViewById(R.id.etChangeOldPassword);
+        etChangeNewPassword = (EditText) findViewById(R.id.etChangeNewPassword);
+        etChangeConfirmPassword = (EditText) findViewById(R.id.etChangeConfirmPassword);
+        btnChangeUpadateNow = (Button) findViewById(R.id.btnChangeUpadateNow);
 
         btnChangeUpadateNow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,30 +76,30 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
 
                 if (StringUtils.isBlank(strOldPassword)) {
                     showToast("Please Enter OldPassword");
-                }else if (StringUtils.isBlank(strNewPassword)) {
+                } else if (StringUtils.isBlank(strNewPassword)) {
                     showToast("Please Enter News Password");
-                }else if (StringUtils.isBlank(strConfirmPassword)) {
+                } else if (StringUtils.isBlank(strConfirmPassword)) {
                     showToast("Please Enter ConfirmPassword");
-                }else if (!strConfirmPassword.equals(strNewPassword)){
+                } else if (!strConfirmPassword.equals(strNewPassword)) {
 //                    showToast("Both Password don't match");
                     txtErrorMsgConfirmPassword.setVisibility(View.VISIBLE);
-                }else if (strConfirmPassword.equals(strNewPassword)){
+                } else if (strConfirmPassword.equals(strNewPassword)) {
                     txtErrorMsgConfirmPassword.setVisibility(View.GONE);
-                    if (strMessagge.equals("Success")){
-                        JSONObject jsonObject=new JSONObject();
-                        try{
-                            jsonObject.put("mode","vendorChangepasswordSubmit");
+                    if (strMessagge.equals("Success")) {
+                        JSONObject jsonObject = new JSONObject();
+                        try {
+                            jsonObject.put("mode", "vendorChangepasswordSubmit");
                             jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
-                            jsonObject.put("oldpassword",strOldPassword);
-                            jsonObject.put("newpassword",strNewPassword);
-                        }catch (Exception e){
+                            jsonObject.put("oldpassword", strOldPassword);
+                            jsonObject.put("newpassword", strNewPassword);
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
 
-                        if (jsonObject.length()>0){
+                        if (jsonObject.length() > 0) {
                             new Postdata().execute(String.valueOf(jsonObject));
                         }
-                    }else {
+                    } else {
                         showToast("Please Enter Correct Old Password");
                     }
 
@@ -110,20 +112,20 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
             public void onFocusChange(View v, boolean hasFocus) {
                 EditText editText;
 
-                if (!hasFocus){
-                    JSONObject jsonObject=new JSONObject();
-                    try{
-                        editText=(EditText)v;
-                        String oldPassword=editText.getText().toString();
-                        Log.d(TAG,"MemberId:"+oldPassword);
-                        jsonObject.put("mode","vendorOldPasswordCheck");
-                        jsonObject.put("vendorid",VendorHomeAcivity.strVendorId);
+                if (!hasFocus) {
+                    JSONObject jsonObject = new JSONObject();
+                    try {
+                        editText = (EditText) v;
+                        String oldPassword = editText.getText().toString();
+                        Log.d(TAG, "MemberId:" + oldPassword);
+                        jsonObject.put("mode", "vendorOldPasswordCheck");
+                        jsonObject.put("vendorid", VendorHomeAcivity.strVendorId);
                         jsonObject.put("oldpassword", oldPassword);
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
 
-                    if (jsonObject.length()>0){
+                    if (jsonObject.length() > 0) {
                         new checkPassword().execute(String.valueOf(jsonObject));
                     }
                 }
@@ -133,7 +135,19 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
 
     }
 
-    private class Postdata  extends AsyncTask<String,String,String> {
+    private class Postdata extends AsyncTask<String, String, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            pd = new ProgressDialog(VendorChangePasswordActivity.this);
+            pd.setMessage("Please Wait...");
+            pd.setCanceledOnTouchOutside(false);
+            pd.setIndeterminate(false);
+            pd.setCancelable(false);
+            pd.show();
+        }
+
         @Override
         protected String doInBackground(String... params) {
 
@@ -193,19 +207,20 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            if (pd.isShowing()) {
+                pd.dismiss();
+            }
             try {
                 JSONObject jsonObject = new JSONObject(strChangePasswordResponse);
                 String strStatus = jsonObject.getString("status");
-                Log.d(TAG, "status: "+strStatus);
+                Log.d(TAG, "status: " + strStatus);
                 strChangePasswordResponse = jsonObject.getString("message");
-                JSONArray jsonArray=jsonObject.getJSONArray("response");
-                String strResponse=jsonArray.getString(0);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                String strResponse = jsonArray.getString(0);
                 Toast.makeText(VendorChangePasswordActivity.this, strResponse, Toast.LENGTH_SHORT).show();
-                if (strStatus.equals(1)){
-                    etChangeOldPassword.getText().clear();
-                    etChangeNewPassword.getText().clear();
-                    etChangeConfirmPassword.getText().clear();
-                }
+                etChangeOldPassword.getText().clear();
+                etChangeNewPassword.getText().clear();
+                etChangeConfirmPassword.getText().clear();
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -214,7 +229,7 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
         }
     }
 
-    private class checkPassword  extends AsyncTask<String,String,String> {
+    private class checkPassword extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... params) {
 
@@ -279,12 +294,12 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(JsonResponse);
                 String strStatus = jsonObject.getString("status");
                 strMessagge = jsonObject.getString("message");
-                JSONArray jsonArray=jsonObject.getJSONArray("response");
-                String strResponse=jsonArray.getString(0);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                String strResponse = jsonArray.getString(0);
 
-                if (strStatus.equals("1")){
+                if (strStatus.equals("1")) {
                     txtErrorMsgOldPassword.setVisibility(View.GONE);
-                }else {
+                } else {
                     txtErrorMsgOldPassword.setVisibility(View.VISIBLE);
                     etChangeNewPassword.setClickable(false);
                     etChangeConfirmPassword.setClickable(false);
@@ -297,9 +312,10 @@ public class VendorChangePasswordActivity extends AppCompatActivity {
 
         }
     }
-    private void showToast(String strMessage){
-        Toast toast=Toast.makeText(VendorChangePasswordActivity.this,strMessage, Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.CENTER,0,0);
+
+    private void showToast(String strMessage) {
+        Toast toast = Toast.makeText(VendorChangePasswordActivity.this, strMessage, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
 
     }

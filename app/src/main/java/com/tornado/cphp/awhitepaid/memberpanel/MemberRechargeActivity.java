@@ -408,6 +408,11 @@ public class MemberRechargeActivity extends AppCompatActivity {
         String strType = rdRechargeType.getText().toString();
         Log.d(TAG, "operator type: " + strType);
 
+        listId.clear();
+        listType.clear();
+        listOperator.clear();
+        listOperatorCode.clear();
+
 
         Map<String, String> jsonParms = new HashMap<>();
 
@@ -515,7 +520,9 @@ public class MemberRechargeActivity extends AppCompatActivity {
              strMobileNumber = etCustomerId.getEditText().getText().toString();
             Log.d(TAG, "customer id click: "+strMobileNumber);
         }else {
-            strMobileNumber = etMobileNumber.getEditText().getText().toString();
+            String MobileNumber=etMobileNumber.getEditText().getText().toString();
+            strMobileNumber = MobileNumber.substring(3,13);
+            Log.d(TAG, "split mobile number: "+strMobileNumber);
             Log.d(TAG, "mobile number: "+strMobileNumber);
         }
 
