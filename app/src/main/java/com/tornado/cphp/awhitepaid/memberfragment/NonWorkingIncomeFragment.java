@@ -45,6 +45,7 @@ public class NonWorkingIncomeFragment extends Fragment {
     ArrayList<String> listEntryDate= new ArrayList<>();
     ArrayList<String> listMemberRound= new ArrayList<>();
     ArrayList<String> listAmount= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewNonWorkingIncomeReport;
 
     @Override
@@ -171,6 +172,10 @@ public class NonWorkingIncomeFragment extends Fragment {
                         String strTds= object.getString("tds");
                         String strAdminCharge= object.getString("admincharge");
                         String strNetAmount= object.getString("netamount");
+                        String strDateTime=object.getString("entrydate");
+
+                        String strTime=StringUtils.getTime(strDateTime);
+                        listTime.add(strTime);
 
                         listEntryDate.add(strEntryDate);
                         listMemberRound.add(strMemberAround);
@@ -238,7 +243,7 @@ public class NonWorkingIncomeFragment extends Fragment {
                 holder.txtEntryDate= (TextView) convertView.findViewById(R.id.txtEntryDate);
                 holder.txtRound = (TextView) convertView.findViewById(R.id.txtRound);
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
-
+                holder.txtTime = (TextView) convertView.findViewById(R.id.txtTime);
 
                 convertView.setTag(holder);
 
@@ -251,6 +256,8 @@ public class NonWorkingIncomeFragment extends Fragment {
             holder.txtEntryDate.setText(items.get(position));
             holder.txtRound.setText(listMemberRound.get(position));
             holder.txtAmount.setText(listAmount.get(position));
+            holder.txtTime.setText(listTime.get(position));
+
 
             return convertView;
 
@@ -259,7 +266,7 @@ public class NonWorkingIncomeFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtEntryDate,txtRound, txtAmount;
+        TextView txtEntryDate,txtRound, txtAmount,txtTime;
     }
 
 }

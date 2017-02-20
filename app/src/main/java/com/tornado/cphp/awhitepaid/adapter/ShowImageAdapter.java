@@ -34,9 +34,9 @@ public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.View
     private static final String TAG=ShowImageAdapter.class.getSimpleName();
     Bitmap bitImagePath;
     private int position;
+    private int i;
 
-
-    public ShowImageAdapter(Context context, ArrayList<String> listEntryDate, ArrayList<String> listImageText, ArrayList<String> listImagePath, ArrayList<String> listId) {
+    public ShowImageAdapter(Context context, ArrayList<String> listImageText, ArrayList<String> listEntryDate, ArrayList<String> listImagePath, ArrayList<String> listId) {
         super();
         this.context = context;
         this.listEntryDate = listEntryDate;

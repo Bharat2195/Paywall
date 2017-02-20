@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -30,9 +29,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.tornado.cphp.awhitepaid.R;
 import com.tornado.cphp.awhitepaid.adapter.CustomGrid;
-import com.tornado.cphp.awhitepaid.adapter.SlidingImage_Adapter;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
-import com.viewpagerindicator.CirclePageIndicator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -51,8 +48,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MemberVendorIdImagesActivity extends AppCompatActivity {
 
@@ -132,70 +127,70 @@ public class MemberVendorIdImagesActivity extends AppCompatActivity {
 
     }
 
-    private void init() {
-        int i;
-        for (i = 0; i < 3; i++){
-            listSliderImage.add(listImage.get(i));
-            listSliderVendorId.add(listVendorId.get(i));
-
-        }
-//            ImagesArray.add(IMAGES[i]);
-        mPager = (ViewPager) findViewById(R.id.pager);
-
-        mPager.setAdapter(new SlidingImage_Adapter(MemberVendorIdImagesActivity.this, listSliderImage, listSliderVendorId));
-
-
-        CirclePageIndicator indicator = (CirclePageIndicator)
-                findViewById(R.id.indicator);
-
-        indicator.setViewPager(mPager);
-
-        final float density = getResources().getDisplayMetrics().density;
-
-//Set circle indicator radius
-        indicator.setRadius(5 * density);
-
-        NUM_PAGES = IMAGES.length;
-
-        // Auto start of viewpager
-        final Handler handler = new Handler();
-        final Runnable Update = new Runnable() {
-            public void run() {
-                if (currentPage == NUM_PAGES) {
-                    currentPage = 0;
-                }
-                mPager.setCurrentItem(currentPage++, true);
-            }
-        };
-        Timer swipeTimer = new Timer();
-        swipeTimer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(Update);
-            }
-        }, 3000, 3000);
-
-        // Pager listener over indicator
-        indicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-
-            @Override
-            public void onPageSelected(int position) {
-                currentPage = position;
-
-            }
-
-            @Override
-            public void onPageScrolled(int pos, float arg1, int arg2) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int pos) {
-
-            }
-        });
-
-    }
+//    private void init() {
+//        int i;
+//        for (i = 0; i < 3; i++){
+//            listSliderImage.add(listImage.get(i));
+//            listSliderVendorId.add(listVendorId.get(i));
+//
+//        }
+////            ImagesArray.add(IMAGES[i]);
+//        mPager = (ViewPager) findViewById(R.id.pager);
+//
+//        mPager.setAdapter(new SlidingImage_Adapter(MemberVendorIdImagesActivity.this, listSliderImage, listSliderVendorId));
+//
+//
+//        CirclePageIndicator indicator = (CirclePageIndicator)
+//                findViewById(R.id.indicator);
+//
+//        indicator.setViewPager(mPager);
+//
+//        final float density = getResources().getDisplayMetrics().density;
+//
+////Set circle indicator radius
+//        indicator.setRadius(5 * density);
+//
+//        NUM_PAGES = IMAGES.length;
+//
+//        // Auto start of viewpager
+//        final Handler handler = new Handler();
+//        final Runnable Update = new Runnable() {
+//            public void run() {
+//                if (currentPage == NUM_PAGES) {
+//                    currentPage = 0;
+//                }
+//                mPager.setCurrentItem(currentPage++, true);
+//            }
+//        };
+//        Timer swipeTimer = new Timer();
+//        swipeTimer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                handler.post(Update);
+//            }
+//        }, 3000, 3000);
+//
+//        // Pager listener over indicator
+//        indicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+//
+//            @Override
+//            public void onPageSelected(int position) {
+//                currentPage = position;
+//
+//            }
+//
+//            @Override
+//            public void onPageScrolled(int pos, float arg1, int arg2) {
+//
+//            }
+//
+//            @Override
+//            public void onPageScrollStateChanged(int pos) {
+//
+//            }
+//        });
+//
+//    }
 
 
     private void searchingCategoryWise() {
@@ -475,7 +470,7 @@ public class MemberVendorIdImagesActivity extends AppCompatActivity {
                         listImageName.add(strImageName);
                     }
 
-                    init();
+//                    init();
                     grid.setAdapter(null);
                     adapter = new CustomGrid(MemberVendorIdImagesActivity.this, listImage, listImageName, listVendorId);
                     grid.setAdapter(adapter);

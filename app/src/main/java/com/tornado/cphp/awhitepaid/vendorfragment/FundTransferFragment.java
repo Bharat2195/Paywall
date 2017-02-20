@@ -15,8 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -48,6 +48,7 @@ public class FundTransferFragment extends Fragment {
     ArrayList<String> listAmount= new ArrayList<>();
     ArrayList<String> listCharges= new ArrayList<>();
     ArrayList<String> listNetAmount= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewFundtRansferReport;
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
@@ -166,13 +167,18 @@ public class FundTransferFragment extends Fragment {
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object = array.getJSONObject(i);
                         String strId=object.getString("id");
-                        String strEntryDate=object.getString("entrydate");
+                        String strEntryDate=object.getString("Entry Date");
                         String strFromId=object.getString("fromid");
                         String strToId= object.getString("toid");
                         String strAmount= object.getString("amount");
                         String strCharges= object.getString("charges");
                         String strNetAmount= object.getString("netamount");
                         String strType= object.getString("type");
+                        String strDateTime=object.getString("entrydate");
+
+                        String strTime=StringUtils.getTime(strDateTime);
+                        Log.d(TAG, "time: "+strTime);
+                        listTime.add(strTime);
 
 
                         listEntryDate.add(strEntryDate);
@@ -246,6 +252,7 @@ public class FundTransferFragment extends Fragment {
                 holder.txtCharges = (TextView) convertView.findViewById(R.id.txtCharges);
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
                 holder.txtNetAmount= (TextView) convertView.findViewById(R.id.txtNetAmount);
+                holder.txtTime= (TextView) convertView.findViewById(R.id.txtTime);
 
 
                 convertView.setTag(holder);
@@ -261,6 +268,7 @@ public class FundTransferFragment extends Fragment {
             holder.txtAmount.setText(listAmount.get(position));
             holder.txtCharges.setText(listCharges.get(position));
             holder.txtNetAmount.setText(listNetAmount.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
@@ -269,7 +277,7 @@ public class FundTransferFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtEntryDate, txtToId, txtAmount, txtCharges, txtNetAmount;
+        TextView txtEntryDate, txtToId, txtAmount, txtCharges, txtNetAmount,txtTime;
     }
 
 }

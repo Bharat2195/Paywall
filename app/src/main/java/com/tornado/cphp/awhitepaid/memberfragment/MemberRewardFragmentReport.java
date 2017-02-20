@@ -46,6 +46,7 @@ public class MemberRewardFragmentReport extends Fragment {
     ArrayList<String> listEntryDate= new ArrayList<>();
     ArrayList<String> listAmount= new ArrayList<>();
     ArrayList<String> listReward= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewRewardReport;
 
     @Override
@@ -166,6 +167,9 @@ public class MemberRewardFragmentReport extends Fragment {
                         String strEntryDate= object.getString("Entry Date");
                         String strAmount= object.getString("amount");
                         String strReward= object.getString("reward");
+                        String strDateTime=object.getString("entrydate");
+                        String strTime=StringUtils.getTime(strDateTime);
+                        listTime.add(strTime);
 
                         listEntryDate.add(strEntryDate);
                         listAmount.add(strAmount);
@@ -234,6 +238,7 @@ public class MemberRewardFragmentReport extends Fragment {
                 holder.txtEntryDate= (TextView) convertView.findViewById(R.id.txtEntryDate);
                 holder.txtReward = (TextView) convertView.findViewById(R.id.txtReward);
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
+                holder.txtTime = (TextView) convertView.findViewById(R.id.txtTime);
 
 
                 convertView.setTag(holder);
@@ -247,6 +252,7 @@ public class MemberRewardFragmentReport extends Fragment {
             holder.txtEntryDate.setText(items.get(position));
             holder.txtReward.setText(listReward.get(position));
             holder.txtAmount.setText(listAmount.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
@@ -256,7 +262,7 @@ public class MemberRewardFragmentReport extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtEntryDate,txtReward, txtAmount;
+        TextView txtEntryDate,txtReward, txtAmount,txtTime;
     }
 
 

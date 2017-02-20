@@ -15,8 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -30,7 +30,10 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -50,6 +53,7 @@ public class WithdrawalReportFragment extends Fragment {
     ArrayList<String> listCharges= new ArrayList<>();
     ArrayList<String> listPayable= new ArrayList<>();
     ArrayList<String> listStatus= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewWithdrawalReport;
 
     @Override
@@ -169,10 +173,11 @@ public class WithdrawalReportFragment extends Fragment {
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object = array.getJSONObject(i);
                         String strId=object.getString("id");
-                        String strEntryDate= object.getString("entry_date");
+                        String strEntryDate= object.getString("Entry Date");
                         String MemberId=object.getString("memberid");
                         String strAmount= object.getString("amount");
                         String strTds= object.getString("tds");
+                        String strDateTime=object.getString("entry_date");
                         String strAdminCharge= object.getString("admin_charge");
                         String strPayableAmount= object.getString("payableamount");
                         String Status= object.getString("status");
@@ -180,11 +185,14 @@ public class WithdrawalReportFragment extends Fragment {
                         String strWallet=object.getString("wallet");
                         String strReplayDate=object.getString("replydate");
 
+                        String strTime=StringUtils.getTime(strDateTime);
+                        Log.d(TAG, "time data: "+strTime);
 
                         listSrNo.add(strId);
                         listDate.add(strEntryDate);
                         listAmount.add(strAmount);
                         listCharges.add(strTds);
+                        listTime.add(strTime);
                         listPayable.add(strPayableAmount);
                         listStatus.add(Status);
                         listVendorId.add(MemberId);
@@ -219,6 +227,24 @@ public class WithdrawalReportFragment extends Fragment {
             }
 
         }
+    }
+
+    private String formateDateFromString(String inputFormat, String outputFormat, String inputDate) {
+        Date parsed = null;
+        String outputDate = "";
+
+        SimpleDateFormat df_input = new SimpleDateFormat(inputFormat, java.util.Locale.getDefault());
+        SimpleDateFormat df_output = new SimpleDateFormat(outputFormat, java.util.Locale.getDefault());
+
+        try {
+            parsed = df_input.parse(inputDate);
+            outputDate = df_output.format(parsed);
+
+        } catch (ParseException e) {
+            Log.d(TAG, "ParseException - dateFormat");
+        }
+
+        return outputDate;
     }
 
     private class CustomAdapter extends ArrayAdapter<String> {
@@ -256,6 +282,7 @@ public class WithdrawalReportFragment extends Fragment {
                 holder.txtCharges= (TextView) convertView.findViewById(R.id.txtCharges);
                 holder.txtPayable= (TextView) convertView.findViewById(R.id.txtPayable);
                 holder.txtSatus= (TextView) convertView.findViewById(R.id.txtSatus);
+                holder.txtTime=(TextView)convertView.findViewById(R.id.txtTime);
 
 
                 convertView.setTag(holder);
@@ -274,6 +301,7 @@ public class WithdrawalReportFragment extends Fragment {
             holder.txtCharges.setText(listCharges.get(position));
             holder.txtPayable.setText(listPayable.get(position));
             holder.txtSatus.setText(listStatus.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
@@ -282,7 +310,7 @@ public class WithdrawalReportFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtSrNo, txtDate, txtVendorId, txtVendorName, txtAmount,txtCharges,txtPayable,txtSatus;
+        TextView txtSrNo, txtDate, txtVendorId, txtVendorName, txtAmount,txtCharges,txtPayable,txtSatus,txtTime;
     }
 
 

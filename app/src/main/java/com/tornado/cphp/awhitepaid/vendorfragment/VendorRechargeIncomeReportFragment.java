@@ -33,9 +33,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by bharat_android on 2/9/2017.
  */
@@ -51,7 +48,9 @@ public class VendorRechargeIncomeReportFragment extends Fragment {
     private ArrayList<String> listRechargePer=new ArrayList<>();
     private ArrayList<String> listRechargeAmount=new ArrayList<>();
     private ArrayList<String> listMobile=new ArrayList<>();
+    private ArrayList<String> listTime=new ArrayList<>();
     private ArrayList<String> listAmount=new ArrayList<>();
+
     private ProgressDialog pd;
     private String strJsonResponse="";
 
@@ -175,6 +174,11 @@ public class VendorRechargeIncomeReportFragment extends Fragment {
                         String strRechargeAmount= object.getString("rechargeamount");
                         String strMobile=object.getString("mobileno");
                         String strAmount= object.getString("amount");
+                        String strDateTime=object.getString("entrydate");
+
+                        String strTime=StringUtils.getTime(strDateTime);
+
+                        listTime.add(strTime);
 
                         listEntryDate.add(strEntryDate);
                         listRechargePer.add(strRechagePer);
@@ -235,6 +239,7 @@ public class VendorRechargeIncomeReportFragment extends Fragment {
                 holder.txtRechageAmount = (TextView) convertView.findViewById(R.id.txtRechageAmount);
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
                 holder.txtMobile = (TextView) convertView.findViewById(R.id.txtMobile);
+                holder.txtTime= (TextView) convertView.findViewById(R.id.txtTime);
 
 
 
@@ -251,7 +256,7 @@ public class VendorRechargeIncomeReportFragment extends Fragment {
             holder.txtRechageAmount.setText(listRechargeAmount.get(position));
             holder.txtAmount.setText(listAmount.get(position));
             holder.txtMobile.setText(listMobile.get(position));
-
+            holder.txtTime.setText(listTime.get(position));
 
 
             return convertView;
@@ -262,7 +267,7 @@ public class VendorRechargeIncomeReportFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtEntryDate,txtRechargePer, txtRechageAmount,txtAmount,txtMobile;
+        TextView txtEntryDate,txtRechargePer, txtRechageAmount,txtAmount,txtMobile,txtTime;
     }
 
 

@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:padding="10dp"
             android:textStyle="bold"
@@ -24,8 +24,20 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Time"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
             android:id="@+id/txtMemberId"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Memberid"
             android:gravity="center"
@@ -35,7 +47,7 @@
 
         <TextView
             android:id="@+id/txtFromId"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Fromid"
             android:gravity="center"
@@ -45,7 +57,7 @@
 
         <TextView
             android:id="@+id/txtLevel"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Level"
             android:gravity="center"
@@ -55,7 +67,7 @@
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Amount"
             android:gravity="center"

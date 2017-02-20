@@ -52,14 +52,13 @@ public class AccountStatementFragment  extends Fragment {
     ArrayList<String> listWallettype= new ArrayList<>();
     ArrayList<String> listBalance= new ArrayList<>();
     ArrayList<String> Balance= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewAccountStatementReport;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_account_statement,container,false);
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -175,10 +174,10 @@ public class AccountStatementFragment  extends Fragment {
                         String strId=String.valueOf(i+1);
                         String strEntryDate= object.getString("Entry Date");
                         String MemberId=object.getString("memberid");
+                        String strDateTime=object.getString("entrydate");
                         String strFromId=object.getString("fromid");
                         String strTransacType=object.getString("transtype");
                         String strAmount= object.getString("amount");
-//                    String strWalletType= object.getString("wallettype");
 
 
                         listBalance.add(strAmount);
@@ -211,10 +210,14 @@ public class AccountStatementFragment  extends Fragment {
 
 
 
+
+                        String strTime=StringUtils.getTime(strDateTime);
+                        Log.d(TAG, "time data: "+strTime);
                         listSrNo.add(strId);
                         listDate.add(strEntryDate);
                         listRemark.add("From:"+strFromId);
                         listType.add(strTransacType);
+                        listTime.add(strTime);
 //                    listWallettype.add(strWalletType);
 //                    if (!strAmount.contains("-")){
 //                        listAdd.add(strAmount);
@@ -245,7 +248,6 @@ public class AccountStatementFragment  extends Fragment {
                         CustomAdapter customAdapter = new CustomAdapter(getActivity(), R.layout.list_item_account_statement, listSrNo);
                         mListviewAccountStatementReport.setAdapter(customAdapter);
 
-
                     } else {
                         Toast.makeText(getActivity(), "listview null", Toast.LENGTH_SHORT).show();
                     }
@@ -261,16 +263,12 @@ public class AccountStatementFragment  extends Fragment {
                     }
 
                 }
-
-
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
         }
     }
-
     private class CustomAdapter extends ArrayAdapter<String> {
 
 
@@ -305,6 +303,7 @@ public class AccountStatementFragment  extends Fragment {
                 holder.txtLess= (TextView) convertView.findViewById(R.id.txtLess);
 //                holder.txtWallettype= (TextView) convertView.findViewById(R.id.txtWallettype);
                 holder.txtBalance= (TextView) convertView.findViewById(R.id.txtBalance);
+                holder.txtTime= (TextView) convertView.findViewById(R.id.txtTime);
 
                 convertView.setTag(holder);
 
@@ -321,14 +320,14 @@ public class AccountStatementFragment  extends Fragment {
             holder.txtLess.setText(listLess.get(position));
 //            holder.txtWallettype.setText(listWallettype.get(position));
             holder.txtBalance.setText(Balance.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
         }
     }
-
     private class ViewHolder {
 
-        TextView txtSrNo, txtDate, txtType, txtRemark, txtAdd,txtLess,txtWallettype,txtBalance;
+        TextView txtSrNo, txtDate, txtType, txtRemark, txtAdd,txtLess,txtWallettype,txtBalance,txtTime;
     }
 }

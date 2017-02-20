@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Base64;
 import android.util.Log;
@@ -16,11 +17,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
-import com.tornado.cphp.awhitepaid.utils.StringUtils;
 import com.tornado.cphp.awhitepaid.adapter.ShowImageAdapter;
+import com.tornado.cphp.awhitepaid.utils.StringUtils;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorHomeAcivity;
+import com.tornado.cphp.awhitepaid.vendorpanel.VendorUploadImageActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -55,6 +58,7 @@ public class ShowImageVenderFragment extends Fragment {
     private ArrayList<String> listVendorId=new ArrayList<>();
     private ArrayList<String> listImageText=new ArrayList<>();
     private ArrayList<String> listImagePath=new ArrayList<>();
+    private SearchView mSearch;
 
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
@@ -73,6 +77,14 @@ public class ShowImageVenderFragment extends Fragment {
 //        mSwipeRefreshLayout.setSize(SwipeRefreshLayout.DEFAULT);// LARGE also can be used
 //        mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.colorAccent));
 
+
+        mSearch= VendorUploadImageActivity.clickEvent();
+        mSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "search clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
         mRecyclerView = (RecyclerView)getActivity().findViewById(R.id.recycler_view);
 //        mRecyclerView.setHasFixedSize(true);
 
@@ -105,6 +117,10 @@ public class ShowImageVenderFragment extends Fragment {
 
 
 
+
+
+
+
     }
 
     private void getImage() {
@@ -121,7 +137,46 @@ public class ShowImageVenderFragment extends Fragment {
             new getImageshow().execute(String.valueOf(jsonObject));
         }
 
+        searchingData(mSearch);
+
+
+
+
+
+
     }
+
+    private void searchingData(SearchView mSearch) {
+
+        mSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                final ArrayList<String> filterList=new ArrayList<String>();
+
+                for (int i=0; i<listImageText.size(); i++){
+
+                    final  String text=listImageText.get(i).toLowerCase();
+                    if (text.contains(newText.toLowerCase())){
+                        filterList.add(listImageText.get(i));
+                    }
+                }
+
+                gridLayoutManager = new StaggeredGridLayoutManager(2, 1);
+                mRecyclerView.setLayoutManager(gridLayoutManager);
+
+                mAdapter = new ShowImageAdapter(getActivity(),listImageText,listEntryDate,listImagePath,listId);
+                mRecyclerView.setAdapter(mAdapter);
+                return false;
+            }
+        });
+    }
+
+
 
 
     @Override
@@ -262,7 +317,7 @@ public class ShowImageVenderFragment extends Fragment {
                     listEntryDate.add(strEntryDate);
                 }
 
-                    mAdapter = new ShowImageAdapter(getActivity(),listEntryDate,listImageText,listImagePath,listId);
+                    mAdapter = new ShowImageAdapter(getActivity(),listImageText,listEntryDate,listImagePath,listId);
                     mRecyclerView.setAdapter(mAdapter);
 //                    mSwipeRefreshLayout.setRefreshing(false);
 //                    mRecyclerView.scrollToPosition(0);

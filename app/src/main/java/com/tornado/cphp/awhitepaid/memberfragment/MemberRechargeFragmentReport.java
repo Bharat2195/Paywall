@@ -33,9 +33,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Created by bharat_android on 2/9/2017.
  */
@@ -50,6 +47,7 @@ public class MemberRechargeFragmentReport extends Fragment {
     private ArrayList<String> listRechargeType=new ArrayList<>();
     private ArrayList<String> listStatus=new ArrayList<>();
     private ArrayList<String> listAmount=new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ProgressDialog pd;
     private String strJsonResponse="";
     private ListView mListviewMemberRecharge;
@@ -176,6 +174,9 @@ public class MemberRechargeFragmentReport extends Fragment {
                         String strRechargeType= object.getString("rechargetype");
                         String strStatus= object.getString("status");
                         String strAmount=object.getString("amount");
+                        String strDateTime=object.getString("entrydate");
+                        String strTime=StringUtils.getTime(strDateTime);
+                        listTime.add(strTime);
 
                         listEntryDate.add(strEntryDate);
                         listMobile.add(strMobile);
@@ -239,6 +240,7 @@ public class MemberRechargeFragmentReport extends Fragment {
                 holder.txtRechargeType = (TextView) convertView.findViewById(R.id.txtRechargeType);
                 holder.txtStatus = (TextView) convertView.findViewById(R.id.txtStatus);
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
+                holder.txtTime = (TextView) convertView.findViewById(R.id.txtTime);
 
 
 
@@ -256,7 +258,7 @@ public class MemberRechargeFragmentReport extends Fragment {
             holder.txtRechargeType.setText(listRechargeType.get(position));
             holder.txtStatus.setText(listStatus.get(position));
             holder.txtAmount.setText(listAmount.get(position));
-
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
@@ -265,7 +267,7 @@ public class MemberRechargeFragmentReport extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtEntryDate,txtMobile, txtCompanyName,txtRechargeType,txtStatus,txtAmount;
+        TextView txtEntryDate,txtMobile, txtCompanyName,txtRechargeType,txtStatus,txtAmount,txtTime;
     }
 
 }

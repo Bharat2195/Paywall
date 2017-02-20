@@ -2,16 +2,18 @@ package com.tornado.cphp.awhitepaid.vendorpanel;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +24,7 @@ import com.tornado.cphp.awhitepaid.vendorfragment.ShowImageVenderFragment;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class VendorUploadImageActivity extends AppCompatActivity {
 
@@ -35,6 +38,8 @@ public class VendorUploadImageActivity extends AppCompatActivity {
     private TextView txtTitle;
     private String tabIndex;
     private boolean isConnected;
+    public static SearchView mSearch;
+    ImageView imgSearch;
 
 
     @Override
@@ -63,6 +68,29 @@ public class VendorUploadImageActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+
+        mSearch=(SearchView)toolbar_upload_image.findViewById(R.id.mSearch);
+        imgSearch = (ImageView) toolbar_upload_image.findViewById(R.id.imgSearch);
+        imgSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgSearch.setVisibility(View.GONE);
+                mSearch.setVisibility(View.VISIBLE);
+                txtTitle.setVisibility(View.GONE);
+            }
+        });
+
+        mSearch.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                imgSearch.setVisibility(View.VISIBLE);
+                mSearch.setVisibility(View.GONE);
+                txtTitle.setVisibility(View.VISIBLE);
+                return false;
+            }
+        });
+
         Intent intent = getIntent();
         tabIndex = intent.getStringExtra("tabindex");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -79,6 +107,12 @@ public class VendorUploadImageActivity extends AppCompatActivity {
 //        setupTabIcons();
     }
 
+    public static SearchView clickEvent() {
+        return mSearch;
+
+
+    }
+
     private void setupViewPager(ViewPager viewPager) {
         VendorUploadImageActivity.ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ImageUploadVenderFragment(), "Image Upload");
@@ -87,6 +121,7 @@ public class VendorUploadImageActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
     }
+
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();

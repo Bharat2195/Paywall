@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtEntryDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:padding="10dp"
             android:textStyle="bold"
@@ -23,10 +23,22 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Time"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+
+
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Amount"
             android:gravity="center"
@@ -36,7 +48,7 @@
 
         <TextView
             android:id="@+id/txtReward"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Reward"
             android:gravity="center"

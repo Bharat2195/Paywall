@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtEntryDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
@@ -25,8 +25,21 @@
             android:layout_height="50dp" />
 
         <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Time"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
             android:id="@+id/txtMobile"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
@@ -39,7 +52,7 @@
 
         <TextView
             android:id="@+id/txtCompanyName"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Company Name"
@@ -50,7 +63,7 @@
 
         <TextView
             android:id="@+id/txtRechageType"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Recharge Type"
@@ -61,7 +74,7 @@
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Amount"
@@ -73,7 +86,7 @@
 
         <TextView
             android:id="@+id/txtStatus"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Status"

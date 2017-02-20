@@ -45,7 +45,7 @@
         android:text="Process to Transfer"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
 

@@ -11,12 +11,12 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.Selection;
@@ -43,8 +43,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.tornado.cphp.awhitepaid.R;
-import com.tornado.cphp.awhitepaid.memberpanel.MemberHomeActivity;
-import com.tornado.cphp.awhitepaid.memberpanel.MemberRechargeActivity;
 import com.tornado.cphp.awhitepaid.utils.StringUtils;
 
 import org.json.JSONArray;
@@ -501,6 +499,13 @@ public class VendorRechargeActivity extends AppCompatActivity {
         rdRechargeType = (RadioButton) findViewById(id);
         String strRechargeType = rdRechargeType.getText().toString();
         Log.d(TAG, " submit operator type: " + strRechargeType);
+        Log.d(TAG, "Recharge btn Clicked: ");
+
+        String strOperator = etCurrentOperator.getEditText().getText().toString();
+        String strAmount = etAmount.getEditText().getText().toString();
+        Log.d(TAG, "submit stramount: " + strAmount);
+
+
 
         if (strRechargeType.equalsIgnoreCase("DTH")){
             strMobileNumber = etCustomerId.getEditText().getText().toString();
@@ -511,11 +516,6 @@ public class VendorRechargeActivity extends AppCompatActivity {
             Log.d(TAG, "split mobile number: "+strMobileNumber);
             Log.d(TAG, "mobile number: "+strMobileNumber);
         }
-
-        String strOperator = etCurrentOperator.getEditText().getText().toString();
-        String strAmount = etAmount.getEditText().getText().toString();
-        Log.d(TAG, "submit stramount: " + strAmount);
-
 
         if (StringUtils.isBlank(strMobileNumber)) {
             Toast.makeText(VendorRechargeActivity.this, "Please Enter Mobile Number || Customer Id", Toast.LENGTH_SHORT).show();
@@ -533,6 +533,7 @@ public class VendorRechargeActivity extends AppCompatActivity {
             pd.setCanceledOnTouchOutside(false);
             pd.setCanceledOnTouchOutside(false);
             pd.show();
+
 
             getReachargeData(strMobileNumber, strOperator, strAmount, strRechargeType);
 

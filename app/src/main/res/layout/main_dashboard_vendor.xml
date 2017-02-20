@@ -112,7 +112,7 @@
                     <TextView
                         android:id="@+id/txtSend"
                         android:text="Send"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
@@ -145,7 +145,7 @@
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/imgWithdrawal"
                         android:layout_width="wrap_content"
@@ -172,7 +172,7 @@
                         android:id="@+id/txtAddress"
                         android:text="Address"
                         android:layout_marginTop="5dp"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
@@ -211,7 +211,7 @@
                     <TextView
                         android:id="@+id/txtPhoto"
                         android:text="Photo"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
@@ -240,7 +240,7 @@
                     <TextView
                         android:id="@+id/txtPassword"
                         android:text="Password"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
@@ -269,7 +269,7 @@
                     <TextView
                         android:id="@+id/txtMe"
                         android:text="Me"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
@@ -309,7 +309,7 @@
                     <TextView
                         android:id="@+id/txtReports"
                         android:text="Reports"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
@@ -338,7 +338,7 @@
                     <TextView
                         android:id="@+id/Balance"
                         android:text="Balance"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="5dp"
@@ -367,7 +367,7 @@
                     <TextView
                         android:id="@+id/txtLoadMoney"
                         android:text="Load Money"
-                        android:textSize="18sp"
+                        android:textSize="18dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@android:color/white"
                         android:layout_centerVertical="true"

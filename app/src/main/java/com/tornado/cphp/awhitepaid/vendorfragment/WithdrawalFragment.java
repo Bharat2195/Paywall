@@ -43,7 +43,7 @@ public class WithdrawalFragment extends Fragment {
     private EditText etWithdrawalAmount;
     private Button btnSubmit;
     private ProgressDialog pd;
-    private String strCharges="", strJsonResponse = "",strChargesRespone="",strYourBalance="",strPanResponse="",JsonResponse="",strWalletBalance="";
+    private String strCharges="",strSpiltValues="", strJsonResponse = "",strChargesRespone="",strYourBalance="",strPanResponse="",JsonResponse="",strWalletBalance="";
     private RelativeLayout relative_layout,rl_no_pancard;
 
     @Override
@@ -130,7 +130,7 @@ public class WithdrawalFragment extends Fragment {
 
                 if (StringUtils.isBlank(strWithDrawalAmount)) {
                     Toast.makeText(getActivity(), "Please Enter WithdrawalAmount values", Toast.LENGTH_SHORT).show();
-                } else if (Integer.parseInt(strWithDrawalAmount)>Integer.parseInt(strWalletBalance) ) {
+                } else if (Integer.parseInt(strWithDrawalAmount)>Integer.parseInt(strSpiltValues) ) {
                     Toast.makeText(getActivity(), "Your Wallet Balance Is low", Toast.LENGTH_SHORT).show();
                 }else if (Integer.parseInt(strWithDrawalAmount)<100) {
                     Toast.makeText(getActivity(), "Minimum Withdrawal Amount 100 Rs.", Toast.LENGTH_SHORT).show();
@@ -361,7 +361,7 @@ public class WithdrawalFragment extends Fragment {
                 Log.d(TAG, "array response: " + strWalletBalance);
                 String []strFloat=strWalletBalance.split("\\.");
                 Log.d(TAG, "strFloat: "+strFloat);
-                String strSpiltValues=strFloat[0];
+                strSpiltValues=strFloat[0];
                 Log.d(TAG, "str spilt values: "+strSpiltValues);
                 txtBalance.setText("BALANCE " + strSpiltValues);
 //                strCharges=jsonArray.getString(1);

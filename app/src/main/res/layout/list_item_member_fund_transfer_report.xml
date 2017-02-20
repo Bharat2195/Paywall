@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:padding="10dp"
             android:textStyle="bold"
@@ -23,11 +23,23 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Time"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+
+
 
 
         <TextView
             android:id="@+id/txtToId"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Toid"
             android:gravity="center"
@@ -37,7 +49,7 @@
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Amount"
             android:gravity="center"
@@ -47,7 +59,7 @@
 
         <TextView
             android:id="@+id/txtCharges"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Charges"
             android:gravity="center"
@@ -58,7 +70,7 @@
 
         <TextView
             android:id="@+id/txtNetAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="NetAmount"
             android:gravity="center"
@@ -68,7 +80,7 @@
 
         <TextView
             android:id="@+id/txtType"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:padding="10dp"
             android:textStyle="bold"

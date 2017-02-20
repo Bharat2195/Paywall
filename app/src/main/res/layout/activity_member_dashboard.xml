@@ -121,7 +121,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Send"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
 
                 </RelativeLayout>
@@ -151,7 +151,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Withdrwal"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -180,7 +180,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Address"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -219,7 +219,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Photo"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -248,7 +248,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Password"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -277,7 +277,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Me"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -316,7 +316,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Reports"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -345,7 +345,7 @@
                         android:layout_marginTop="5dp"
                         android:text="@string/activation"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -374,7 +374,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Load Money"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 

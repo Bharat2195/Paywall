@@ -29,7 +29,7 @@
         android:layout_margin="10dp"
         android:padding="10dp"
         android:text="Add Address your Location"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
 
     <EditText
@@ -50,7 +50,7 @@
         android:padding="10dp"
         android:layout_margin="10dp"
         android:background="@color/blue"
-        android:textSize="18sp"
+        android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_width="wrap_content"

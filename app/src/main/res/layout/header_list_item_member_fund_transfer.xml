@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
@@ -24,11 +24,24 @@
             android:layout_width="130dp"
             android:layout_height="50dp" />
 
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Time"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
 
 
         <TextView
             android:id="@+id/txtToId"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Toid"
@@ -39,7 +52,7 @@
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Amount"
@@ -50,7 +63,7 @@
 
         <TextView
             android:id="@+id/txtCharges"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Charges"
@@ -62,7 +75,7 @@
 
         <TextView
             android:id="@+id/txtNetAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="NetAmount"
@@ -73,7 +86,7 @@
 
         <TextView
             android:id="@+id/txtType"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"

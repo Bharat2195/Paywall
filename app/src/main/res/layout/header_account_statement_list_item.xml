@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtSrNo"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Date"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/txtType"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Type"
@@ -48,7 +48,7 @@
 
         <TextView
             android:id="@+id/txtRemark"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Remark"
@@ -60,7 +60,7 @@
 
         <TextView
             android:id="@+id/txtAdd"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Add"
@@ -71,7 +71,7 @@
 
         <TextView
             android:id="@+id/txtLess"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Less"
             android:background="@color/blue"
             android:textColor="@color/white"
@@ -82,7 +82,7 @@
 
         <TextView
             android:id="@+id/txtBalance"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Balance"
             android:background="@color/blue"
             android:textColor="@color/white"
@@ -91,16 +91,18 @@
             android:layout_width="130dp"
             android:layout_height="50dp" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/txtWallettype"-->
-            <!--android:textSize="14sp"-->
-            <!--android:text="Wallettype"-->
-            <!--android:background="@color/blue"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:gravity="center"-->
-            <!--android:textStyle="bold"-->
-            <!--android:layout_width="130dp"-->
-            <!--android:layout_height="50dp" />-->
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:text="Time"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="50dp" />
+
+
 
 
 

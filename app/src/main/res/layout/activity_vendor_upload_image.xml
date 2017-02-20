@@ -12,7 +12,7 @@
             android:id="@+id/toolbar_upload_image"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            layout="@layout/toolbar"/>
+            layout="@layout/toolbar_searching"/>
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"

@@ -14,37 +14,41 @@
 
         <TextView
             android:id="@+id/txtSrNo"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:gravity="center"
+            android:padding="10dp"
             android:text="Sr No."
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Date"
             android:gravity="center"
             android:textStyle="bold"
+            android:padding="10dp"
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtType"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Type"
             android:gravity="center"
             android:textStyle="bold"
+            android:padding="10dp"
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtRemark"
-            android:textSize="14sp"
+            android:padding="10dp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Remark"
             android:gravity="center"
@@ -55,8 +59,9 @@
 
         <TextView
             android:id="@+id/txtAdd"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
+            android:padding="10dp"
             android:text="Add"
             android:gravity="center"
             android:textStyle="bold"
@@ -65,9 +70,10 @@
 
         <TextView
             android:id="@+id/txtLess"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Less"
             android:textColor="@color/black"
+            android:padding="10dp"
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="130dp"
@@ -75,23 +81,27 @@
 
         <TextView
             android:id="@+id/txtBalance"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Balance"
             android:textColor="@color/black"
             android:gravity="center"
+            android:padding="10dp"
             android:textStyle="bold"
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/txtWallettype"-->
-            <!--android:textSize="14sp"-->
-            <!--android:text="Wallettype"-->
-            <!--android:textColor="@color/black"-->
-            <!--android:gravity="center"-->
-            <!--android:textStyle="bold"-->
-            <!--android:layout_width="130dp"-->
-            <!--android:layout_height="50dp" />-->
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+
+
 
 
 

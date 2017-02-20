@@ -48,6 +48,7 @@ public class MemberFundTransferFragment extends Fragment {
     ArrayList<String> listCharges= new ArrayList<>();
     ArrayList<String> listNetAmount= new ArrayList<>();
     ArrayList<String> listType= new ArrayList<>();
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewMemberFundtRansferReport;
 
     @Override
@@ -172,6 +173,10 @@ public class MemberFundTransferFragment extends Fragment {
                         String strNetAmount= object.getString("netamount");
                         String strType= object.getString("type");
 
+                        String strDateTime=object.getString("entrydate");
+                        String strTime=StringUtils.getTime(strDateTime);
+                        listTime.add(strTime);
+
                         listDate.add(strDate);
                         listToId.add(strToId);
                         listAmount.add(strAmount);
@@ -244,6 +249,7 @@ public class MemberFundTransferFragment extends Fragment {
                 holder.txtAmount = (TextView) convertView.findViewById(R.id.txtAmount);
                 holder.txtNetAmount= (TextView) convertView.findViewById(R.id.txtNetAmount);
                 holder.txtType= (TextView) convertView.findViewById(R.id.txtType);
+                holder.txtTime = (TextView) convertView.findViewById(R.id.txtTime);
 
                 convertView.setTag(holder);
 
@@ -258,6 +264,7 @@ public class MemberFundTransferFragment extends Fragment {
             holder.txtCharges.setText(listCharges.get(position));
             holder.txtNetAmount.setText(listNetAmount.get(position));
             holder.txtType.setText(listType.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
 
             return convertView;
@@ -267,6 +274,6 @@ public class MemberFundTransferFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtDate, txtToId, txtAmount, txtCharges, txtNetAmount,txtType;
+        TextView txtDate, txtToId, txtAmount, txtCharges, txtNetAmount,txtType,txtTime;
     }
 }

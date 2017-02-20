@@ -516,8 +516,15 @@ public class MemberRechargeActivity extends AppCompatActivity {
         String strRechargeType = rdRechargeType.getText().toString();
         Log.d(TAG, " submit operator type: " + strRechargeType);
 
+
+
+        String strOperator = etCurrentOperator.getEditText().getText().toString();
+        String strAmount = etAmount.getEditText().getText().toString();
+        Log.d(TAG, "submit stramount: " + strAmount);
+
+
         if (strRechargeType.equalsIgnoreCase("DTH")){
-             strMobileNumber = etCustomerId.getEditText().getText().toString();
+            strMobileNumber = etCustomerId.getEditText().getText().toString();
             Log.d(TAG, "customer id click: "+strMobileNumber);
         }else {
             String MobileNumber=etMobileNumber.getEditText().getText().toString();
@@ -525,11 +532,6 @@ public class MemberRechargeActivity extends AppCompatActivity {
             Log.d(TAG, "split mobile number: "+strMobileNumber);
             Log.d(TAG, "mobile number: "+strMobileNumber);
         }
-
-        String strOperator = etCurrentOperator.getEditText().getText().toString();
-        String strAmount = etAmount.getEditText().getText().toString();
-        Log.d(TAG, "submit stramount: " + strAmount);
-
 
         if (StringUtils.isBlank(strMobileNumber)) {
             Toast.makeText(MemberRechargeActivity.this, "Please Enter Mobile Number || Customer Id", Toast.LENGTH_SHORT).show();
@@ -547,6 +549,8 @@ public class MemberRechargeActivity extends AppCompatActivity {
             pd.setCanceledOnTouchOutside(false);
             pd.setCanceledOnTouchOutside(false);
             pd.show();
+
+
 
             getReachargeData(strMobileNumber, strOperator, strAmount, strRechargeType);
 

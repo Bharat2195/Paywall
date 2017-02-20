@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtDetail"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/txtLevelNo"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Level No"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/txtTotal"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Total"

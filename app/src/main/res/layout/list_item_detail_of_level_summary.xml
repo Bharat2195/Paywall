@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/txtMemberDetail"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:padding="10dp"
             android:textStyle="bold"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/txtJoiningDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Joining Date"
             android:gravity="center"
@@ -35,7 +35,7 @@
 
         <TextView
             android:id="@+id/txtActivationDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:textColor="@color/black"
             android:text="Activation Date"
             android:gravity="center"

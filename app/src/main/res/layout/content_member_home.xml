@@ -50,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="10dp"
+                android:textSize="14dp"
                 android:text="BALANCE 0.00"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
@@ -64,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_margin="10dp"
+            android:textSize="14dp"
             android:background="@drawable/button_corner"
             android:padding="10dp"
             android:text="load money"
@@ -115,7 +117,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Send"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
 
                 </RelativeLayout>
@@ -145,7 +147,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Withdrwal"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -175,7 +177,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Load Money"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -214,7 +216,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Shop Detail"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -243,7 +245,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Password"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -272,7 +274,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Me"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -311,7 +313,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Reports"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -340,7 +342,7 @@
                         android:layout_marginTop="5dp"
                         android:text="@string/activation"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 
@@ -369,7 +371,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Recharge"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp" />
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
 

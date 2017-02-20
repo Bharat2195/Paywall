@@ -50,6 +50,8 @@ public class WorkingIncomeFragment extends Fragment {
     ArrayList<String> listAmount= new ArrayList<>();
     ArrayList<String> listTds= new ArrayList<>();
     ArrayList<String> listAdminCharge= new ArrayList<>();
+
+    ArrayList<String> listTime= new ArrayList<>();
     private ListView mListviewWorkingIncomeReport;
 
 
@@ -177,6 +179,9 @@ public class WorkingIncomeFragment extends Fragment {
                         String strAdminCharge= object.getString("admincharge");
                         String strNetAmount= object.getString("netamount");
                         String strEntryDate=object.getString("Entry Date");
+                        String strDateTime=object.getString("entrydate");
+                        String strTime=StringUtils.getTime(strDateTime);
+                        listTime.add(strTime);
 
 
                         listMemberId.add(MemberId);
@@ -253,6 +258,7 @@ public class WorkingIncomeFragment extends Fragment {
                 holder.txtFromId = (TextView) convertView.findViewById(R.id.txtFromId);
                 holder.txtLevel=(TextView)convertView.findViewById(R.id.txtLevel);
                 holder.txtAmount=(TextView)convertView.findViewById(R.id.txtAmount);
+                holder.txtTime = (TextView) convertView.findViewById(R.id.txtTime);
 
                 convertView.setTag(holder);
 
@@ -266,6 +272,7 @@ public class WorkingIncomeFragment extends Fragment {
             holder.txtFromId.setText(listFromId.get(position));
             holder.txtLevel.setText(listlevelNo.get(position));
             holder.txtAmount.setText(listAmount.get(position));
+            holder.txtTime.setText(listTime.get(position));
 
             return convertView;
 
@@ -275,7 +282,7 @@ public class WorkingIncomeFragment extends Fragment {
 
     private class ViewHolder {
 
-        TextView txtDate,txtMemberId, txtFromId,txtLevel,txtAmount;
+        TextView txtDate,txtMemberId, txtFromId,txtLevel,txtAmount,txtTime;
     }
 
 

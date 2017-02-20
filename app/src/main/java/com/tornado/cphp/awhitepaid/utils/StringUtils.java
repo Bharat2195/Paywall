@@ -54,5 +54,12 @@ public class StringUtils {
         toast.show();
     }
 
+    public static String getTime(String Time){
+        String [] splitTime=Time.split(" ");
+        String strTime=splitTime[1];
+        return  strTime;
+
+    }
+
 
 }

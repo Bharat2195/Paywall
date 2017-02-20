@@ -158,8 +158,6 @@ public class VendorHomeAcivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
         Intent intent = getIntent();
         strVendorId = intent.getStringExtra("VendorId");
         toolbar_main = (Toolbar) findViewById(R.id.toolbar_main);

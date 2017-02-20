@@ -14,94 +14,106 @@
 
         <TextView
             android:id="@+id/txtSrNo"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:padding="10dp"
             android:textStyle="bold"
             android:gravity="center"
             android:text="Sr No."
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/txtDate"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Date"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/txtVendorId"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Vendor Id"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/txtVendorName"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Vendor Name"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
 
         <TextView
             android:id="@+id/txtAmount"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:text="Amount"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/txtCharges"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Charges"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/txtPayable"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Payable"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
 
 
         <TextView
             android:id="@+id/txtSatus"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:text="Status"
             android:background="@color/blue"
             android:textColor="@color/white"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:textSize="14dp"
+            android:text="Time"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
 
 
     </LinearLayout>

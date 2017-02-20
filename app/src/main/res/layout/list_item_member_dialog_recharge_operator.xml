@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/txtOperator"
-        android:textSize="24sp"
+        android:textSize="24dp"
         android:textColor="@color/black"
         android:text="AIRCEL"
         android:layout_margin="10dp"
